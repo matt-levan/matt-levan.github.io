@@ -14,7 +14,7 @@ The core value of Fusion is derived from “Fusion 5”—five foundational appl
 1. Data mobility: Applications need to run from the edge, to the core, and to the cloud, which requires your data to be mobile.
 1. Data cataloging: Data scientists seek simple and fast ways to create actionable data insights at scale.
 
-![Screenshot]({{ site.baseurl }}/assets/images/image2.png)
+![Screenshot]({{ site.baseurl }}/assets/images/introduction-02.png)
 
 ## About this demo
 The purpose of this exercise is to enable you to get some hands-on experience with IBM Fusion on an OpenShift Cluster. The environment used is a VMware server provisioned on IBM Technology Zone and is suitable for self-education, demos, and a customer Proof of Experience (PoX). In this exercise you will:

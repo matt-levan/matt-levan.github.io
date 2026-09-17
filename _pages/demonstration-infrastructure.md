@@ -10,7 +10,7 @@ nav_order: 5
 ## Platform overview
 The platform for this lab is a VMware-based Red Hat OpenShift Container Platform cluster, into which you will install and use Fusion.  See the diagram below.
 
-![Screenshot]({{ site.baseurl }}/assets/images/image28.png)
+![Screenshot]({{ site.baseurl }}/assets/images/platform-overview-01.png)
 
 The lab environment is composed of 9 or more Virtual Machines (VMs), hosted on a VMware vSphere cluster.
 Six of these VMs form a Red Hat OpenShift Container Platform (OCP) cluster, running Kubernetes. This cluster is a mixed cluster with different kinds of workers nodes. It is composed of:

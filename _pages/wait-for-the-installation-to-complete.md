@@ -8,4 +8,4 @@ nav_order: 9
 # Wait for the installation to complete
 
 
-![Screenshot]({{ site.baseurl }}/assets/images/image59.png)
+![Screenshot]({{ site.baseurl }}/assets/images/wait-for-the-installation-to-complete-01.png)

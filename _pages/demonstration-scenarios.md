@@ -20,24 +20,24 @@ The demonstration environment provided for you after provisioning is configured 
 ### OpenShift Web Console
 1. To access the OpenShift console, click on the blue Desktop button (A) or click on the the Desktop url link (B). The login credentials needed are the Username “kubeadmin” (C) and the Password (D) provided. (The actual connection information will be specific to your cluster.)
 
-![Screenshot]({{ site.baseurl }}/assets/images/image29.png)
+![Screenshot]({{ site.baseurl }}/assets/images/openshift-web-console-01.png)
 
 1. When your browser connects to the OpenShift Container Platform web user interface (UI), select kube:admin (A) to bring up the login screen. (The IBMid option will use your IBM account to login and is not the recommended method to use for authentication to the environment.)
 
-![Screenshot]({{ site.baseurl }}/assets/images/image30.png)
+![Screenshot]({{ site.baseurl }}/assets/images/openshift-web-console-02.png)
 
 1. Enter Username (A) and Password (B) as found in your TechZone reservation.
 
-![Screenshot]({{ site.baseurl }}/assets/images/image31.png)
+![Screenshot]({{ site.baseurl }}/assets/images/openshift-web-console-03.png)
 
 
-![Screenshot]({{ site.baseurl }}/assets/images/image32.png)
+![Screenshot]({{ site.baseurl }}/assets/images/openshift-web-console-04.png)
 
 1. Once you have logged in, you will be presented with the OpenShift home page.
 ### OpenShift Command Line Access
 1. To get command line access, find the Bastion SSH Connection (A) information on your IBM Technology Zone reservation details page. The Bastion Password (B) is used to access the remote shell environment. Here is an image of what you will see – the connection data will be specific to your cluster. The API URL (C) will be used in a later step to connect to the OpenShift cluster with the ‘oc’ command.
 
-![Screenshot]({{ site.baseurl }}/assets/images/image33.png)
+![Screenshot]({{ site.baseurl }}/assets/images/openshift-command-line-access-01.png)
 
 1. To connect via SSH, open a terminal on a Mac or Linux system and enter a command that looks something like this:
 
@@ -63,7 +63,7 @@ where `API_URL` is the API URL value obtained from your reservation page of your
 
 (When prompted, enter the kubeadmin “Cluster Admin Password”)
 
-![Screenshot]({{ site.baseurl }}/assets/images/image34.png)
+![Screenshot]({{ site.baseurl }}/assets/images/openshift-command-line-access-02.png)
 
 1. Now, that you can access the cluster, run a couple of OpenShift commands from the ‘oc’ command line:
 
@@ -72,4 +72,4 @@ where `API_URL` is the API URL value obtained from your reservation page of your
 `oc`` get ``clusterversion`
 ```
 
-![Screenshot]({{ site.baseurl }}/assets/images/image35.png)
+![Screenshot]({{ site.baseurl }}/assets/images/openshift-command-line-access-03.png)

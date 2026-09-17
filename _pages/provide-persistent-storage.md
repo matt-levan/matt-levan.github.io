@@ -15,16 +15,16 @@ Then run the follow command:
 oc apply -f https://raw.githubusercontent.com/IBM/ibm-spectrum-scale-container-native/v6.0.0.x/generated/scale/mco/mco.yaml
 After applying the MCO, wait for the machine ready count to complete:
 
-![Screenshot]({{ site.baseurl }}/assets/images/image53.png)
+![Screenshot]({{ site.baseurl }}/assets/images/provide-persistent-storage-01.png)
 
 
-![Screenshot]({{ site.baseurl }}/assets/images/image54.png)
+![Screenshot]({{ site.baseurl }}/assets/images/provide-persistent-storage-02.png)
 
 
-![Screenshot]({{ site.baseurl }}/assets/images/image55.png)
+![Screenshot]({{ site.baseurl }}/assets/images/provide-persistent-storage-03.png)
 
 
-![Screenshot]({{ site.baseurl }}/assets/images/image56.png)
+![Screenshot]({{ site.baseurl }}/assets/images/provide-persistent-storage-04.png)
 
 Install the Data Foundation service from the services menu on the fusion console
 
@@ -32,12 +32,12 @@ Install the Data Foundation service from the services menu on the fusion console
 
 After selecting Data Foundation you will see:
 
-![Screenshot]({{ site.baseurl }}/assets/images/image57.png)
+![Screenshot]({{ site.baseurl }}/assets/images/provide-persistent-storage-05.png)
 
 Select “Install”
 
 and you will get an option for “internal” or “external”. Select “internal” if you only want to install Internal Data Foundation. Select “external” if you want to enable remote mount of Ceph, Scale and Fusion Access.
 
-![Screenshot]({{ site.baseurl }}/assets/images/image58.png)
+![Screenshot]({{ site.baseurl }}/assets/images/provide-persistent-storage-06.png)
 
 For this lab, we want to explore all of the features. Therefore, select “external”
