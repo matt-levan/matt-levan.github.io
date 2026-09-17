@@ -48,13 +48,16 @@ Additionally, you might need to configure an OpenVPN connection to be able to ac
 
 1. After a few minutes, you will receive an email confirming that your IBMid has been activated.
 > Note: The first time that you log in using your IBMid you will be sent another code to verify your log in.
+
 To access the IBM Fusion infrastructure provided in your environment, you will need to refer to the IBM Technology Zone “Reservation Ready” email, which will contain links to the login credentials needed.
 > Note: Connectivity to the Red Hat OpenShift console may be lost during the first 30 minutes after receiving the Technology Zone “Reservation Ready” email. The machineConfigPool is still updating and rebooting the worker nodes during this time causing the loss of connection to the console during this period.
+
 The IBM Technology Zone “Reservation Ready” email should look like the one shown here.
 
 ![Screenshot]({{ site.baseurl }}/assets/images/rdr-lab-guide/connect-to-the-lab-environment-01.png)
 
 > NOTE: You can also see this information under “My Reservations” when you are logged into IBM Technology Zone (https://techzone.ibm.com/my/reservations).
+
 The desktop URL provided is used for direct access to the OpenShift Console.
 
 ![Screenshot]({{ site.baseurl }}/assets/images/rdr-lab-guide/connect-to-the-lab-environment-02.png)
@@ -115,6 +118,7 @@ ssh itzuser@apps.ocp-50t6fjgae-droi.cloud.techzone.ibm.com -p 40222
 
 (Use the Bastion Password. Also the hostname is an example; get the real host name from your reservation.)
 > Note: On Windows you can use PowerShell or an SSH utility like ‘putty’.
+
 1. Once you are in the bastion host, connect to the cluster with the API URL and the kubeadmin user and kubeadmin password by executing a command that looks like this:
 ```bash
 oc login -u kubeadmin [API_URL]

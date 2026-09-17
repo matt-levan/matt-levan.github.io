@@ -10,6 +10,7 @@ parent: "IBM Fusion HCP Lab Guide"
 
 This section takes advantage of a new configMap that was made available in IBM Fusion 2.10 to automatically install and configure the Red Hat LVM Operator and associated lvmCluster custom resource after the IBM Fusion Operator is installed.
 > IMPORTANT: When you configure storage for hosted control planes, consider the recommended etcd best practices. To ensure that you meet the latency requirements, dedicate a fast storage device to all hosted control plane etcd instances that run on each control-plane node. It is a recommended best practice to use LVM storage to configure a local storage class for hosted etcd pods.
+
 ## Label Infra nodes
 The three (3) infrastructure nodes were provisioned with 2 Terabyte (TB) of internal storage to be used as etcd storage of hosted clusters.
 1. In the OpenShift GUI, navigate to the Nodes screen by clicking on the Compute (A) menu item shown in the left-hand side navigation pane and selecting the Nodes (B) sub-item. (C) Next, type the word infra in the Search text entry field. Click on the infra-1 (D) node link when it appears.

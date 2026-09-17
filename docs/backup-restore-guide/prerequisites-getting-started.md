@@ -15,4 +15,5 @@ Red Hat Courses:
 - [DO180 – Red Hat OpenShift Administration I: Managing Containers and Kubernetes](https://training-lms.redhat.com/sso/saml/auth/rhopen?RelayState=deeplinkoffering%3D46105986)
 - [DO280 – Red Hat OpenShift Administration II: Operating a Production Kubernetes Cluster](https://training-lms.redhat.com/sso/saml/auth/rhopen?RelayState=deeplinkoffering%3D46105987)
 > Note: Red Hat Partner Connect Training access required.
+
 When instructions are given to enter text, the text is usually shown in mono space font (this is an example). This is to help indicate that you need to type or copy/paste all the text as is.

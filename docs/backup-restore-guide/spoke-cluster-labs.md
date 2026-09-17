@@ -11,6 +11,7 @@ parent: "Fusion Backup and Restore Lab Guide"
 A hub and spoke model enable a single administrator to manage backups for multiple applications that exist on the different clusters. The “hub” is the single location from where the administrator can login and manage all the applications on all the spoke and hub clusters. The hub location hosts the server and facilitates the Backup & Restore administrator to run backup and restore jobs across all clusters.
 The hub includes all the Backup & Restore server components and agent components for backing up components on its own cluster. The “spoke” has only the Backup & Restore agent installed in it.
 > The Backup & Restore hub maintains all scheduling, retention, policy handling, location management, and everything else from a management point of view. The agent or spoke takes care of requests to facilitate Backup & Restore jobs on that cluster.
+
 ## Configure a second cluster as a spoke
 For reference, the cluster installed with the Backup & Restore service (agent and server) will be referred to as the hub cluster. The second cluster deployed will be referred to as the spoke cluster. For ease of connecting to the correct cluster use the following table.
 
@@ -75,6 +76,7 @@ For reference, the cluster installed with the Backup & Restore service (agent an
 ## Prepare for spoke backup and restore
 The spoke cluster requires access to the object bucket used during a backup operation and the Ceph cluster used earlier is not accessible from the spoke cluster. A new application, backup location, and backup policy will be created to enable restoring an application to the spoke cluster.
 > IMPORTANT: In a hub and spoke configuration, all OpenShift clusters participating in backup and restore operations need to be able to reach the object storage bucket used.
+
 ### Create FDF ObjectBucketClaim for S3 backup location
 This section describes the steps to create a FDF ObjectBucketClaim for configuring an S3 compatible backup location.
 1. In the OpenShift GUI for the hub, navigate Navigate to the Object Storage screen by clicking on the Storage (A) menu item shown in the left-hand side navigation pane and selecting the Object Storage (B) sub-item.
@@ -130,6 +132,7 @@ In this section a new backup location will be created on the hub cluster that is
 
 1. Enter the S3 endpoint and connection information from the Object Bucket Claim created in Section Create ODF ObjectBucketClaim for S3 backup location and click the Add (E) button. Additionally, the Show/Hide button on the Secret key can be used to display the text or hide it.
 > NOTE: This configuration would not be appropriate for a production environment as the S3 target location should not be part of the Red Hat OpenShift Container Platform being backed up.
+
 *Table  – Add a backup location details*
 
 | Field name | Value | Callout |

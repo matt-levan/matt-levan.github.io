@@ -32,6 +32,7 @@ Participants will gain hands-on experience with:
 - **Fusion Data Foundation:** Provides the underlying storage and replication layer.
 - **Red Hat Advanced Cluster Management:** Centralized control plane for managing both clusters and orchestrating DR workflows.
 > IMPORTANT: This configuration is not supported for Regional Disaster Recovery and is intended solely for learning purposes. In a production environment, Red Hat Advanced Cluster Management should be deployed on a separate, third cluster that does not participate in data replication.
+
 ## Components of Fusion Regional Disaster recovery
 ### Red Hat Advanced Cluster Management for Kubernetes
 Red Hat Advanced Cluster Management (RHACM) provides the ability to manage multiple clusters and application lifecycles. Hence, it serves as a control plane in a multi-cluster environment.

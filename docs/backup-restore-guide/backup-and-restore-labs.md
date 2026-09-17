@@ -123,6 +123,7 @@ In this section, you’ll learn how to create a basic application to demonstrate
 ## Assign Policy to application
 The OpenShift Cluster can host many application workloads; IBM Fusion provides a simple graphical user interface (GUI) to assign backup policies to applications and automate their protection.
 > There are two (2) methods for interacting with applications in the Fusion GUI. The Applications menu item on the left-hand side navigation pane shows only the applications local to the cluster. The Backed up applications sub-item under the Backup & restore menu allows for assigning policies to local and remote clusters. For this lab either option can be used.
+
 ### Assign policy using applications menu item
 This sub-section describes the process for managing backups of applications deployed in the local cluster using the Applications page.
 1. Navigate to the Application pane by clicking on the Applications (A) menu item on the left-hand side navigation pane.
@@ -235,6 +236,7 @@ When you protect an application with Backup & Restore service, a default backup 
 > Application consistent: If a client has an application that has many, many persistent volumes, and that application is busy reading and writing to its PVs, there needs to be a way to instruct the application to stop writing or to pause. The application can complete any tasks in process but then stop briefly to allow a snapshot of the PVs to be taken. Then, the application can be instructed to resume. This is like quiescing a database.
 > With application consistency, it’s possible to restore an application to another cluster without having data stuck in an I/O buffer, thus ensuring the application is back running in the exact state it was in at the time of the backup. Application consistency also means that there needs to be a workflow to back up those applications in a certain order, and Fusion provides this with recipes.
 > Application consistent backups are important because they ensure that important files and data are saved in a way that keeps them safe and undamaged. This means that if something goes wrong, like a computer crash or a power outage, clients can restore their files and data to the way they were before the event, without losing any important information.
+
 1. In the OpenShift GUI, navigate to the Projects screen by clicking on the Home (A) menu item in the left-hand side navigation pane and selecting the Projects (B) sub-item. When the Projects screen is shown, click on the Create Project (C) button.
 
 ![Screenshot]({{ site.baseurl }}/assets/images/backup-restore-guide/create-a-simple-application-01.png)
@@ -292,6 +294,7 @@ When you protect an application with Backup & Restore service, a default backup 
 > In the MongoDB script there are two hooks provided. The first hook checks to validate that the number of replicas expected by the deployment are equal to the number of replicas that are Ready. The second hook includes the logic to put the Mongodb database into and take it out of hot backup mode allowing for an application consistent backup of the database.
 > Workflows: A workflow defines the sequence of steps for a backup or restore operation, specifically the order in which the groups of resources and PVCs must be processed and any hooks that need to be applied.
 > In the MongoDB script there are two workflows provided for the backup and restore sequence. In the backup workflow, the MongoDB resources are backed up, then the MongoDB is put into hot backup mode. After the MongoDB has entered hot backup mode, the volumes are backed up. Finally, the last step is to take the MongoDB database out of hot backup mode. In the restore section, the resources are restored such that the MongoDB volumes are created before the resources, then the restore waits until all expected replicas are Ready.
+
 1. Click the Import YAML (A) (the icon that looks like a + sign) button on the OpenShift GUI masthead.
 
 ![Screenshot]({{ site.baseurl }}/assets/images/backup-restore-guide/create-an-application-with-fusion-recipe-12.png)
@@ -333,6 +336,7 @@ When you protect an application with Backup & Restore service, a default backup 
 > The recipe syntax is as follows for use in a PolicyAssignment.
 > spec:  recipe:    apiVersion: spp-data-protection.isf.ibm.com/v1alpha1    name: RECIPE_NAME    namespace: RECIPE_NAMESPACE
 > RECIPE_NAME is the name of the recipe as specified in the Recipe CR.RECIPE_NAMESPACE is the namespace where the Recipe CR is located.
+
 1. Enter the following 4 lines before status and after runNow as shown in the screenshot. The spacing included in the text entered is needed to conform to the YAML used by OpenShift. Do not enter the values (X spaces) and instead press the spacebar the number of times indicated if the editor does not auto-indent.
 > NOTE: for readability the metadata and status information have been collapsed using the expand/collapse buttons on the left-hand side of the editor.
 
@@ -386,6 +390,7 @@ Click the Save (A) button after the 4 new lines have been added.
 ## Backup service protection
 The IBM Storage Fusion Backup & Restore service protection involves the backup of the control plane to a S3 object bucket. In the event of cluster failure, you can use this feature to restore the Backup & Restore service to another cluster. In this section you will configure service protection and run the initial service backup.
 > Service protection is just for backup/restore on the hub cluster and not for other configurations that exist in IBM Storage Fusion. For example, Red Hat OpenShift Container Platform cluster, disaster recovery, Red Hat OpenShift Data Foundation.
+
 1. In the Fusion GUI, navigate to the Service protection page by clicking on the Backup & restore (A) menu item shown in the left-hand side navigation pane and selecting Service protection (B) sub-item.
 
 ![Screenshot]({{ site.baseurl }}/assets/images/backup-restore-guide/backup-service-protection-01.png)

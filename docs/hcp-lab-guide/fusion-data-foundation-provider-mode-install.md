@@ -14,6 +14,7 @@ In provider mode, the architecture is divided into two key components: the Provi
 Fusion Data Foundation being installed on OpenShift Container Platform 4.17 or later do not recognize the disk devices used in the Technology Zone environment as SSD/NVMe disks and will not use those disks for creating the FDF StorageSystem. The following steps will change the rotational flag from 1 to 0 on any unused block devices of the worker nodes to allow the FDF StorageSystem to be created in this lab environment.
 > IMPORTANT: Complete this section only if you are deploying on OpenShift version 4.17 or later. If the OpenShift cluster is running 4.16 or earlier, skip this section and proceed to the next section to install and configure Fusion Data Foundation.
 > NOTE: The following process can take 25-30 minutes to complete after creation of the MachineConfig.
+
 The udev rule file, /etc/udev/rules.d/99-ibm.rules, is created using a MachineConfig with the following contents to change the queue/rotational flag from 1 to 0 for any devices that do not currently have a partition table.
 ```bash
 ACTION=="add|change", SUBSYSTEM=="block", KERNEL=="sd[a-z]", ENV{ID_PART_TABLE_TYPE}=="", ATTR{queue/rotational}="0"
@@ -73,6 +74,7 @@ spec:
 ## Fusion Data Foundation install process
 This section shows how to deploy the Fusion Data Foundation (FDF) in Provider mode.
 > IMPORTANT: If the OCS/ODF size was set to 2 TiB or 5 TiB when the IBM Fusion on OCP environment was provisioned on IBM Technology Zone, ODF was deployed automatically and the steps outlined in this section have already been performed and this environment cannot be used for this lab.
+
 ### Install Data Foundation service
 The following steps walk you through the installation of Data Foundation using Local storage.
 1. In the Fusion GUI, navigate to the Services page by clicking on the Services (A) menu item shown in the left-hand side navigation pane and then clicking on the Data Foundation (B) tile.
@@ -140,6 +142,7 @@ In this section, Fusion Data Foundation StorageSystem custom resource will be cr
 ## Configure default storageClass
 It is recommended to use OpenShift Data Foundation RADOS Block Devices (RBDs) for OpenShift Virtualization. In this section, we will configure the default storageClass using the following annotation, storageclass.kubernetes.io/is-default-class=="true".
 > NOTE: When the IBM Fusion on OCP environment was provisioned in IBM Technology Zone with OCS/ODF size was set to None, ODF was not deployed automatically. A managed-nfs-storage storageClass was created to host the image-registry-storage PVC and was configured as the Default storageClass.
+
 1. Navigate to the StorageClasses screen by clicking on the Storage (A) menu item shown in the left-hand side navigation pane and selecting the StorageClasses (B) sub-item.
 
 ![Screenshot]({{ site.baseurl }}/assets/images/hcp-lab-guide/configure-default-storageclass-01.png)

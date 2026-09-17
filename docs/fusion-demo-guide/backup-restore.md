@@ -196,6 +196,7 @@ In this section, you’ll learn how to create a basic application to demonstrate
 ## Assign Policy to application
 The OpenShift Cluster can host many application workloads; IBM Fusion provides a simple graphical user interface (GUI) to assign backup policies to applications and automate their protection.
 > There are two (2) methods for interacting with applications in the Fusion GUI. The Applications menu item on the left-hand side navigation pane shows only the applications local to the cluster. The Backed up applications sub-item under the Backup & restore menu allows for assigning policies to local and remote clusters. For this lab either option can be used.
+
 ### Assign policy using applications menu item
 This sub-section describes the process for managing backups of applications deployed in the local cluster using the Applications page.
 1. Navigate to the Application pane by clicking on the Applications (A) menu item on the left-hand side navigation pane.

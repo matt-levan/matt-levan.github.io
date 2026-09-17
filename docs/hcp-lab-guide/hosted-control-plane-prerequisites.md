@@ -205,6 +205,7 @@ The key's randomart image is:
 
 1. Execute the following command to display the public key that was generated during the previous step.
 > NOTE: The below command assumes all defaults were used when creating the keys.
+
 ```bash
 cat /home/itzuser/.ssh/id_rsa.pub
 ```

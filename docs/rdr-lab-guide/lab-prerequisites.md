@@ -58,10 +58,12 @@ IBM Fusion is fully containerized and designed to be an application in Red Hat O
 ## Fusion Data Foundation install process
 This section shows how to deploy the Fusion Data Foundation (FDF) configured for use in a Regional Disaster Recovery configuration.
 > IMPORTANT: If the OCS/ODF size was set to 2 TiB or 5 TiB when the IBM Fusion on OCP environment was provisioned on IBM Technology Zone, ODF was deployed automatically and the steps outlined in this section have already been performed and this environment cannot be used for this lab.
+
 ### Allow VMDK disks to be used by FDF
 Fusion Data Foundation being installed on OpenShift Container Platform 4.17 or later do not recognize the disk devices used in the Technology Zone environment as SSD/NVMe disks and will not use those disks for creating the FDF StorageSystem. The following steps will change the rotational flag from 1 to 0 on any unused block devices of the worker nodes to allow the FDF StorageSystem to be created in this lab environment.
 > IMPORTANT: Complete this section only if you are deploying on OpenShift version 4.17 or later. If the OpenShift cluster is running 4.16 or earlier, skip this section and proceed to the next section to install and configure Fusion Data Foundation.
 > NOTE: The following process can take 25-30 minutes to complete after creation of the MachineConfig.
+
 The udev rule file, /etc/udev/rules.d/99-ibm.rules, is created using a MachineConfig with the following contents to change the queue/rotational flag from 1 to 0 for any devices that do not currently have a partition table.
 ```bash
 ACTION=="add|change", SUBSYSTEM=="block", KERNEL=="sd[a-z]", ENV{ID_PART_TABLE_TYPE}=="", ATTR{queue/rotational}="0"
@@ -185,6 +187,7 @@ It is recommended to use Fusion Data Foundation RADOS Block Devices (RBDs) for t
 ![Screenshot]({{ site.baseurl }}/assets/images/rdr-lab-guide/configure-default-storageclass-05.png)
 
 > Note: Continue to the next section if “Use Ceph RBD as the default StorageClass” was set during the Create StorageSystem wizard.
+
 1. Click on the action menu (A) button, looks like 3 stacked dots, on the ocs-storagecluster-ceph-rbd line. Click on the Edit annotations (B) item.
 
 ![Screenshot]({{ site.baseurl }}/assets/images/rdr-lab-guide/configure-default-storageclass-06.png)

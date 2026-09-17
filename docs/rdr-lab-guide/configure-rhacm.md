@@ -125,6 +125,7 @@ In this section, Red Hat Advanced Cluster Management (RHACM) will be configured 
 
 1. Complete Steps 1 through 4 again on the second cluster (ocp2).
 > IMPORTANT: Before proceeding, ensure that the submariner.io/gateway=true label is applied to the worker-1 nodes in both the local-cluster and ocp2 clusters. This step is critical for submariner connectivity.
+
 1. In the OpenShift GUI of local-cluster, navigate to the Advanced Cluster Manager by clicking on the local-cluster drop-down list (A) in the masthead and click on All clusters (B).
 
 ![Screenshot]({{ site.baseurl }}/assets/images/rdr-lab-guide/import-second-cluster-04.png)

@@ -41,6 +41,7 @@ Participants will gain hands-on experience with:
 Infrastructure machine sets can be used to create machines that host only infrastructure components, such as the default router, the integrated container image registry, and the components for cluster metrics and monitoring. These infrastructure machines are not counted toward the total number of subscriptions that are required to run the environment.
 In a production deployment, it is recommended that you deploy at least three machine sets to hold infrastructure components. Red Hat OpenShift Service Mesh deploys Elasticsearch, which requires three instances to be installed on different nodes. Each of these nodes can be deployed to different availability zones for high availability. This configuration requires three different machine sets, one for each availability zone. In global Azure regions that do not have multiple availability zones, you can use availability sets to ensure high availability.
 > NOTE: More information about infra nodes and configuring them can be found in the Red Hat Knowledgebase article 5034771 (https://access.redhat.com/solutions/5034771).
+
 ## Product disclaimer
 
 {% include shared/product-disclaimer.md %}

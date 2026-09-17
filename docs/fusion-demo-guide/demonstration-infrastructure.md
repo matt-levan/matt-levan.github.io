@@ -21,6 +21,7 @@ Six of these VMs form a Red Hat OpenShift Container Platform (OCP) cluster, runn
 A single VM, the IBM Storage Scale node, provides the remote Storage Scale File System (for files) and another VM, the IBM Storage Ceph node, provides the object storage.
 The default installation does not include the IBM Fusion operator. You will need to complete the installation of the Fusion operator and the Fusion data services.
 > Note: OCP nodes (master & worker) won’t be accessed directly, but through the OpenShift command line interface (oc) or the GUI.
+
 ## Addressing plan and credentials
 Access to the lab environment is provided through your desktop web browser. The access information needed is provided in the Technology Zone Reservations page.
 1. Navigate to your “Reservations” page on IBM Technology Zone using either the “View My Reservations” button on your IBM Technology Zone email notification or log into IBM Technology Zone and use the “My reservations” link. Select your reservation by clicking on the corresponding tile.

@@ -11,6 +11,7 @@ parent: "IBM Fusion Demo Guide"
 ## Reserve an environment in IBM Technology Zone
 This lab requires the use of an environment that is provisioned through IBM Technology Zone.
 > Tip: If you are using the lab to demo IBM Fusion to a client, ensure that you reserve enough time to set up the environment, as some environments require a significant amount of set up time. As well, reserve the IBM Technology Zone environment far enough in advance so that you can choose the best time to use to demo the lab to with your client.
+
 1. Open a web browser and go to the IBM Technology Zone – IBM Fusion Collection. ([https://techzone.ibm.com/collection/ibm-spectrum-fusion](https://techzone.ibm.com/collection/ibm-spectrum-fusion))
 1. The product overview page is displayed.
 
@@ -79,6 +80,7 @@ You will receive additional emails that tell you when your environment is being 
 You can select “track my request” and see the progress
 Follow the steps outlined in the email from IBM Technology Zone telling you the environment is ready to connect to and begin using the environment.
 > Note: If you have any difficulties provisioning your environment, visit the IBM Technology Zone Help web page (https://techzone.ibm.com/help). It is recommended to attempt to provision the environment again if it fails the first few times before opening a ticket with IBM Technology Zone. If you have an issue with the site, you can open a support case (https://ibmsf.force.com/ibminternalproducts/s/createrecord/NewCase?language=en_US). Alternatively, you can send an email to techzone.help@ibm.com. This contact information is also provided in the emails that you receive from IBM Technology Zone.
+
 ## Connect to the lab environment
 To access the IBM Fusion infrastructure provided in your environment, you will need to refer to the IBM Technology Zone “Reservation Ready” email, which will contain links to the login credentials needed.
 > Note: Connectivity to the Red Hat OpenShift console may be lost during the first 30 minutes after receiving the Technology Zone “Reservation Ready” email. The machineConfigPool is still updating and rebooting the worker nodes during this time causing the loss of connection to the console during this period.

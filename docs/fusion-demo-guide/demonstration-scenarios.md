@@ -47,6 +47,7 @@ ssh itzuser@apps.ocp-50t6fjgae-droi.cloud.techzone.ibm.com -p 10022 -i sshkey.pr
 ```
 
 > Note: On Windows you can use PowerShell or an SSH utility like ‘putty’.
+
 NOTE: the password does NOT work for SSH, you MUST use the private sshkey
 
 NOTE: Once you log in as itzuser, you can run “sudo -i” for root access

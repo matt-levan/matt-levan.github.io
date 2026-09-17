@@ -150,6 +150,7 @@ If you selected **Data Foundation External** when installing the Data Foundation
 
 ### Logon to the Storage Scale command line and issue Storage Scale commands
 > Note: For visual guidance, refer to the supplemental PowerPoint available at [https://ibm.box.com/v/TechzoneSpFusionScreenshots](https://ibm.box.com/v/TechzoneSpFusionScreenshots). Screenshots of this process can be found in the section titled “SSH to Storage Scale Node.”
+
 In this section, you will be instructed to issue appropriate native IBM Storage Scale commands to obtain the required Storage Scale cluster and filesystem information.
 The screenshots provided will also help you with more details about what is being requested with the “Add IBM Storage Scale file system” prompts.
 Connect to the Bastion host via SSH by opening a terminal on a Mac or Linux system and entering a command that looks something like this:
@@ -207,6 +208,7 @@ https://10.10.10.202/scalemgmt/v2/cluster
 ## Data Encryption
 In some cases, it is necessary to encrypt data stored with Fusion and the Global Data Platform. This can be configured directly through the Fusion GUI in the Remote file systems page.
 > Note: The information provided in this section is for educational purposes to denote that only the IBM Security Guardium Key Lifecycle Manager (GKLM) is available for enabling encryption with IBM Fusion and the Global Data Platform.
+
 To enable data encryption, you must first connect to IBM Security Guardium Key Lifecycle Manager (GKLM) by clicking on the Connect button.
 
 ![Screenshot]({{ site.baseurl }}/assets/images/fusion-demo-guide/data-encryption-01.png)
