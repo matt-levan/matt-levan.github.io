@@ -29,10 +29,10 @@ Welcome to the IBM Storage technical documentation library. Select a guide below
     <span class="doc-card-version">v4.20 / Fusion 2.12</span>
   </a>
 
-  <a href="#" class="doc-card doc-card-coming-soon">
-    <h2>Fusion Regional Disaster Recovery Guide</h2>
-    <p>Configure and test regional disaster recovery with IBM Fusion hub-and-spoke architecture.</p>
-    <span class="doc-card-badge">Coming soon</span>
+<a href="/rdr-lab-guide/" class="doc-card">
+    <h2>IBM Fusion RDR Lab Guide</h2>
+    <p>Implement and test Regional Disaster Recovery with IBM Fusion — two OpenShift clusters, Fusion Data Foundation, RHACM, Submariner, and OpenShift DR failover/relocate exercises.</p>
+    <span class="doc-card-version">v2.11.0.0</span>
   </a>
 
 

@@ -1,9 +1,9 @@
 ---
 layout: default
 title: "Addendum"
-permalink: /hcp-lab-guide/addendum/
-nav_order: 9
-parent: "IBM Fusion HCP Lab Guide"
+permalink: /rdr-lab-guide/addendum/
+nav_order: 8
+parent: "IBM Fusion RDR Lab Guide"
 ---
 
 # Addendum
