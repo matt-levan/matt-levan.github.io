@@ -31,6 +31,6 @@ The table below is a summary of the reservation detail information you will use.
 |  | IP Address | User | Password |
 | --- | --- | --- | --- |
 | Cluster URL | https://console-openshift-console.apps.fusion.Storage.lan | kubeadmin | Provided by IBM Technology Zone |
-| IBM Storage Scale | 10.10.100.202 | itzuser | <check vm console> |
-| IBM Storage Scale GUI | [https://10.10.100.202](https://192.168.252.5) | admin | Passw0rd! |
+| IBM Storage Scale | 10.10.10.202 | itzuser | <check vm console> |
+| IBM Storage Scale GUI | https://10.10.10.202 | admin | Passw0rd! |
 | IBM Storage Scale GUI |  | csi-storage-gui-user | csi-storage-gui-password |
