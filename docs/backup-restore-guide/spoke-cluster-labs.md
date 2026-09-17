@@ -21,43 +21,43 @@ For reference, the cluster installed with the Backup & Restore service (agent an
 | Spoke |  |
 
 ## Install Backup and Restore agent
-1. In the Fusion GUI on the hub cluster, navigate to the Topology screen by clicking on the Backup & restore (A) menu item shown in the left-hand side navigation pane and selecting the Topology (B) sub-item.
+1. In the Fusion GUI on the hub cluster, navigate to the Topology screen by clicking on the **Backup & restore** (A) menu item shown in the left-hand side navigation pane and selecting the **Topology** (B) sub-item.
 
    ![Screenshot]({{ site.baseurl }}/assets/images/backup-restore-guide/install-backup-and-restore-agent-01.png)
 
-1. Click the Connect cluster (A) button.
+1. Click the **Connect cluster** (A) button.
 
    ![Screenshot]({{ site.baseurl }}/assets/images/backup-restore-guide/install-backup-and-restore-agent-02.png)
 
-1. Click the Use Fusion UI (A) tile.
+1. Click the Use **Fusion UI** (A) tile.
 
    ![Screenshot]({{ site.baseurl }}/assets/images/backup-restore-guide/install-backup-and-restore-agent-03.png)
 
-1. Click the Copy snippet (A) button to copy the connection snippet to the clipboard.
+1. Click the Copy **snippet** (A) button to copy the connection snippet to the clipboard.
 
    ![Screenshot]({{ site.baseurl }}/assets/images/backup-restore-guide/install-backup-and-restore-agent-04.png)
 
-1. In the Fusion GUI on the spoke cluster, navigate to the Services screen by clicking on the Services (A) menu item shown in the left-hand side navigation pane.
+1. In the Fusion GUI on the spoke cluster, navigate to the Services screen by clicking on the **Services** (A) menu item shown in the left-hand side navigation pane.
 
    ![Screenshot]({{ site.baseurl }}/assets/images/backup-restore-guide/install-backup-and-restore-agent-05.png)
 
-1. Click the Backup & Restore Agent (A) tile.
+1. Click the **Backup & Restore Agent** (A) tile.
 
    ![Screenshot]({{ site.baseurl }}/assets/images/backup-restore-guide/install-backup-and-restore-agent-06.png)
 
-1. Click the Install (A) button.
+1. Click the **Install** (A) button.
 
    ![Screenshot]({{ site.baseurl }}/assets/images/backup-restore-guide/install-backup-and-restore-agent-07.png)
 
-1. Paste the connection snippet copied from the hub cluster into the Hub Connection Snippet (A) text entry field using Ctrl-V (windows), CMD-V (Mac) or browser Edit -> Paste option in the browser menu.
+1. Paste the connection snippet copied from the hub cluster into the **Hub Connection Snippet** (A) text entry field using Ctrl-V (windows), CMD-V (Mac) or browser Edit -> Paste option in the browser menu.
 
    ![Screenshot]({{ site.baseurl }}/assets/images/backup-restore-guide/install-backup-and-restore-agent-08.png)
 
-1. Open the drop-down list associated with “Storage class to be used to deploy the service” field and select the value ocs-storagecluster-ceph-rbd (A) from the list.
+1. Open the drop-down list associated with “Storage class to be used to deploy the service” field and select the value **ocs-storagecluster-ceph-rbd** (A) from the list.
 
    ![Screenshot]({{ site.baseurl }}/assets/images/backup-restore-guide/install-backup-and-restore-agent-09.png)
 
-1. Click the Install (A) button.
+1. Click the **Install** (A) button.
 
    ![Screenshot]({{ site.baseurl }}/assets/images/backup-restore-guide/install-backup-and-restore-agent-10.png)
 
@@ -69,7 +69,7 @@ For reference, the cluster installed with the Backup & Restore service (agent an
 
    ![Screenshot]({{ site.baseurl }}/assets/images/backup-restore-guide/install-backup-and-restore-agent-12.png)
 
-1. In the Fusion GUI on the hub cluster, navigate to the Topology screen by clicking on the Backup & restore (A) menu item shown in the left-hand side navigation pane and selecting the Topology (B) sub-item. Verify the spoke cluster is listed as Connected and Healthy.
+1. In the Fusion GUI on the hub cluster, navigate to the Topology screen by clicking on the **Backup & restore** (A) menu item shown in the left-hand side navigation pane and selecting the **Topology** (B) sub-item. Verify the spoke cluster is listed as Connected and Healthy.
 
    ![Screenshot]({{ site.baseurl }}/assets/images/backup-restore-guide/install-backup-and-restore-agent-13.png)
 
@@ -79,11 +79,11 @@ The spoke cluster requires access to the object bucket used during a backup oper
 
 ### Create FDF ObjectBucketClaim for S3 backup location
 This section describes the steps to create a FDF ObjectBucketClaim for configuring an S3 compatible backup location.
-1. In the OpenShift GUI for the hub, navigate Navigate to the Object Storage screen by clicking on the Storage (A) menu item shown in the left-hand side navigation pane and selecting the Object Storage (B) sub-item.
+1. In the OpenShift GUI for the hub, navigate Navigate to the Object Storage screen by clicking on the **Storage** (A) menu item shown in the left-hand side navigation pane and selecting the **Object Storage** (B) sub-item.
 
    ![Screenshot]({{ site.baseurl }}/assets/images/backup-restore-guide/create-fdf-objectbucketclaim-for-s3-backup-location-01.png)
 
-1. On the Object Storage page, click the Object Bucket Claims (A) tab.
+1. On the Object Storage page, click the **Object Bucket Claims** (A) tab.
 
    ![Screenshot]({{ site.baseurl }}/assets/images/backup-restore-guide/create-fdf-objectbucketclaim-for-s3-backup-location-02.png)
 
@@ -91,7 +91,7 @@ This section describes the steps to create a FDF ObjectBucketClaim for configuri
 
    ![Screenshot]({{ site.baseurl }}/assets/images/backup-restore-guide/create-fdf-objectbucketclaim-for-s3-backup-location-03.png)
 
-1. Click on the Create ObjectBucketClaim (A) button.
+1. Click on the Create **ObjectBucketClaim** (A) button.
 
    ![Screenshot]({{ site.baseurl }}/assets/images/backup-restore-guide/create-fdf-objectbucketclaim-for-s3-backup-location-04.png)
 
@@ -111,7 +111,7 @@ This section describes the steps to create a FDF ObjectBucketClaim for configuri
 
    ![Screenshot]({{ site.baseurl }}/assets/images/backup-restore-guide/create-fdf-objectbucketclaim-for-s3-backup-location-08.png)
 
-1. Scroll to the bottom of the ObjectBucketClaim details page and click the Reveal Values (A) button.
+1. Scroll to the bottom of the ObjectBucketClaim details page and click the Reveal **Values** (A) button.
 
    ![Screenshot]({{ site.baseurl }}/assets/images/backup-restore-guide/create-fdf-objectbucketclaim-for-s3-backup-location-09.png)
 
@@ -122,15 +122,15 @@ This section describes the steps to create a FDF ObjectBucketClaim for configuri
 
 ### Create a new backup location for hub/spoke restore
 In this section a new backup location will be created on the hub cluster that is accessible by both clusters.
-1. In the Fusion GUI for the hub, navigate to the Locations screen by clicking on the Backup & restore (A) menu item shown in the left-hand side navigation pane and selecting the Locations (B) sub-item. When the Locations screen is shown, click the Add location + (C) button and follow the wizard to provide the S3 endpoint information and credentials.
+1. In the Fusion GUI for the hub, navigate to the Locations screen by clicking on the **Backup & restore** (A) menu item shown in the left-hand side navigation pane and selecting the **Locations** (B) sub-item. When the Locations screen is shown, click the **Add location +** (C) button and follow the wizard to provide the S3 endpoint information and credentials.
 
    ![Screenshot]({{ site.baseurl }}/assets/images/backup-restore-guide/create-a-new-backup-location-for-hub-spoke-restore-01.png)
 
-1. (A) Enter hubspoke-bucket in the Location name text entry field and click the S3 Compliant (B) tile. Click Next (C) to enter connection details.
+1. (A) Enter hubspoke-bucket in the Location name text entry field and click the **S3 Compliant** (B) tile. Click Next (C) to enter connection details.
 
    ![Screenshot]({{ site.baseurl }}/assets/images/backup-restore-guide/create-a-new-backup-location-for-hub-spoke-restore-02.png)
 
-1. Enter the S3 endpoint and connection information from the Object Bucket Claim created in Section Create ODF ObjectBucketClaim for S3 backup location and click the Add (E) button. Additionally, the Show/Hide button on the Secret key can be used to display the text or hide it.
+1. Enter the S3 endpoint and connection information from the Object Bucket Claim created in Section Create ODF ObjectBucketClaim for S3 backup location and click the **Add** (E) button. Additionally, the Show/Hide button on the Secret key can be used to display the text or hide it.
    > NOTE: This configuration would not be appropriate for a production environment as the S3 target location should not be part of the Red Hat OpenShift Container Platform being backed up.
 
 *Table  – Add a backup location details*
@@ -151,15 +151,15 @@ In this section a new backup location will be created on the hub cluster that is
 
 ### Create a new backup policy for hub/spoke restore
 A new backup policy will be created for use by the hub and spoke clusters using the newly created backup location.
-1. In the Fusion GUI for the hub, navigate to the Policies screen by clicking on the Backup & restore (A) menu item shown in the left-hand side navigation pane and selecting the Policies (B) sub-item. When the Policies screen is shown, click the Add policy + (C) button to create a new local object storage policy.
+1. In the Fusion GUI for the hub, navigate to the Policies screen by clicking on the **Backup & restore** (A) menu item shown in the left-hand side navigation pane and selecting the **Policies** (B) sub-item. When the Policies screen is shown, click the **Add policy +** (C) button to create a new local object storage policy.
 
    ![Screenshot]({{ site.baseurl }}/assets/images/backup-restore-guide/create-a-new-backup-policy-for-hub-spoke-restore-01.png)
 
-1. (A) Enter hubspoke-backup in the Policy name text entry field, set Frequency to monthly (B), select 1 (C) for Choose a day, and specify a Time window for the backup to occur.
+1. (A) Enter hubspoke-backup in the Policy name text entry field, set **Frequency to monthly** (B), select **1** (C) for Choose a day, and specify a Time window for the backup to occur.
 
    ![Screenshot]({{ site.baseurl }}/assets/images/backup-restore-guide/create-a-new-backup-policy-for-hub-spoke-restore-02.png)
 
-1. Scroll down and click the Location on the Object storage (A) tile. Click the backup locations on the hubspoke-bucket (B) tile and click the Create policy (C) button to complete creation of the hubspoke-backup backup policy.
+1. Scroll down and click the **Location on the Object storage** (A) tile. Click the **backup locations on the hubspoke-bucket** (B) tile and click the Create **policy** (C) button to complete creation of the hubspoke-backup backup policy.
 
    ![Screenshot]({{ site.baseurl }}/assets/images/backup-restore-guide/create-a-new-backup-policy-for-hub-spoke-restore-03.png)
 
@@ -169,7 +169,7 @@ A new backup policy will be created for use by the hub and spoke clusters using 
 
 ### Deploy application for spoke cluster restore
 In this section a new application will be created in a new namespace that can be backed up in preparation of being restored to the hub cluster.
-1. In the OpenShift GUI, navigate to the Projects screen by clicking on the Home (A) menu item in the left-hand side navigation pane and selecting the Projects (B) sub-item. When the Projects screen is shown, click the Create Project (C) button.
+1. In the OpenShift GUI, navigate to the Projects screen by clicking on the **Home** (A) menu item in the left-hand side navigation pane and selecting the **Projects** (B) sub-item. When the Projects screen is shown, click the Create **Project** (C) button.
 
    ![Screenshot]({{ site.baseurl }}/assets/images/backup-restore-guide/create-a-simple-application-01.png)
 
@@ -177,15 +177,15 @@ In this section a new application will be created in a new namespace that can be
 
    ![Screenshot]({{ site.baseurl }}/assets/images/backup-restore-guide/deploy-application-for-spoke-cluster-restore-01.png)
 
-1. Verify that the project listed is set to the newly created hubspoke namespace. Click the Import YAML (A) (the icon that looks like a + sign) button on the OpenShift GUI masthead.
+1. Verify that the project listed is set to the newly created hubspoke namespace. Click the **Import YAML** (A) (the icon that looks like a + sign) button on the OpenShift GUI masthead.
 
    ![Screenshot]({{ site.baseurl }}/assets/images/backup-restore-guide/deploy-application-for-spoke-cluster-restore-02.png)
 
-1. Navigate to the filebrowser-all.yaml file hosted in GitHub, https://github.com/matt-levan/fusion-l4-material/blob/main/backuprestore-lab/filebrowser-all.yaml. Click the Copy raw file (A) button (the icon that looks like 2 overlapping windows) to copy the contents of the file to the clipboard.
+1. Navigate to the filebrowser-all.yaml file hosted in GitHub, https://github.com/matt-levan/fusion-l4-material/blob/main/backuprestore-lab/filebrowser-all.yaml. Click the Copy **raw file** (A) button (the icon that looks like 2 overlapping windows) to copy the contents of the file to the clipboard.
 
    ![Screenshot]({{ site.baseurl }}/assets/images/backup-restore-guide/create-a-simple-application-04.png)
 
-1. Return to the OpenShift GUI and use Ctrl-V (windows), CMD-V (Mac) or browser Edit -> Paste button to paste the contents of the clipboard into the editor (A) text entry field. Click the Create (B) button to create the filebrowser resources.
+1. Return to the OpenShift GUI and use Ctrl-V (windows), CMD-V (Mac) or browser Edit -> Paste button to paste the contents of the clipboard into the **editor** (A) text entry field. Click the Create (B) button to create the filebrowser resources.
 
    ![Screenshot]({{ site.baseurl }}/assets/images/backup-restore-guide/deploy-application-for-spoke-cluster-restore-03.png)
 
@@ -193,12 +193,12 @@ In this section a new application will be created in a new namespace that can be
 
    ![Screenshot]({{ site.baseurl }}/assets/images/backup-restore-guide/deploy-application-for-spoke-cluster-restore-04.png)
 
-1. Navigate to the Route screen by clicking on the Network (A) menu item shown in the left-hand side navigation pane and selecting the Routes (B) sub-item. When the Routes screen is shown, click the URL Location (C) for the filebrowser route to open a new tab/window to the filebrowser application.
+1. Navigate to the Route screen by clicking on the **Network** (A) menu item shown in the left-hand side navigation pane and selecting the **Routes** (B) sub-item. When the Routes screen is shown, click the **URL Location** (C) for the filebrowser route to open a new tab/window to the filebrowser application.
    > NOTE: It may take a minute or two for the filebrowser application to become fully online and accessible from the route screen.
 
    ![Screenshot]({{ site.baseurl }}/assets/images/backup-restore-guide/deploy-application-for-spoke-cluster-restore-05.png)
 
-1. Login to the File Browser application with Username (A): admin and Password (B): admin. Click the Login (C) button.
+1. Login to the File Browser application with **Username** (A): admin and **Password** (B): admin. Click the **Login** (C) button.
 
    ![Screenshot]({{ site.baseurl }}/assets/images/backup-restore-guide/create-a-simple-application-08.png)
 
@@ -206,60 +206,60 @@ In this section a new application will be created in a new namespace that can be
 
    ![Screenshot]({{ site.baseurl }}/assets/images/backup-restore-guide/create-a-simple-application-09.png)
 
-1. Use New folder (A) and Upload file (B) to create some directories and upload a couple files. In the example shown, 2 directories were created, and 3 files were uploaded.
+1. Use **New folder** (A) and **Upload file** (B) to create some directories and upload a couple files. In the example shown, 2 directories were created, and 3 files were uploaded.
 
    ![Screenshot]({{ site.baseurl }}/assets/images/backup-restore-guide/create-a-simple-application-10.png)
 
 ### Assign hubspoke application to hubspoke-backup policy
 In this section the hubspoke-backup policy will be assigned to the new hubspoke application.
-1. In the Fusion GUI for the hub, navigate to the Applications page by clicking on the Applications (A) menu item shown in the left-hand side navigation pane. When the Applications screen is shown, select the checkbox (B) associated with the hubspoke application and click the Assign backup policy (C) button.
+1. In the Fusion GUI for the hub, navigate to the Applications page by clicking on the **Applications** (A) menu item shown in the left-hand side navigation pane. When the Applications screen is shown, select the **checkbox** (B) associated with the hubspoke application and click the Assign **backup policy** (C) button.
 
    ![Screenshot]({{ site.baseurl }}/assets/images/backup-restore-guide/assign-hubspoke-application-to-hubspoke-backup-policy-01.png)
 
-1. Select the checkbox (A) associated with the hubspoke-backup policy. Leave the Back up now toggle set to enabled (displayed with a green checkmark). Click the Save (B) button to complete assigning the policy. Allow enough time for the backup to complete before starting the restore process.
+1. Select the **checkbox** (A) associated with the hubspoke-backup policy. Leave the Back up now toggle set to enabled (displayed with a green checkmark). Click the **Save** (B) button to complete assigning the policy. Allow enough time for the backup to complete before starting the restore process.
 
    ![Screenshot]({{ site.baseurl }}/assets/images/backup-restore-guide/assign-hubspoke-application-to-hubspoke-backup-policy-02.png)
 
 1. Wait for the backup to complete before continuing to the next section.
 ## Restore application to spoke cluster
 This section outlines the steps required to restore an application to a spoke cluster using a previously created backup.
-1. In the Fusion GUI of the hub cluster, navigate to the Backed up application screen by clicking on the Backup & restore (A) menu item shown in the left-hand side navigation pane and selecting the Backed up applications (B) sub-item.
+1. In the Fusion GUI of the hub cluster, navigate to the Backed up application screen by clicking on the **Backup & restore** (A) menu item shown in the left-hand side navigation pane and selecting the **Backed up applications** (B) sub-item.
 
    ![Screenshot]({{ site.baseurl }}/assets/images/backup-restore-guide/restore-application-to-spoke-cluster-01.png)
 
-1. Click the hubspoke (A) application name to open the application details page.
+1. Click the **hubspoke** (A) application name to open the application details page.
 
    ![Screenshot]({{ site.baseurl }}/assets/images/backup-restore-guide/restore-application-to-spoke-cluster-02.png)
 
-1. On the hubspoke application details page, click the Restore (A) button.
+1. On the hubspoke application details page, click the **Restore** (A) button.
 
    ![Screenshot]({{ site.baseurl }}/assets/images/backup-restore-guide/restore-application-to-spoke-cluster-03.png)
 
-1. In Step 1 of the Restore hubspoke wizard, open the drop-down list associated with the Cluster destination (A) and select the spoke cluster (B) from the list of Target Clusters. Choose the cluster that does not display the **This cluster** tag.
+1. In Step 1 of the Restore hubspoke wizard, open the drop-down list associated with the **Cluster destination** (A) and select the **spoke cluster** (B) from the list of Target Clusters. Choose the cluster that does not display the **This cluster** tag.
 
    ![Screenshot]({{ site.baseurl }}/assets/images/backup-restore-guide/restore-application-to-spoke-cluster-04.png)
 
-1. Select the Use same project (A) tile and then click on the Next (B) button.
+1. Select the Use **same project** (A) tile and then click on the Next (B) button.
 
    ![Screenshot]({{ site.baseurl }}/assets/images/backup-restore-guide/restore-application-to-spoke-cluster-05.png)
 
-1. In Step 2 of the Restore hubspoke wizard, select the most recent (A) Backup time and click the Next (B) button to continue.
+1. In Step 2 of the Restore hubspoke wizard, select the **most recent** (A) Backup time and click the Next (B) button to continue.
 
    ![Screenshot]({{ site.baseurl }}/assets/images/backup-restore-guide/restore-application-to-spoke-cluster-06.png)
 
-1. In Step 3 of the Restore hubspoke wizard, review the summary information for the restore, then click the Restore (A) button.
+1. In Step 3 of the Restore hubspoke wizard, review the summary information for the restore, then click the **Restore** (A) button.
 
    ![Screenshot]({{ site.baseurl }}/assets/images/backup-restore-guide/restore-application-to-spoke-cluster-07.png)
 
-1. Click the Restore (A) button to confirm restore to the spoke cluster.
+1. Click the **Restore** (A) button to confirm restore to the spoke cluster.
 
    ![Screenshot]({{ site.baseurl }}/assets/images/backup-restore-guide/restore-application-to-spoke-cluster-08.png)
 
-1. In the Fusion GUI on the hub cluster, navigate to the Jobs page by clicking on the Backup & restore (A) menu item shown in the left-hand side navigation pane and selecting the Jobs (B) sub-item. When the Jobs screen is shown, click the Restore (C) tab.
+1. In the Fusion GUI on the hub cluster, navigate to the Jobs page by clicking on the **Backup & restore** (A) menu item shown in the left-hand side navigation pane and selecting the **Jobs** (B) sub-item. When the Jobs screen is shown, click the **Restore** (C) tab.
 
    ![Screenshot]({{ site.baseurl }}/assets/images/backup-restore-guide/restore-application-to-spoke-cluster-09.png)
 
-1. Click the restore-hubspoke-<date> (A) restore job name to access the restore job details page.
+1. Click the **restore-hubspoke-<date>** (A) restore job name to access the restore job details page.
 
    ![Screenshot]({{ site.baseurl }}/assets/images/backup-restore-guide/restore-application-to-spoke-cluster-10.png)
 
@@ -267,7 +267,7 @@ This section outlines the steps required to restore an application to a spoke cl
 
    ![Screenshot]({{ site.baseurl }}/assets/images/backup-restore-guide/restore-application-to-spoke-cluster-11.png)
 
-1. In the OpenShift GUI on the spoke cluster, navigate to the Pods page of the hubspoke project by clicking on the Workloads (A) menu item shown in the left-hand side navigation pane and selecting the Pods (B) sub-item. When the Pods screen is shown, click the Pod actions (C) (the icon that looks like 3 stacked dots) button and select the Delete Pod (D) option.
+1. In the OpenShift GUI on the spoke cluster, navigate to the Pods page of the hubspoke project by clicking on the **Workloads** (A) menu item shown in the left-hand side navigation pane and selecting the **Pods** (B) sub-item. When the Pods screen is shown, click the **Pod actions** (C) (the icon that looks like 3 stacked dots) button and select the Delete **Pod** (D) option.
    > NOTE: This step is a workaround for the application starting properly, but the route not working until the pod is restarted.
 
    ![Screenshot]({{ site.baseurl }}/assets/images/backup-restore-guide/restore-application-to-spoke-cluster-12.png)
@@ -280,7 +280,7 @@ This section outlines the steps required to restore an application to a spoke cl
 
    ![Screenshot]({{ site.baseurl }}/assets/images/backup-restore-guide/restore-application-to-spoke-cluster-14.png)
 
-1. In the OpenShift GUI on the spoke cluster, navigate to the Routes page of the hubspoke project by clicking on the Networking (A) menu item shown in the left-hand side navigation pane and selecting the Routes (B) sub-item. When the Routes screen is shown, click the URL (C) link to open the filebrowser application in a new tab.
+1. In the OpenShift GUI on the spoke cluster, navigate to the Routes page of the hubspoke project by clicking on the **Networking** (A) menu item shown in the left-hand side navigation pane and selecting the **Routes** (B) sub-item. When the Routes screen is shown, click the **URL** (C) link to open the filebrowser application in a new tab.
 
    ![Screenshot]({{ site.baseurl }}/assets/images/backup-restore-guide/restore-application-to-spoke-cluster-15.png)
 

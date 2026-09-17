@@ -13,19 +13,19 @@ This section takes advantage of a new configMap that was made available in IBM F
 
 ## Label Infra nodes
 The three (3) infrastructure nodes were provisioned with 2 Terabyte (TB) of internal storage to be used as etcd storage of hosted clusters.
-1. In the OpenShift GUI, navigate to the Nodes screen by clicking on the Compute (A) menu item shown in the left-hand side navigation pane and selecting the Nodes (B) sub-item. (C) Next, type the word infra in the Search text entry field. Click on the infra-1 (D) node link when it appears.
+1. In the OpenShift GUI, navigate to the Nodes screen by clicking on the **Compute** (A) menu item shown in the left-hand side navigation pane and selecting the **Nodes** (B) sub-item. (C) Next, type the word infra in the Search text entry field. Click on the **infra-1** (D) node link when it appears.
 
    ![Screenshot]({{ site.baseurl }}/assets/images/hcp-lab-guide/label-infra-nodes-01.png)
 
-1. Select the Details (A) tab.
+1. Select the **Details** (A) tab.
 
    ![Screenshot]({{ site.baseurl }}/assets/images/hcp-lab-guide/label-infra-nodes-02.png)
 
-1. Click on the Edit (A) Labels (shown with a pencil) button.
+1. Click on the **Edit** (A) Labels (shown with a pencil) button.
 
    ![Screenshot]({{ site.baseurl }}/assets/images/hcp-lab-guide/label-infra-nodes-03.png)
 
-1. (A) Enter node-role.kubernetes.io/infra in the labels text entry box and click on the Save (B) button.
+1. (A) Enter node-role.kubernetes.io/infra in the labels text entry box and click on the **Save** (B) button.
 
    ![Screenshot]({{ site.baseurl }}/assets/images/hcp-lab-guide/label-infra-nodes-04.png)
 
@@ -33,15 +33,15 @@ The three (3) infrastructure nodes were provisioned with 2 Terabyte (TB) of inte
 1. Repeat steps 1-4 for Node infra-3
 ## LVM Disk Path
 In this section, the unused disk devices on the infrastructure (infra) nodes will be discovered and saved in a text file for use later as part of the lvm-config configMap.
-1. In the OpenShift GUI, navigate to the Nodes screen by clicking on the Compute (A) menu item shown in the left-hand side navigation pane and selecting the Nodes (B) sub-item. (C) Next, type the word infra in the Search text entry field. Click on the infra-1 (D) node link when it appears.
+1. In the OpenShift GUI, navigate to the Nodes screen by clicking on the **Compute** (A) menu item shown in the left-hand side navigation pane and selecting the **Nodes** (B) sub-item. (C) Next, type the word infra in the Search text entry field. Click on the **infra-1** (D) node link when it appears.
 
    ![Screenshot]({{ site.baseurl }}/assets/images/hcp-lab-guide/label-infra-nodes-01.png)
 
-1. Click on the Terminal (A) in the infra-1 Node details page.
+1. Click on the **Terminal** (A) in the infra-1 Node details page.
 
    ![Screenshot]({{ site.baseurl }}/assets/images/hcp-lab-guide/lvm-disk-path-01.png)
 
-1. Enter chroot /host (A) in the Terminal window once it is displayed.
+1. Enter **chroot /host** (A) in the Terminal window once it is displayed.
 
    ![Screenshot]({{ site.baseurl }}/assets/images/hcp-lab-guide/lvm-disk-path-02.png)
 
@@ -73,7 +73,7 @@ In this section, a `lvm-config` configMap will be generated. This configMap is u
 
    ![Screenshot]({{ site.baseurl }}/assets/images/hcp-lab-guide/install-and-configure-lvm-storage-01.png)
 
-1. Click on the Import YAML (A) button from the drop-down list provided.
+1. Click on the **Import YAML** (A) button from the drop-down list provided.
 
    ![Screenshot]({{ site.baseurl }}/assets/images/hcp-lab-guide/install-and-configure-lvm-storage-02.png)
 
@@ -93,7 +93,7 @@ In this section, a `lvm-config` configMap will be generated. This configMap is u
      nodeType: compute
    ```
 
-1. Use Ctrl-V (windows), CMD-V (Mac) or the browser Edit -> Paste function to paste the contents of the clipboard into the editor (A) text entry field. Click the Create (B) button to create the configMap.
+1. Use Ctrl-V (windows), CMD-V (Mac) or the browser Edit -> Paste function to paste the contents of the clipboard into the **editor** (A) text entry field. Click the Create (B) button to create the configMap.
 
    ![Screenshot]({{ site.baseurl }}/assets/images/hcp-lab-guide/install-and-configure-lvm-storage-03.png)
 

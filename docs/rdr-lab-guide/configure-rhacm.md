@@ -10,19 +10,19 @@ parent: "IBM Fusion RDR Lab Guide"
 
 In this section, Red Hat Advanced Cluster Management (RHACM) will be configured to enable centralized control and coordination of OpenShift clusters, a critical step in setting up regional disaster recovery with IBM Fusion.
 ## Red Hat Advanced Cluster Manager
-1. In the OpenShift GUI of local-cluster, navigate to the OperatorHub screen by clicking on the Operators (A) menu item shown in the left-hand side navigation pane and selecting the OperatorHub (B) sub-item. (C) Next, type the word Advanced Cluster Management for Kubernetes in the Search text entry field below the All Items heading. Click on the Advanced Cluster Management for Kubernetes (D) operator tile when it appears.
+1. In the OpenShift GUI of local-cluster, navigate to the OperatorHub screen by clicking on the **Operators** (A) menu item shown in the left-hand side navigation pane and selecting the **OperatorHub** (B) sub-item. (C) Next, type the word Advanced Cluster Management for Kubernetes in the Search text entry field below the All Items heading. Click on the **Advanced Cluster Management for Kubernetes** (D) operator tile when it appears.
 
    ![Screenshot]({{ site.baseurl }}/assets/images/rdr-lab-guide/red-hat-advanced-cluster-manager-01.png)
 
-1. Click on the Install (A) button.
+1. Click on the **Install** (A) button.
 
    ![Screenshot]({{ site.baseurl }}/assets/images/rdr-lab-guide/red-hat-advanced-cluster-manager-02.png)
 
-1. When the Install Operator screen appears, keep all the default settings shown and scroll down until the Install (A) button appears. Then, click on the button.
+1. When the Install Operator screen appears, keep all the default settings shown and scroll **down until the Install** (A) button appears. Then, click on the button.
 
    ![Screenshot]({{ site.baseurl }}/assets/images/rdr-lab-guide/red-hat-advanced-cluster-manager-03.png)
 
-1. Wait for the Create MulticlusterHub button to change from gray to blue like the one shown below. Click on the Create MulticlusterHub (A) button.
+1. Wait for the Create MulticlusterHub button to change from gray to blue like the one shown below. Click on the Create **MulticlusterHub** (A) button.
 
    ![Screenshot]({{ site.baseurl }}/assets/images/rdr-lab-guide/red-hat-advanced-cluster-manager-04.png)
 
@@ -30,7 +30,7 @@ In this section, Red Hat Advanced Cluster Management (RHACM) will be configured 
 
    ![Screenshot]({{ site.baseurl }}/assets/images/rdr-lab-guide/red-hat-advanced-cluster-manager-05.png)
 
-1. The Advanced Cluster Manager for Kubernetes Deployment multiclusterhub status will progress from Progressing, Degraded to Reconcile Complete, Progressing or Running. A “Web console update is available” popup will appear at some point. When this happens (A) click on the Refresh web console link to reload the OpenShift user interface.
+1. The Advanced Cluster Manager for Kubernetes Deployment multiclusterhub status will progress from Progressing, Degraded to Reconcile Complete, Progressing or Running. A “Web console update is available” popup will appear at some point. **When this happens** (A) click on the Refresh web console link to reload the OpenShift user interface.
 
    ![Screenshot]({{ site.baseurl }}/assets/images/rdr-lab-guide/red-hat-advanced-cluster-manager-06.png)
 
@@ -39,19 +39,19 @@ In this section, Red Hat Advanced Cluster Management (RHACM) will be configured 
    ![Screenshot]({{ site.baseurl }}/assets/images/rdr-lab-guide/red-hat-advanced-cluster-manager-07.png)
 
 ## Multicluster Orchestrator
-1. In the OpenShift GUI of local-cluster, navigate to the OperatorHub screen by clicking on the **Operators** (A) menu item shown in the left-hand side navigation pane and selecting the **OperatorHub** (B) sub-item. (C) Next, type the word Multicluster Orchestrator in the Search text entry field below the All Items heading. Click on the Multicluster Orchestrator (D) operator tile when it appears.
+1. In the OpenShift GUI of local-cluster, navigate to the OperatorHub screen by clicking on the **Operators** (A) menu item shown in the left-hand side navigation pane and selecting the **OperatorHub** (B) sub-item. (C) Next, type the word Multicluster Orchestrator in the Search text entry field below the All Items heading. Click on the **Multicluster Orchestrator** (D) operator tile when it appears.
 
    ![Screenshot]({{ site.baseurl }}/assets/images/rdr-lab-guide/multicluster-orchestrator-01.png)
 
-1. Click on the Install (A) button.
+1. Click on the **Install** (A) button.
 
    ![Screenshot]({{ site.baseurl }}/assets/images/rdr-lab-guide/multicluster-orchestrator-02.png)
 
-1. When the Install Operator screen appears, click the Enable (A) button under the Console plugin section, and scroll down until the Install (B) button appears. Then, click on the button.
+1. When the Install Operator screen appears, click the Enable (A) button under the Console plugin section, and scroll **down until the Install** (B) button appears. Then, click on the button.
 
    ![Screenshot]({{ site.baseurl }}/assets/images/rdr-lab-guide/multicluster-orchestrator-03.png)
 
-1. The deployment of the Multicluster Orchestrator will occur and no further configuration is required. A “Web console update is available” popup will appear at some point. When this happens (A) click on the Refresh web console link to reload the OpenShift user interface.
+1. The deployment of the Multicluster Orchestrator will occur and no further configuration is required. A “Web console update is available” popup will appear at some point. **When this happens** (A) click on the Refresh web console link to reload the OpenShift user interface.
 
    ![Screenshot]({{ site.baseurl }}/assets/images/rdr-lab-guide/multicluster-orchestrator-04.png)
 
@@ -60,7 +60,7 @@ In this section, Red Hat Advanced Cluster Management (RHACM) will be configured 
 
    ![Screenshot]({{ site.baseurl }}/assets/images/rdr-lab-guide/import-second-cluster-01.png)
 
-1. Scroll down to the bottom of the screen and click on the Download kubeconfig (A) button.
+1. Scroll down to the bottom of the screen and click on the **Download kubeconfig** (A) button.
 
    ![Screenshot]({{ site.baseurl }}/assets/images/rdr-lab-guide/import-second-cluster-02.png)
 
@@ -69,27 +69,27 @@ In this section, Red Hat Advanced Cluster Management (RHACM) will be configured 
 
    ![Screenshot]({{ site.baseurl }}/assets/images/rdr-lab-guide/import-second-cluster-03.png)
 
-1. In the OpenShift GUI of local-cluster, navigate to the Advanced Cluster Manager by clicking on the local-cluster drop-down list (A) in the masthead and click on All clusters (B).
+1. In the OpenShift GUI of local-cluster, navigate to the Advanced Cluster Manager by clicking on the **local-cluster drop-down list** (A) in the masthead and click on **All clusters** (B).
 
    ![Screenshot]({{ site.baseurl }}/assets/images/rdr-lab-guide/import-second-cluster-04.png)
 
-1. Click on the Import an existing cluster (A) button of the getting started popup.
+1. Click on the **Import an existing cluster** (A) button of the getting started popup.
 
    ![Screenshot]({{ site.baseurl }}/assets/images/rdr-lab-guide/import-second-cluster-05.png)
 
-1. Alternatively, if the popup window was closed, navigate to the Clusters page and click on the Import cluster (A) button.
+1. Alternatively, if the popup window was closed, navigate to the Clusters page and click on the **Import cluster** (A) button.
 
    ![Screenshot]({{ site.baseurl }}/assets/images/rdr-lab-guide/import-second-cluster-06.png)
 
-1. (A) Enter ocp2 in the Name field and click on the Cluster set dropdown (B). Select the default (C) item from the Cluster set dropdown.
+1. (A) Enter ocp2 in the Name field and click on the Cluster set **dropdown** (B). Select the **default** (C) item from the Cluster set dropdown.
 
    ![Screenshot]({{ site.baseurl }}/assets/images/rdr-lab-guide/import-second-cluster-07.png)
 
-1. Click on the Import mode dropdown (A) item and select the Kubeconfig (B) item from the list.
+1. Click on the **Import mode dropdown** (A) item and select the **Kubeconfig** (B) item from the list.
 
    ![Screenshot]({{ site.baseurl }}/assets/images/rdr-lab-guide/import-second-cluster-08.png)
 
-1. Paste the contents of the Clipboard—containing the contents of the ocp2_kubeconfig.conf file—into the Kubeconfig (A) text entry field and click on the Next (B) button.
+1. Paste the contents of the Clipboard—containing the contents of the ocp2_kubeconfig.conf **file—into the Kubeconfig** (A) text entry field and click on the Next (B) button.
 
    ![Screenshot]({{ site.baseurl }}/assets/images/rdr-lab-guide/import-second-cluster-09.png)
 
@@ -97,7 +97,7 @@ In this section, Red Hat Advanced Cluster Management (RHACM) will be configured 
 
    ![Screenshot]({{ site.baseurl }}/assets/images/rdr-lab-guide/import-second-cluster-10.png)
 
-1. Click on the Import (A) button.
+1. Click on the **Import** (A) button.
 
    ![Screenshot]({{ site.baseurl }}/assets/images/rdr-lab-guide/import-second-cluster-11.png)
 
@@ -106,21 +106,21 @@ In this section, Red Hat Advanced Cluster Management (RHACM) will be configured 
    ![Screenshot]({{ site.baseurl }}/assets/images/rdr-lab-guide/import-second-cluster-12.png)
 
 ## Configure submariner
-1. In the OpenShift GUI, navigate to the Nodes screen by clicking on the Compute (A) menu item shown in the left-hand side navigation pane and selecting the Nodes (B) sub-item. Select worker-1 (C) from the Nodes list.
+1. In the OpenShift GUI, navigate to the Nodes screen by clicking on the **Compute** (A) menu item shown in the left-hand side navigation pane and selecting the **Nodes** (B) sub-item. Select **worker-1** (C) from the Nodes list.
 
    > IMPORTANT: The IBM Technology Zone environment has been configured to forward submariner traffic exclusively to worker-1. If another worker node is used, submariner will fail to establish a connection.
 
    ![Screenshot]({{ site.baseurl }}/assets/images/rdr-lab-guide/configure-submariner-01.png)
 
-1. Select Details (A) on the worker-1 Node details screen.
+1. Select **Details** (A) on the worker-1 Node details screen.
 
    ![Screenshot]({{ site.baseurl }}/assets/images/rdr-lab-guide/configure-submariner-02.png)
 
-1. Scroll down until the Labels section appears and select Edit (A) (appears with a pencil).
+1. Scroll down until the Labels section appears and select **Edit** (A) (appears with a pencil).
 
    ![Screenshot]({{ site.baseurl }}/assets/images/rdr-lab-guide/configure-submariner-03.png)
 
-1. (A) Enter submariner.io/gateway=true in the Labels for worker-1 text entry field click on the Save (B) button.
+1. (A) Enter submariner.io/gateway=true in the Labels for worker-1 text entry field click on the **Save** (B) button.
 
    ![Screenshot]({{ site.baseurl }}/assets/images/rdr-lab-guide/configure-submariner-04.png)
 
@@ -129,27 +129,27 @@ In this section, Red Hat Advanced Cluster Management (RHACM) will be configured 
 
    > IMPORTANT: Before proceeding, ensure that the submariner.io/gateway=true label is applied to the worker-1 nodes in both the local-cluster and ocp2 clusters. This step is critical for submariner connectivity.
 
-1. In the OpenShift GUI of local-cluster, navigate to the Advanced Cluster Manager by clicking on the local-cluster drop-down list (A) in the masthead and click on All clusters (B).
+1. In the OpenShift GUI of local-cluster, navigate to the Advanced Cluster Manager by clicking on the **local-cluster drop-down list** (A) in the masthead and click on **All clusters** (B).
 
    ![Screenshot]({{ site.baseurl }}/assets/images/rdr-lab-guide/import-second-cluster-04.png)
 
-1. In the OpenShift GUI, navigate to the Clusters screen by clicking on the Infrastructure (A) menu item shown in the left-hand side navigation pane and selecting the Clusters (B) sub-item. Click on the Cluster sets (C) tab.
+1. In the OpenShift GUI, navigate to the Clusters screen by clicking on the **Infrastructure** (A) menu item shown in the left-hand side navigation pane and selecting the **Clusters** (B) sub-item. Click on the Cluster sets (C) tab.
 
    ![Screenshot]({{ site.baseurl }}/assets/images/rdr-lab-guide/configure-submariner-05.png)
 
-1. Click on the default (A) cluster set to open the Overview screen.
+1. Click on the **default** (A) cluster set to open the Overview screen.
 
    ![Screenshot]({{ site.baseurl }}/assets/images/rdr-lab-guide/configure-submariner-06.png)
 
-1. Click on the Submariner add-ons (A) tab.
+1. Click on the **Submariner add-ons** (A) tab.
 
    ![Screenshot]({{ site.baseurl }}/assets/images/rdr-lab-guide/configure-submariner-07.png)
 
-1. Click on the Install Sumbariner add-ons (A) button at the bottom of the screen.
+1. Click on the **Install Sumbariner add-ons** (A) button at the bottom of the screen.
 
    ![Screenshot]({{ site.baseurl }}/assets/images/rdr-lab-guide/configure-submariner-08.png)
 
-1. Add the OpenShift clusters by selecting the Select clusters (A) selection box to open the Target clusters list. Then, from the dropdown, select both local-cluster (B) and ocp2 (C) to include them as target clusters.
+1. Add the OpenShift clusters by selecting the Select **clusters** (A) selection box to open the Target clusters list. Then, from the dropdown, select **both local-cluster** (B) and **ocp2** (C) to include them as target clusters.
 
    ![Screenshot]({{ site.baseurl }}/assets/images/rdr-lab-guide/configure-submariner-09.png)
 
@@ -157,7 +157,7 @@ In this section, Red Hat Advanced Cluster Management (RHACM) will be configured 
 
    ![Screenshot]({{ site.baseurl }}/assets/images/rdr-lab-guide/configure-submariner-10.png)
 
-1. Click on the Install (A) button.
+1. Click on the **Install** (A) button.
 
    ![Screenshot]({{ site.baseurl }}/assets/images/rdr-lab-guide/configure-submariner-11.png)
 
@@ -168,15 +168,15 @@ In this section, Red Hat Advanced Cluster Management (RHACM) will be configured 
    ![Screenshot]({{ site.baseurl }}/assets/images/rdr-lab-guide/configure-submariner-12.png)
 
 ## Create Disaster Recovery Policy
-1. In the OpenShift GUI of local-cluster, navigate to the Advanced Cluster Manager by clicking on the local-cluster drop-down list (A) in the masthead and click on All clusters (B).
+1. In the OpenShift GUI of local-cluster, navigate to the Advanced Cluster Manager by clicking on the **local-cluster drop-down list** (A) in the masthead and click on **All clusters** (B).
 
    ![Screenshot]({{ site.baseurl }}/assets/images/rdr-lab-guide/import-second-cluster-04.png)
 
-1. In the OpenShift GUI, navigate to the Disaster Recovery screen by clicking on the Data Services (A) menu item shown in the left-hand side navigation pane and selecting the Disaster Recovery (B) sub-item. Click on the Create a disaster recovery policy (C).
+1. In the OpenShift GUI, navigate to the Disaster Recovery screen by clicking on the **Data Services** (A) menu item shown in the left-hand side navigation pane and selecting the **Disaster Recovery** (B) sub-item. Click on the Create a **disaster recovery policy** (C).
 
    ![Screenshot]({{ site.baseurl }}/assets/images/rdr-lab-guide/create-disaster-recovery-policy-01.png)
 
-1. (A) Enter ocp1-ocp2-dr in the Policy name text entry field. Then, in the Connect clusters selection box, check the boxes next to both local-cluster (B) and ocp2 (B) to include them in the policy.
+1. (A) Enter ocp1-ocp2-dr in the Policy name text entry field. Then, in the Connect clusters selection box, check the **boxes next to both local-cluster** (B) and **ocp2** (B) to include them in the policy.
 
    ![Screenshot]({{ site.baseurl }}/assets/images/rdr-lab-guide/create-disaster-recovery-policy-02.png)
 

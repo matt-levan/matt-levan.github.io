@@ -8,11 +8,11 @@ This lab requires the use of an environment that is provisioned through IBM Tech
 
 ![Screenshot]({{ site.baseurl }}/assets/images/fusion-demo-guide/reserve-an-environment-in-ibm-technology-zone-01.png)
 
-1. From the product overview page, locate Environments (A) in the menu shown on the left-hand side of the screen and click on it.
+1. From the product overview page, **locate Environments** (A) in the menu shown on the left-hand side of the screen and click on it.
 
 ![Screenshot]({{ site.baseurl }}/assets/images/fusion-demo-guide/reserve-an-environment-in-ibm-technology-zone-02.png)
 
-1. Scroll down until the Reserve (A) button located at the bottom of the Beta: Storage Fusion on OCP w/ODF and Scale tile and click on it.
+1. Scroll **down until the Reserve** (A) button located at the bottom of the Beta: Storage Fusion on OCP w/ODF and Scale tile and click on it.
 > Important: The Beta:IBM Fusion on OpenShift Virtualization is the new pattern for the labs and is used in this guide. Many options are automatically configured, and this simplifies the user experience of deploying a Fusion Technology Zone environment.
 
 NOTE: This is a new pattern, and the some of the steps in the docs may be out of date.
@@ -36,7 +36,7 @@ NOTE: This is a new pattern, and the some of the steps in the docs may be out of
 
 ![Screenshot]({{ site.baseurl }}/assets/images/fusion-demo-guide/reserve-an-environment-in-ibm-technology-zone-07.png)
 
-1. Select the Preferred Geography: itzvmware-spectrum – AMERICAS – us-east-region – wdc04 datacenter (A).
+1. Select the Preferred Geography: itzvmware-spectrum – AMERICAS **– us-east-region – wdc04 datacenter** (A).
 
 ![Screenshot]({{ site.baseurl }}/assets/images/fusion-demo-guide/reserve-an-environment-in-ibm-technology-zone-08.png)
 
@@ -56,7 +56,7 @@ NOTE: This is a new pattern, and the some of the steps in the docs may be out of
 ![Screenshot]({{ site.baseurl }}/assets/images/fusion-demo-guide/reserve-an-environment-in-ibm-technology-zone-11.png)
 
 Make sure you save.
-1. After you have completed the form, select I agree to IBM Technology Zone’s Terms and Conditions and End User Security Policies (A) checkbox, and then click the Submit (B) button.
+1. After you have completed the form, select I agree to IBM Technology Zone’s Terms and Conditions and **End User Security Policies** (A) checkbox, and then click the **Submit** (B) button.
 
 ![Screenshot]({{ site.baseurl }}/assets/images/fusion-demo-guide/reserve-an-environment-in-ibm-technology-zone-12.png)
 

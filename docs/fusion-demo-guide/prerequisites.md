@@ -20,26 +20,26 @@ You might also require an IBM Cloud account for some lab environments.
 Additionally, you might need to configure an OpenVPN connection to be able to access the lab environment.
 ### Creating an IBMid
 1. In your web browser, go to the IBM account page (https://www.ibm.com/account/us-en/).
-1. Click **Log in to My IBM** (A).
+1. Click **Log in to **My IBM**** (A).
 
    ![Screenshot]({{ site.baseurl }}/assets/images/fusion-demo-guide/creating-an-ibmid-01.png)
 
-1. The Log in to IBM page is displayed. Click **Create an IBMid** (A).
+1. The Log in to IBM page is displayed. Click **Create an **IBMid**** (A).
 
    ![Screenshot]({{ site.baseurl }}/assets/images/fusion-demo-guide/creating-an-ibmid-02.png)
 
 1. On the **Create an IBMid** page, enter the following information:
-- Your email address (A)
-- A password for your IBMid account (B)
-- First name (C)
-- Last name (D)
-- Your country or region of residence (E) and state or province (F)
-- If you select that you are not a student (G), then enter the name of your company (G)
+**- Your email address** (A)
+- A **password for your IBMid account** (B)
+**- First name** (C)
+**- Last name** (D)
+- Your country or region of **residence** (E) and state or **province** (F)
+- If you select that **you are not a student** (G), then enter the name of **your company** (G)
 - Click **Next** (I) to continue
 
    ![Screenshot]({{ site.baseurl }}/assets/images/fusion-demo-guide/creating-an-ibmid-03.png)
 
-1. You are then prompted to verify your email and complete your account creation. Enter the code that was emailed to you in **Verification token** (A), and then click **Create account** (B).
+1. You are then prompted to verify your email and complete your account creation. Enter the code that was emailed to you in **Verification **token**** (A), and then click **Create **account**** (B).
 
    ![Screenshot]({{ site.baseurl }}/assets/images/fusion-demo-guide/creating-an-ibmid-04.png)
 

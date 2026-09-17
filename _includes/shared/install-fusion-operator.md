@@ -23,19 +23,19 @@ Although a Red Hat OpenShift environment has been provisioned on IBM Technology 
 1. When the screen shows a “create SpectrumFusion” button, it is ready for installation.
 ## Connect to Fusion
 IBM Fusion is fully containerized and designed to be an application in Red Hat OpenShift. Thus, the IBM Fusion GUI can be launched from the OpenShift console.
-1. From the OpenShift Console (top right), click the Application menu (A) icon (the icon that looks like 9 squares) and then click IBM Storage Fusion (B). A new tab will be opened for the IBM Fusion GUI. If prompted, enter kubeadmin and your kubeadmin password from the reservation.
+1. From the OpenShift Console (top right), click the **Application menu** (A) icon (the icon that looks like 9 squares) and then click **IBM Storage Fusion** (B). A new tab will be opened for the IBM Fusion GUI. If prompted, enter kubeadmin and your kubeadmin password from the reservation.
 
 ![Screenshot]({{ site.baseurl }}/assets/images/fusion-demo-guide/connect-to-fusion-01.png)
 
-1. If the Red Hat OpenShift Container Platform logon screen appears, select kube:admin to bring up the login screen. Enter the kubeadmin credentials to continue to the IBM Fusion user interface. Othere, accept the license agreement by selecting, I have read and accept the license agreement (A) check box.
+1. If the Red Hat OpenShift Container Platform logon screen appears, select kube:admin to bring up the login screen. Enter the kubeadmin credentials to continue to the IBM Fusion user interface. Othere, accept the license agreement by selecting, I have read and **accept the license agreement** (A) check box.
 
 ![Screenshot]({{ site.baseurl }}/assets/images/fusion-demo-guide/connect-to-fusion-02.png)
 
-1. Click the Continue (A) button. This should redirect you to the Welcome to IBM Fusion page.
+1. Click the **Continue** (A) button. This should redirect you to the Welcome to IBM Fusion page.
 > The spectrumfusion SpectrumFusion custom resource is created after accepting the License Agreement.
 
 ![Screenshot]({{ site.baseurl }}/assets/images/fusion-demo-guide/connect-to-fusion-03.png)
 
-1. Click on the View services (A) button or Services (B) menu item to go directly to the Services page.
+1. Click on the View **services** (A) button or **Services** (B) menu item to go directly to the Services page.
 
 ![Screenshot]({{ site.baseurl }}/assets/images/fusion-demo-guide/connect-to-fusion-04.png)

@@ -19,7 +19,7 @@ The demonstration environment provided for you after provisioning is configured 
 - The IBM Storage Scale Cluster has been configured for the Remote Cluster Mount via Storage Scale CNSA
 ## Access the Environment
 ### OpenShift Web Console
-1. To access the OpenShift console, click on the blue Desktop button (A) or click on the the Desktop url link (B). The login credentials needed are the Username “kubeadmin” (C) and the Password (D) provided. (The actual connection information will be specific to your cluster.)
+1. To access the OpenShift console, click on the **blue Desktop button** (A) or click on the the **Desktop url link** (B). The login credentials **needed are the Username “kubeadmin”** (C) and the **Password** (D) provided. (The actual connection information will be specific to your cluster.)
 
    ![Screenshot]({{ site.baseurl }}/assets/images/fusion-demo-guide/openshift-web-console-01.png)
 
@@ -27,7 +27,7 @@ The demonstration environment provided for you after provisioning is configured 
 
    ![Screenshot]({{ site.baseurl }}/assets/images/fusion-demo-guide/openshift-web-console-02.png)
 
-1. Enter Username (A) and Password (B) as found in your TechZone reservation.
+1. Enter **Username** (A) and **Password** (B) as found in your TechZone reservation.
 
    ![Screenshot]({{ site.baseurl }}/assets/images/fusion-demo-guide/openshift-web-console-03.png)
 
@@ -36,7 +36,7 @@ The demonstration environment provided for you after provisioning is configured 
 
 1. Once you have logged in, you will be presented with the OpenShift home page.
 ### OpenShift Command Line Access
-1. To get command line access, find the Bastion SSH Connection (A) information on your IBM Technology Zone reservation details page. The Bastion Password (B) is used to access the remote shell environment. Here is an image of what you will see – the connection data will be specific to your cluster. The API URL (C) will be used in a later step to connect to the OpenShift cluster with the ‘oc’ command.
+1. To get command line access, **find the Bastion SSH Connection** (A) information on your IBM Technology Zone reservation details page. The **Bastion Password** (B) is used to access the remote shell environment. Here is an image of what you will see – the connection data will be specific to your cluster. The **API URL** (C) will be used in a later step to connect to the OpenShift cluster with the ‘oc’ command.
 
    ![Screenshot]({{ site.baseurl }}/assets/images/fusion-demo-guide/openshift-command-line-access-01.png)
 

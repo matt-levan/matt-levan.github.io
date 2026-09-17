@@ -44,7 +44,7 @@ Switch to the **IBM Fusion** tab on the right.
 
 Applications have different requirements for backup frequency and retention. IBM Fusion uses Backup Policies to define and automate backup operations.
 
-To configure backup and restore activities, go to the Backup & Restore section on the left-hand side navigation pane. To access the Overview page for Backup & Restore, click on the Backup & Restore (A) menu item shown in the left-hand side navigation pane and select the Overview (B) sub-item.
+To configure backup and restore activities, go to the Backup & Restore section on the left-hand side navigation pane. To access the Overview page for Backup & Restore, click on the **Backup & Restore** (A) menu item shown in the left-hand side navigation pane and select the **Overview** (B) sub-item.
 
 ![Backup and Restore Overview]({{ site.baseurl }}/assets/images/ocpv-fusion-lab/06-module-04-bandrl-overview.png)
 
@@ -77,7 +77,7 @@ There you will find the correct route to use.
 
 ### Backup Location
 
-Back on the **IBM Fusion** tab, navigate to the Locations screen by clicking on the Backup & restore (A) menu item shown in the left-hand side navigation pane and selecting the **Locations** (B) sub-item. When the Locations screen is shown, click the **Add location** `(C)` button and use the wizard to provide the appropriate S3 endpoint information and credentials.
+Back on the **IBM Fusion** tab, navigate to the Locations screen by clicking on the **Backup & restore** (A) menu item shown in the left-hand side navigation pane and selecting the **Locations** (B) sub-item. When the Locations screen is shown, click the **Add **location** `**(C)` button and use the wizard to provide the appropriate S3 endpoint information and credentials.
 
 ![Back and Restore Locations]({{ site.baseurl }}/assets/images/ocpv-fusion-lab/06-module-04-bnr-locationss.png)
 
@@ -97,19 +97,19 @@ A backup policy is a set of rules and schedules that define how and when data is
 
 The Policies page lists all policies. You can search for policy records based on the backup location or other keywords, configure the table display, and perform actions like viewing, editing, or deleting policies from the ellipsis overflow menu.
 
-In the Fusion GUI, navigate to the Policies screen by clicking on the **Backup & restore** (A) menu item shown in the left-hand side navigation pane and selecting the **Policies** (B) sub-item. When the Policies screen is shown, click the **Add policy** `(C)` button to configure a backup policy. 
+In the Fusion GUI, navigate to the Policies screen by clicking on the **Backup **& restore**** (A) menu item shown in the left-hand side navigation pane and selecting the **Policies** (B) sub-item. When the Policies screen is shown, click the **Add **policy** `**(C)` button to configure a backup policy. 
 
 ![Back and Restore Policies]({{ site.baseurl }}/assets/images/ocpv-fusion-lab/06-module-04-bnr-policies.png)
 
-Enter `daily-snapshot` (A) in the **Policy Name** text entry field, set **Frequency** to **Daily** and specify a Time window for the backup to occur. Then, select the **In place snapshot** (B) Backup location tile. Finally, click the **Next** `(C)` button to create the new daily-snapshot backup policy.
+Enter **`daily-snapshot`** (A) in the **Policy Name** text entry field, set **Frequency** to **Daily** and specify a Time window for the backup to occur. Then, select the **In **place snapshot**** (B) Backup location tile. Finally, click the **Next** **`**(C)` button to create the new daily-snapshot backup policy.
 
 ![Back and Restore Policy Create]({{ site.baseurl }}/assets/images/ocpv-fusion-lab/06-module-04-bnr-policy-create.png)
 
-The daily-snapshot policy will now appear in the list of backup policies. Next, we will create a weekly-backup policy using object storage as the backup location. Click the **Add policy +** (A) button to begin.
+The daily-snapshot policy will now appear in the list of backup policies. Next, we will create a weekly-backup policy using object storage as the backup location. Click the **Add **policy +**** (A) button to begin.
 
 ![Back and Restore Policy New]({{ site.baseurl }}/assets/images/ocpv-fusion-lab/06-module-04-bnr-policy-new.png)
 
-(A) Enter `weekly-backup` in the **Policy name** text entry field, set **Frequency** to **weekly** (B), select **Sunday** `(C)` for **Schedule**, and specify a Time window for the backup to occur. Select the **Object Storage** (D) Backup location tile to pick the backup location `location1` (E). Click the **Create policy** (F) button to complete creation of the weekly-backup backup policy.
+(A) Enter `weekly-backup` in the **Policy name** text entry field, set **Frequency** to **weekly** (B), select **Sunday** **`**(C)` for **Schedule**, and specify a Time window for the backup to occur. Select the **Object **Storage**** (D) Backup location tile to **pick the backup location `location1`** (E). Click the **Create **policy**** (F) button to complete creation of the weekly-backup backup policy.
 
 ![Back and Restore Policy Weekly]({{ site.baseurl }}/assets/images/ocpv-fusion-lab/06-module-04-bnr-policy-weekly.png)
 
@@ -130,7 +130,7 @@ In this section, you'll learn how to create a basic application to demonstrate c
 
 ### Create a simple application
 
-In the OpenShift GUI, navigate to the **Projects** screen by clicking on the **Home** (A) menu item in the left-hand side navigation pane and selecting the **Projects** (B) sub-item. When the Projects screen is shown, click the **Create Project** `(C)` button.
+In the OpenShift GUI, navigate to the **Projects** screen by clicking on the **Home** (A) menu item in the left-hand side navigation pane and selecting the **Projects** (B) sub-item. When the Projects screen is shown, click the **Create **Project** `**(C)` button.
 
 ![Create New Project]({{ site.baseurl }}/assets/images/ocpv-fusion-lab/06-module-04-bnr-create-project.png)
 
@@ -138,7 +138,7 @@ In the OpenShift GUI, navigate to the **Projects** screen by clicking on the **H
 
 ![Create New Project]({{ site.baseurl }}/assets/images/ocpv-fusion-lab/06-module-04-bnr-create-project-new.png)
 
-Verify that the project listed is set to the newly created filebrowser namespace. Click the **Import YAML** (A) (the icon that looks like a + sign) button on the OpenShift GUI masthead.
+Verify that the project listed is set to the newly created filebrowser namespace. Click the **Import **YAML**** (A) (the icon that looks like a + sign) button on the OpenShift GUI masthead.
 
 ![Varify New Project]({{ site.baseurl }}/assets/images/ocpv-fusion-lab/06-module-04-bnr-verify-project.png)
 
@@ -360,7 +360,7 @@ spec:
   wildcardPolicy: None
 ```
 
-The OpenShift GUI and use `Ctrl-V` (windows), `CMD-V` (Mac) or browser Edit -> Paste button to paste the contents of the clipboard into the editor (A) text entry field. Click the *Create* (B) button to create the filebrowser resources.
+The OpenShift GUI and use `Ctrl-V` (windows), `CMD-V` (Mac) or browser Edit -> Paste button to paste the contents of the clipboard into the **editor** (A) text entry field. Click the ***Create*** (B) button to create the filebrowser resources.
 
 ![Paste YAML]({{ site.baseurl }}/assets/images/ocpv-fusion-lab/06-module-04-bnr-paste-yaml.png)
 
@@ -368,13 +368,13 @@ The following information will be displayed listing all resources that were crea
 
 ![YAML status]({{ site.baseurl }}/assets/images/ocpv-fusion-lab/06-module-04-bnr-yaml-status.png)
 
-Navigate to the Route screen by clicking on the *Network* (A) menu item shown in the left-hand side navigation pane and selecting the *Routes* (B) sub-item. When the Routes screen is shown, click the *URL Location* +(C)+ for the filebrowser route to open a new tab/window to the filebrowser application
+Navigate to the Route screen by clicking on the ***Network*** (A) menu item shown in the left-hand side navigation pane and selecting the ***Routes*** (B) sub-item. When the Routes screen is shown, click the ***URL Location* +**(C)+ for the filebrowser route to open a new tab/window to the filebrowser application
 
 NOTE: It may take a minute or two for the filebrowser application to become fully online and accessible from the route screen
 
 ![Routes]({{ site.baseurl }}/assets/images/ocpv-fusion-lab/06-module-04-bnr-routes.png)
 
-Login to the filebrowser application with *Username* (A): `admin` and *Password* (B): `admin`. Click the *Login* +(C)+ button.
+Login to the filebrowser application with ***Username*** (A): `admin` and ***Password*** (B): `admin`. Click the ***Login* +**(C)+ button.
 
 ![filebrowser login]({{ site.baseurl }}/assets/images/ocpv-fusion-lab/06-module-04-bnr-filebrower-login.png)
 
@@ -382,7 +382,7 @@ No files will be listed in the filebrowser application.
 
 ![filebrowser files]({{ site.baseurl }}/assets/images/ocpv-fusion-lab/06-module-04-bnr-filebrower-files.png)
 
-Use *New folder* (A) and *Upload file* (B) to create some directories and upload a couple files. In the example shown, 2 directories were created, and 3 files were uploaded.
+Use ***New folder*** (A) and ***Upload file*** (B) to create some directories and upload a couple files. In the example shown, 2 directories were created, and 3 files were uploaded.
 
 ![Filebrowser Files New]({{ site.baseurl }}/assets/images/ocpv-fusion-lab/06-module-04-bnr-filebrower-files-new.png)
 
@@ -398,15 +398,15 @@ This sub-section describes the process for managing backups of applications depl
 
 Switch to the *IBM Fusion* tab.
 
-Navigate to the Application pane by clicking on the *Applications* (A) menu item on the left-hand side navigation pane.
+Navigate to the Application pane by clicking on the ***Applications*** (A) menu item on the left-hand side navigation pane.
 
 ![Applications Page]({{ site.baseurl }}/assets/images/ocpv-fusion-lab/06-module-04-bnr-applications-page.png)
 
-Select the *filebrowser* application checkbox (A) and click the *Assign backup policy* (B) button.
+Select the ***filebrowser* application checkbox** (A) and click the ***Assign backup policy*** (B) button.
 
 ![Applications Assign Policy]({{ site.baseurl }}/assets/images/ocpv-fusion-lab/06-module-04-bnr-assign-policy.png)
 
-Select both the *daily-snapshot* checkbox (A) and *weekly-backup* checkbox (B). Leave the Back up now toggle set to enabled (displayed with a green checkmark). Click the *Save* +(C)+ button.
+Select **both the *daily-snapshot* checkbox** (A) and ***weekly-backup* checkbox** (B). Leave the Back up now toggle set to enabled (displayed with a green checkmark). Click the ***Save* +**(C)+ button.
 
 ![Applications Assign Policy]({{ site.baseurl }}/assets/images/ocpv-fusion-lab/06-module-04-bnr-assign-policy2.png)
 
@@ -416,19 +416,19 @@ A confirmation window will appear in the upper-right corner notifying that the p
 
 This sub-section describes the process for managing backups of applications deployed across both hub and spoke clusters using the Backup up applications page.
 
-Navigate to the Backed up applications pane in the IBM Fusion UI by clicking *Backup & Restore* (A) menu item shown in the left-hand side navigation pane and selecting the *Backed up applications* (B) sub-item. You should now see a page listing the applications that have been backed up, together with application details and assigned backup policies. Each line represents an OpenShift namespace which can contain a different application/workload.
+Navigate to the Backed up applications pane in the IBM Fusion UI by clicking ***Backup & Restore*** (A) menu item shown in the left-hand side navigation pane and selecting the ***Backed up applications*** (B) sub-item. You should now see a page listing the applications that have been backed up, together with application details and assigned backup policies. Each line represents an OpenShift namespace which can contain a different application/workload.
 
 If you want to find a specific namespace, you can use the search toolbar present on the page.
 
-You can assign a backup policy to a namespace by clicking *Protect apps +* +(C)+ on the right side. This will launch the Protect applications wizard.
+You can assign a backup policy to a namespace by clicking ***Protect apps +* +**(C)+ on the right side. This will launch the Protect applications wizard.
 
 ![Applications Assign Policy]({{ site.baseurl }}/assets/images/ocpv-fusion-lab/06-module-04-bnr-assign-policy2.png)
 
-The Protect applications wizard can be used to backup applications locally and in hub and spoke configurations. Select the *local cluster* (A) from the drop-down list, and a list of unprotected applications will populate in the list below. Next select, *filebrowser* (B) from the unprotected applications list. Finally click on the *Next* +(C)+ button.
+The Protect applications wizard can be used to backup applications locally and in hub and spoke configurations. Select the ***local cluster*** (A) from the drop-down list, and a list of unprotected applications will populate in the list below. Next select, ***filebrowser*** (B) from the unprotected applications list. Finally click on the ***Next* +**(C)+ button.
 
 ![Protect Wizard]({{ site.baseurl }}/assets/images/ocpv-fusion-lab/06-module-04-bnr-protect-wizard.png)
 
-On the Assign policies, you can select one or more policies to attach to the application and if backup should start right after applying the policies. Select both the *daily-snapshot* (A) and *weekly-backup* (B) policies. Leave the Back up now toggle set to enabled (displayed with a green checkmark). Click the *Assign* +(C)+ button.
+On the Assign policies, you can select one or more policies to attach to the application and if backup should start right after applying the policies. Select **both the *daily-snapshot*** (A) and ***weekly-backup*** (B) policies. Leave the Back up now toggle set to enabled (displayed with a green checkmark). Click the ***Assign* +**(C)+ button.
 
 ![Protect Wizard]({{ site.baseurl }}/assets/images/ocpv-fusion-lab/06-module-04-bnr-protect-wizard2.png)
 
@@ -444,7 +444,7 @@ After a short period of time the Backup status will change from Pending to an In
 
 ![Backup Status]({{ site.baseurl }}/assets/images/ocpv-fusion-lab/06-module-04-bnr-backup-status.png)
 
-Status of each policy can be checked by going into the application pane and clicking the *Backups* (A) tab. In the example shown below, the daily-snapshot policy has `Completed` and the weekly-backup is `Snapshot in progress`.
+Status of each policy can be checked by going into the application pane and clicking the ***Backups*** (A) tab. In the example shown below, the daily-snapshot policy has `Completed` and the weekly-backup is `Snapshot in progress`.
 
 ![Backup Complete]({{ site.baseurl }}/assets/images/ocpv-fusion-lab/06-module-04-bnr-backup-complete.png)
 
@@ -460,27 +460,27 @@ The *Backups* tab shows all the backups created for this application and lets yo
 
 ![Backedup Applications]({{ site.baseurl }}/assets/images/ocpv-fusion-lab/06-module-04-bnr-backups.png)
 
-A restore action can also be started by using buttons at top of the page. Click on the *Restore* (A) button located at the top of the pane.
+A restore action can also be started by using buttons at top of the page. Click on the ***Restore*** (A) button located at the top of the pane.
 
 ![Restoring Applications]({{ site.baseurl }}/assets/images/ocpv-fusion-lab/06-module-04-bnr-restore.png)
 
-The wizard presents the choice to restore to the same cluster or to a different cluster, if you have a hub-spoke setup. Open the drop-down list associated with the “Target cluster” field and select the *This cluster* (A) item from the list.
+The wizard presents the choice to restore to the same cluster or to a different cluster, if you have a hub-spoke setup. Open the drop-down list associated with the “Target cluster” field and select the ***This cluster*** (A) item from the list.
 
 ![Restoring Application Wizard]({{ site.baseurl }}/assets/images/ocpv-fusion-lab/06-module-04-bnr-restore-wizard.png)
 
-The restore wizard also provides a choice to restore over the same project, an existing project, or to a new project. Select *Create a new project* (A) and (B) enter `filebrowser2` in the Project name text entry field. Then, click on the *Next* +(C)+ button to select the backup to restore. 
+The restore wizard also provides a choice to restore over the same project, an existing project, or to a new project. Select ***Create a new project*** (A) and (B) enter `filebrowser2` in the Project name text entry field. Then, click on the ***Next* +**(C)+ button to select the backup to restore. 
 
 ![Restoring Application Project]({{ site.baseurl }}/assets/images/ocpv-fusion-lab/06-module-04-bnr-restore-project.png)
 
-Choose the *Backup time* (A) you want to restore from, from the list of backups provided - note that if you want multiple backups to choose from, you must first create them. Then click on the *Next* (B) button.
+Choose the ***Backup time*** (A) you want to restore from, from the list of backups provided - note that if you want multiple backups to choose from, you must first create them. Then click on the ***Next*** (B) button.
 
 ![Restoring Application Time]({{ site.baseurl }}/assets/images/ocpv-fusion-lab/06-module-04-bnr-restore-time.png)
 
-Keep all the default settings shown and click on the *Restore* (A) button. A *Summary* (B) is displayed on the right pane with details on what the Before restore and After restore states will be.
+Keep all the default settings shown and click on the ***Restore*** (A) button. A ***Summary*** (B) is displayed on the right pane with details on what the Before restore and After restore states will be.
 
 ![Restoring Application Settings]({{ site.baseurl }}/assets/images/ocpv-fusion-lab/06-module-04-bnr-restore-settings.png)
 
-Confirm the restore by clicking on the *Restore* (A) button in the final dialog box.
+Confirm the restore by clicking on the ***Restore*** (A) button in the final dialog box.
 
 ![Restoring Application Confirm]({{ site.baseurl }}/assets/images/ocpv-fusion-lab/06-module-04-bnr-restore-confirm.png)
 
@@ -488,7 +488,7 @@ Watch the restore progress on the *Backups* tab. Item (A) is the Restore job tha
 
 ![Restoring Application Progress]({{ site.baseurl }}/assets/images/ocpv-fusion-lab/06-module-04-bnr-restore-progress.png)
 
-In the OpenShift Console, navigate to the Pods page by clicking on the *Workloads* (A) menu item shown in the left-hand side navigation pane and selecting the *Pods* (B) sub-item. Then click the *project selector* +(C)+ and choose `filebrowser2` (D) from the projects drop down menu. Refer to section OpenShift project selector on how to use the project selector.
+In the OpenShift Console, navigate to the Pods page by clicking on the ***Workloads*** (A) menu item shown in the left-hand side navigation pane and selecting the ***Pods*** (B) sub-item. Then click the ***project selector* +**(C)+ and choose **`filebrowser2`** (D) from the projects drop down menu. Refer to section OpenShift project selector on how to use the project selector.
 
 ![Restoring Application Project]({{ site.baseurl }}/assets/images/ocpv-fusion-lab/06-module-04-bnr-restore-project2.png)
 
@@ -496,15 +496,15 @@ Watch the application being restored and the new pods created for the restored a
 
 ![Restoring Application Watch]({{ site.baseurl }}/assets/images/ocpv-fusion-lab/06-module-04-bnr-restore-watch.png)
 
-Navigate to the PersistenVolumesClaims screen by selecting the *Storage* (A) menu item shown in the left-hand side navigation pane and selecting the *PersistentVolumeClaims* (B) sub-item. The newly restored PVCs are shown.
+Navigate to the PersistenVolumesClaims screen by selecting the ***Storage*** (A) menu item shown in the left-hand side navigation pane and selecting the ***PersistentVolumeClaims*** (B) sub-item. The newly restored PVCs are shown.
 
 ![Restoring Application PVC]({{ site.baseurl }}/assets/images/ocpv-fusion-lab/06-module-04-bnr-restore-pvc.png)
 
-Navigate to the Routes screen by clicking on the *Networking* (A) menu item shown in the left-hand side navigation pane and selecting the *Routes* (B) sub-item. The Routes screen is shown
+Navigate to the Routes screen by clicking on the ***Networking*** (A) menu item shown in the left-hand side navigation pane and selecting the ***Routes*** (B) sub-item. The Routes screen is shown
 
 ![Restoring Application Routes]({{ site.baseurl }}/assets/images/ocpv-fusion-lab/06-module-04-bnr-restore-routes.png)
 
-Login to the filebrowser application with the *Username* (A): `admin` and *Password* (B): `admin`. Click *Login* +(C)+. Review that the files added earlier have been restored to a new application project
+Login to the filebrowser application with the ***Username*** (A): `admin` and ***Password*** (B): `admin`. Click ***Login* +**(C)+. Review that the files added earlier have been restored to a new application project
 
 ![Restoring Application]({{ site.baseurl }}/assets/images/ocpv-fusion-lab/06-module-04-bnr-application.png)
 
@@ -523,11 +523,11 @@ Navigate to *Virtualization* -> *Catalog*. Create a new Virtual Machine using th
 
 Switch to the *IBM Fusion* tab.
 
-Navigate to the Applications screen by clicking on the Applications (A) menu item on the left-hand side navigation pane. Select the check box (B) next to `vmbackup` application and click on the *Assign backup policy* +(C)+ button to open the Assign backup policy page.
+Navigate to the Applications screen by clicking on the **Applications** (A) menu item on the left-hand side navigation pane. Select the check **box** (B) next to `vmbackup` application and click on the ***Assign backup policy* +**(C)+ button to open the Assign backup policy page.
 
 ![VM Backup Policy]({{ site.baseurl }}/assets/images/ocpv-fusion-lab/06-module-04-bnr-vm-backup-policy.png)
 
-Select the check box (A) next to `weekly-backup` and leave the *Back up now* toggle set to `enabled` (green with a checkmark for enabled). Click on the *Save* (B) button to enable the weekly-backup policy for the vmbackup application and start a new backup job. 
+Select the check **box** (A) next to `weekly-backup` and leave the *Back up now* toggle set to `enabled` (green with a checkmark for enabled). Click on the ***Save*** (B) button to enable the weekly-backup policy for the vmbackup application and start a new backup job. 
 
 ![VM Set backup policy]({{ site.baseurl }}/assets/images/ocpv-fusion-lab/06-module-04-bnr-vm-backup-set-policy.png)
 
@@ -535,7 +535,7 @@ Wait for backup to show as *Completed* under *Backup status*.
 
 ![VM Backup Complete]({{ site.baseurl }}/assets/images/ocpv-fusion-lab/06-module-04-bnr-vm-backup-complete.png)
 
-Navigate to the *Jobs* screen by clicking on the *Backup & restore* (A) menu item on the left-hand side navigation pane and selecting the *Jobs* (B) menu sub-item. Click on the `vmbackup-weekly-backup-<OCP cluster name>` +(C)+ button to open the backup summary page.
+Navigate to the *Jobs* screen by clicking on the ***Backup & restore*** (A) menu item on the left-hand side navigation pane and selecting the ***Jobs*** (B) menu sub-item. Click on the **`vmbackup-weekly-backup-<OCP cluster name>` +**(C)+ button to open the backup summary page.
 
 ![VM Backup Jobs]({{ site.baseurl }}/assets/images/ocpv-fusion-lab/06-module-04-bnr-vm-backup-jobs.png)
 
@@ -545,35 +545,35 @@ Review the information on this page. Some relevant information to the backup has
 
 ### Restore Virtual Machine
 
-Navigate to the Backed up applications screen by clicking on the *Backup & restore* (A) menu item on the left-hand side navigation pane and selecting the *Backed up applications* (B) menu sub-item. Click on the `vmbackup` +(C)+ application name to open the vmbackup backup details page.
+Navigate to the Backed up applications screen by clicking on the ***Backup & restore*** (A) menu item on the left-hand side navigation pane and selecting the ***Backed up applications*** (B) menu sub-item. Click on the **`vmbackup` +**(C)+ application name to open the vmbackup backup details page.
 
 ![VM Backed up Applications]({{ site.baseurl }}/assets/images/ocpv-fusion-lab/06-module-04-bnr-vm-backed-apps.png)
 
-Click on the *Restore* (A) button to begin the restore process.
+Click on the ***Restore*** (A) button to begin the restore process.
 
 ![VM Restore]({{ site.baseurl }}/assets/images/ocpv-fusion-lab/06-module-04-bnr-vm-restore.png)
 
-The wizard presents the choice to restore to the same cluster or to a different cluster, if you have a hub-spoke setup. Open the drop-down list associated with the *Target cluster* field and select *This cluster* (A) from the list.
+The wizard presents the choice to restore to the same cluster or to a different cluster, if you have a hub-spoke setup. Open the drop-down list associated with the *Target cluster* field and select ***This cluster*** (A) from the list.
 
 ![VM Restore select destination]({{ site.baseurl }}/assets/images/ocpv-fusion-lab/06-module-04-bnr-vm-restore-select-dest.png)
 
-Click on the *Create a new project* (A) combo box to change the Project destination. Enter `vmrestore` in the *Project name* (B) text entry field and click the *Next* +(C)+ button to continue the restore process.
+Click on the ***Create a new project*** (A) combo box to change the Project destination. Enter `vmrestore` in the ***Project name*** (B) text entry field and click the ***Next* +**(C)+ button to continue the restore process.
 
 ![VM Restore Project]({{ site.baseurl }}/assets/images/ocpv-fusion-lab/06-module-04-bnr-vm-restore-project.png)
 
-Click on the *latest backup time* (A) combo box (which should be the backup that was run in the previous section). Click the *Next* (B) button to continue to the final step of the restore process.
+Click on the ***latest backup time*** (A) combo box (which should be the backup that was run in the previous section). Click the ***Next*** (B) button to continue to the final step of the restore process.
 
 ![VM Restore Select]({{ site.baseurl }}/assets/images/ocpv-fusion-lab/06-module-04-bnr-vm-restore-select.png)
 
-Review the *Summary* (A) details for OpenShift Project and Restore point for accuracy. Click the *Restore* (B) button.
+**Review the *Summary*** (A) details for OpenShift Project and Restore point for accuracy. Click the ***Restore*** (B) button.
 
 ![VM Restore Button]({{ site.baseurl }}/assets/images/ocpv-fusion-lab/06-module-04-bnr-vm-restore-button.png)
 
-Click the *Restore* (A) button again to confirm the start of the restore process.
+Click the ***Restore*** (A) button again to confirm the start of the restore process.
 
 ![VM Comfirm Restore]({{ site.baseurl }}/assets/images/ocpv-fusion-lab/06-module-04-bnr-vm-confirm-restore.png)
 
-Click on the *View job details* (A) button to open the `vmbackup` restore details page.
+Click on the ***View job details*** (A) button to open the `vmbackup` restore details page.
 
 ![VM Job Details]({{ site.baseurl }}/assets/images/ocpv-fusion-lab/06-module-04-bnr-vm-job-details.png)
 
@@ -581,7 +581,7 @@ Wait for the restore backup job to show *Completed*.
 
 ![VM Restore Complete]({{ site.baseurl }}/assets/images/ocpv-fusion-lab/06-module-04-bnr-vm-restore-complete.png)
 
-Return to the *OpenShift Console* tab. Navigate to the *VirtualMachines* screen by clicking on the *Virtualization* (A) menu item on the left-hand side navigation pane and selecting the *VirtualMachines* (B) sub-item. Use the *Project selector* to change to the `vmrestore` +(C)+ project. Notice that the VirtualMachine has been restored to a new namespace and is in a Running Status.
+Return to the *OpenShift Console* tab. Navigate to the *VirtualMachines* screen by clicking on the ***Virtualization*** (A) menu item on the left-hand side navigation pane and selecting the ***VirtualMachines*** (B) sub-item. Use the *Project selector* to **change to the `vmrestore` +**(C)+ project. Notice that the VirtualMachine has been restored to a new namespace and is in a Running Status.
 
 ![List Restored VM]({{ site.baseurl }}/assets/images/ocpv-fusion-lab/06-module-04-bnr-vm-list-restored.png)
 
@@ -604,7 +604,7 @@ When you protect an application with Backup & Restore service, a default backup 
 >
 > **Application consistent:** If a client has an application that has many, many persistent volumes, and that application is busy reading and writing to its PVs, there needs to be a way to instruct the application to stop writing or to pause. The application can complete any tasks in process but then stop briefly to allow a snapshot of the PVs to be taken. Then, the application can be instructed to resume. This is like quiescing a database. With application consistency, it's possible to restore an application to another cluster without having data stuck in an I/O buffer. Application consistency also means that there needs to be a workflow to back up those applications in a certain order, and Fusion provides this with recipes.
 
-In the *OpenShift Console* tab, navigate to the *Projects* screen by clicking on the *Home* (A) menu item in the left-hand side navigation pane and selecting the *Projects* (B) sub-item. When the Projects screen is shown, click on the *Create Project* +(C)+ button.
+In the *OpenShift Console* tab, navigate to the *Projects* screen by clicking on the ***Home*** (A) menu item in the left-hand side navigation pane and selecting the ***Projects*** (B) sub-item. When the Projects screen is shown, click on the ***Create Project* +**(C)+ button.
 
 ![Create PacMan Project]({{ site.baseurl }}/assets/images/ocpv-fusion-lab/06-module-04-bnr-create-pm-project.png)
 
@@ -738,19 +738,19 @@ spec:
   wildcardPolicy: None
 ```
 
-Click the *Import YAML* (A) (the icon that looks like a + sign) button on the OpenShift Console masthead.
+Click the ***Import YAML*** (A) (the icon that looks like a + sign) button on the OpenShift Console masthead.
 
 ![Import YAML]({{ site.baseurl }}/assets/images/ocpv-fusion-lab/06-module-04-bnr-import-yaml.png)
 
-In the *OpenShift Console* tab use `Ctrl-V` (windows), `CMD-V` (Mac) or the browser `Edit` -> `Paste` function to paste the contents of the clipboard into the editor (A) text entry field. Click the *Create* (B) button to create the recipe.
+In the *OpenShift Console* tab use `Ctrl-V` (windows), `CMD-V` (Mac) or the browser `Edit` -> `Paste` function to paste the contents of the clipboard into the **editor** (A) text entry field. Click the ***Create*** (B) button to create the recipe.
 
 ![Create recipe]({{ site.baseurl }}/assets/images/ocpv-fusion-lab/06-module-04-bnr-create-recipe.png)
 
-In the *IBM Fusion* tab, navigate to the Applications screen by clicking on the *Applications* (A) menu item shown in the left-hand side navigation pane. When the Applications screen is shown, select the *pacman* checkbox (B) and click on the *Assign backup policy* +(C)+ button.
+In the *IBM Fusion* tab, navigate to the Applications screen by clicking on the ***Applications*** (A) menu item shown in the left-hand side navigation pane. When the Applications screen is shown, select the ***pacman* checkbox** (B) and click on the ***Assign backup policy* +**(C)+ button.
 
 ![Assign policy]({{ site.baseurl }}/assets/images/ocpv-fusion-lab/06-module-04-bnr-assign-policy3.png)
 
-Select the *weekly-backup policy* (A) and use the *Backup up now* (B) toggle to *disable* the initial backup (shown as gray when disabled). Click the *Save* +(C)+ button.
+Select the ***weekly-backup policy*** (A) and use the ***Backup up now*** (B) toggle to *disable* the initial backup (shown as gray when disabled). Click the ***Save* +**(C)+ button.
 
 IMPORTANT: Set the Backup up now option to *disabled* (indicated by the absence of a green checkmark) to prevent an initial backup. The Pacman application does not generate sufficient changes in the MongoDB database and performing an initial backup without the appropriate recipe may result in restore failures when using Change Block Tracking (CBT).
 
@@ -760,11 +760,11 @@ The Pacman application is now associated with the weekly-backup policy.
 
 ![Policy Associated]({{ site.baseurl }}/assets/images/ocpv-fusion-lab/06-module-04-bnr-policy-associated.png)
 
-In the *OpenShift Console* tab, navigate to the Search screen by clicking on the *Home* (A) menu item shown in the left-hand side navigation pane and selecting the *Search* (B) sub-item.
+In the *OpenShift Console* tab, navigate to the Search screen by clicking on the ***Home*** (A) menu item shown in the left-hand side navigation pane and selecting the ***Search*** (B) sub-item.
 
 ![Search]({{ site.baseurl }}/assets/images/ocpv-fusion-lab/06-module-04-bnr-policy-search.png)
 
-Change to the `ibm-spectrum-fusion-ns` project, if not already there. Refer to section OpenShift project selector on how to use the project selector. Open the drop-down list associated with the *Resources* (A) field and (B) enter `policyassignment` in the search box text entry field (displayed with a magnifying glass). Select the *PolicyAssignment* +(C)+. Click anywhere outside the drop-down list to dismiss the window.
+Change to the `ibm-spectrum-fusion-ns` project, if not already there. Refer to section OpenShift project selector on how to use the project selector. Open the drop-down list associated with the ***Resources*** (A) field and (B) enter `policyassignment` in the search box text entry field (displayed with a magnifying glass). Select the ***PolicyAssignment* +**(C)+. Click anywhere outside the drop-down list to dismiss the window.
 
 ![Project Selector]({{ site.baseurl }}/assets/images/ocpv-fusion-lab/06-module-04-bnr-project-selector.png)
 
@@ -772,7 +772,7 @@ Click on the *PolicyAssignment* associated with the pacman application that was 
 
 ![Policy Assignment]({{ site.baseurl }}/assets/images/ocpv-fusion-lab/06-module-04-bnr-policy-assignment.png)
 
-Click the *YAML* (A) tab.
+Click the ***YAML*** (A) tab.
 
 ![Policy Assignment YAML]({{ site.baseurl }}/assets/images/ocpv-fusion-lab/06-module-04-bnr-policy-assignment-yaml.png)
 
@@ -799,27 +799,27 @@ NOTE: for readability the metadata and status information have been collapsed us
     name: mongodb-image-based-backup-restore-recipe
     namespace: ibm-spectrum-fusion-ns
 ```
-Click the *Save* (A) button after the 4 new lines have been added.
+Click the ***Save*** (A) button after the 4 new lines have been added.
 
 ![Policy Save YAML]({{ site.baseurl }}/assets/images/ocpv-fusion-lab/06-module-04-bnr-policy-save-yaml.png)
 
-Change to the *pacman* project using the Project selector if necessary. Refer to section OpenShift project selector on how to use the project selector. Navigate to the Pods screen by clicking on the *Workload* (A) menu item shown in the left-hand side navigation pane and selecting the *Pods* (B) sub-item. Click on the `mongodb-XXXXXXXXXX-YYYYY` pod +(C)+ to open the pod details page.
+Change to the *pacman* project using the Project selector if necessary. Refer to section OpenShift project selector on how to use the project selector. Navigate to the Pods screen by clicking on the ***Workload*** (A) menu item shown in the left-hand side navigation pane and selecting the ***Pods*** (B) sub-item. Click on the **`mongodb-XXXXXXXXXX-YYYYY` pod +**(C)+ to open the pod details page.
 
 ![Pacman project]({{ site.baseurl }}/assets/images/ocpv-fusion-lab/06-module-04-bnr-pacman-project-yaml.png)
 
-Click the *Logs* (A) tab and select *Wrap lines* (B) to improve readability. Scroll to the bottom of the logs if necessary. Leave this window open for now as we will return to it after a new backup has been run using the updated PolicyAssignment with the newly attached recipe.
+Click the ***Logs*** (A) tab and select ***Wrap lines*** (B) to improve readability. Scroll to the bottom of the logs if necessary. Leave this window open for now as we will return to it after a new backup has been run using the updated PolicyAssignment with the newly attached recipe.
 
 ![Pacman logs]({{ site.baseurl }}/assets/images/ocpv-fusion-lab/06-module-04-bnr-pacman-logs-yaml.png)
 
-In the *IBM Fusion* tab, navigate to the Applications page by clicking on the *Applications* (A) menu item shown in the left-hand side navigation pane. When the Application screen is shown, select the `pacman` application (B) checkbox and click on the *Back up now* +(C)+ button. 
+In the *IBM Fusion* tab, navigate to the Applications page by clicking on the ***Applications*** (A) menu item shown in the left-hand side navigation pane. When the Application screen is shown, select the **`pacman` application** (B) checkbox and click on the ***Back up now* +**(C)+ button. 
 
 ![backup now]({{ site.baseurl }}/assets/images/ocpv-fusion-lab/06-module-04-bnr-backup-now-yaml.png)
 
-Click on the *Back up* (A) button.
+Click on the ***Back up*** (A) button.
 
 ![backup now button]({{ site.baseurl }}/assets/images/ocpv-fusion-lab/06-module-04-bnr-backup-now-button.png)
 
-Navigate to the Jobs screen by clicking on the *Backup & restore* (A) menu item shown in the left-hand side navigation pane and selecting the *Jobs* (B) sub-item. When the Jobs screen is shown, click on the `pacman-weekly-backup-<cluster name>` job +(C)+ to open the job details page.
+Navigate to the Jobs screen by clicking on the ***Backup & restore*** (A) menu item shown in the left-hand side navigation pane and selecting the ***Jobs*** (B) sub-item. When the Jobs screen is shown, click on the **`pacman-weekly-backup-<cluster name>` job +**(C)+ to open the job details page.
 
 ![backup jobs]({{ site.baseurl }}/assets/images/ocpv-fusion-lab/06-module-04-bnr-backup-jobs.png)
 
@@ -852,11 +852,11 @@ The IBM Storage Fusion Backup & Restore service protection involves the backup o
 
 NOTE: To follow this section, create a new object bucket claim, as was done in the backup location section and use the new bucket claim info service protection.
 
-In the *IBM Fusion* tab, navigate to the Service protection page by clicking on the *Backup & restore* (A) menu item shown in the left-hand side navigation pane and selecting *Service protection* (B) sub-item.
+In the *IBM Fusion* tab, navigate to the Service protection page by clicking on the ***Backup & restore*** (A) menu item shown in the left-hand side navigation pane and selecting ***Service protection*** (B) sub-item.
 
 ![Service Protection]({{ site.baseurl }}/assets/images/ocpv-fusion-lab/06-module-04-bnr-service-protection.png)
 
-Click on the *Configure service backups* (A) tile.
+Click on the ***Configure service backups*** (A) tile.
 
 ![Service Protection Backups]({{ site.baseurl }}/assets/images/ocpv-fusion-lab/06-module-04-bnr-service-protection-backups.png)
 
@@ -872,11 +872,11 @@ An `Adding backup location, Location service-protection-location is being added`
 
 ![Service Protection Location]({{ site.baseurl }}/assets/images/ocpv-fusion-lab/06-module-04-bnr-service-protection-location.png)
 
-Click the *Define schedule* (A) button to configure a schedule for service protection.
+Click the ***Define schedule*** (A) button to configure a schedule for service protection.
 
 ![Service Protection Schedule]({{ site.baseurl }}/assets/images/ocpv-fusion-lab/06-module-04-bnr-service-schedule.png)
 
-Select *Weekly* (A) under the *Select frequency* item, select *Sunday* (B) from the *Schedule* item, and select a *Start time*, *End time*, and *Timezone* +(C)+ under the *Time window* item. Click the *Create policy* (D) button. Leave *Initiate Service backup now* selected.
+Select ***Weekly*** (A) under the *Select frequency* item, select ***Sunday*** (B) from the *Schedule* item, and select a *Start time*, *End time*, and ***Timezone* +**(C)+ under the *Time window* item. Click the ***Create policy*** (D) button. Leave *Initiate Service backup now* selected.
 
 ![Service Protection Set Schedule]({{ site.baseurl }}/assets/images/ocpv-fusion-lab/06-module-04-bnr-service-set-schedule.png)
 

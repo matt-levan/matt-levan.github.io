@@ -9,19 +9,19 @@ parent: "IBM Fusion HCP Lab Guide"
 # Create Hosted Cluster
 
 ## Add Cloud Provider credentials
-1. Navigate to the Multicluster Engine by clicking on the local-cluster drop-down list (A) in the masthead and click on All clusters (B).
+1. Navigate to the Multicluster Engine by clicking on the **local-cluster drop-down list** (A) in the masthead and click on **All clusters** (B).
 
    ![Screenshot]({{ site.baseurl }}/assets/images/hcp-lab-guide/add-cloud-provider-credentials-01.png)
 
-1. Click on the Connect your cloud provider (A) button.
+1. Click on the **Connect your cloud provider** (A) button.
 
    ![Screenshot]({{ site.baseurl }}/assets/images/hcp-lab-guide/add-cloud-provider-credentials-02.png)
 
-1. Click on the Red Hat OpenShift Virtualization (A) button.
+1. Click on the **Red Hat OpenShift Virtualization** (A) button.
 
    ![Screenshot]({{ site.baseurl }}/assets/images/hcp-lab-guide/add-cloud-provider-credentials-03.png)
 
-1. (A) Enter hcp-pull-secret in the Credential name text entry field and select default from the Namespace drop-down list (B). Click on the Next (C) button to continue.
+1. (A) Enter hcp-pull-secret in the Credential name text entry field and select default from the **Namespace drop-down list** (B). Click on the Next (C) button to continue.
 
    ![Screenshot]({{ site.baseurl }}/assets/images/hcp-lab-guide/add-cloud-provider-credentials-04.png)
 
@@ -29,11 +29,11 @@ parent: "IBM Fusion HCP Lab Guide"
 
    ![Screenshot]({{ site.baseurl }}/assets/images/hcp-lab-guide/add-cloud-provider-credentials-05.png)
 
-1. Paste the contents of the pull-secret text file that was created in the Save the cluster pull-secret section into the Pull secret (A) text entry box. Paste the contents of the SSH public key text file that was created in the Create SSH key for Hosted Control Planes section into the SSH public key (B) text entry box. Finally, click on the Next (C) button.
+1. Paste the contents of the pull-secret text file that was created in the Save the cluster pull-secret section into the **Pull secret** (A) text entry box. Paste the contents of the SSH public key text file that was created in the Create SSH key for Hosted Control Planes section into the **SSH public key** (B) text entry box. Finally, click on the Next (C) button.
 
    ![Screenshot]({{ site.baseurl }}/assets/images/hcp-lab-guide/add-cloud-provider-credentials-06.png)
 
-1. Click on the Add (A) button.
+1. Click on the **Add** (A) button.
 
    ![Screenshot]({{ site.baseurl }}/assets/images/hcp-lab-guide/add-cloud-provider-credentials-07.png)
 
@@ -42,16 +42,16 @@ parent: "IBM Fusion HCP Lab Guide"
    ![Screenshot]({{ site.baseurl }}/assets/images/hcp-lab-guide/add-cloud-provider-credentials-08.png)
 
 ## Create Cluster
-1. In the multicluster Engine GUI, navigate to the Clusters screen by clicking on the Infrastructure (A) menu item shown in the left-hand side navigation pane and selecting the Clusters (B) sub-item. Next, click on the Create cluster (C) button.
+1. In the multicluster Engine GUI, navigate to the Clusters screen by clicking on the **Infrastructure** (A) menu item shown in the left-hand side navigation pane and selecting the **Clusters** (B) sub-item. Next, click on the Create **cluster** (C) button.
    > NOTE: Close the “Managing clusters just got easier” pop-up box, if it appears.
 
    ![Screenshot]({{ site.baseurl }}/assets/images/hcp-lab-guide/create-cluster-01.png)
 
-1. Click on the Red Hat OpenShift Virtualization (A) tile.
+1. Click on the **Red Hat OpenShift Virtualization** (A) tile.
 
    ![Screenshot]({{ site.baseurl }}/assets/images/hcp-lab-guide/create-cluster-02.png)
 
-1. Click on the Hosted (A) tile.
+1. Click on the **Hosted** (A) tile.
 
    ![Screenshot]({{ site.baseurl }}/assets/images/hcp-lab-guide/create-cluster-03.png)
 
@@ -71,7 +71,7 @@ parent: "IBM Fusion HCP Lab Guide"
 
 ![Screenshot]({{ site.baseurl }}/assets/images/hcp-lab-guide/create-cluster-04.png)
 
-1. Enter the following labels in the Additional labels (A) text entry field separated by a , (when the , is entered the label will appear as a tag below the Additional labels field):
+1. Enter the following labels in the **Additional labels** (A) text entry field separated by a , (when the , is entered the label will appear as a tag below the Additional labels field):
    ```bash
    isf.ibm.com/fusion-base=
    isf.ibm.com/fusion-fdf=
@@ -96,7 +96,7 @@ Click on the Next (B) button.
 
 ![Screenshot]({{ site.baseurl }}/assets/images/hcp-lab-guide/create-cluster-06.png)
 
-1. Scroll down until Root volume option is displayed and click on the Root volume option or > dropdown carat (A) to reveal the Root volume options section is displayed. Enter the Root volume details provided in Table 3 - Root volume options and click on the Next (E) button.
+1. Scroll down until Root volume option is displayed and click on the Root volume option or > **dropdown carat** (A) to reveal the Root volume options section is displayed. Enter the Root volume details provided in Table 3 - Root volume options and click on the Next (E) button.
 
 *Table  - Root volume options*
 
