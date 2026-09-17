@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "Demonstration infrastructure"
+title: "Demonstration Infrastructure"
 permalink: /demonstration-infrastructure/
 nav_order: 5
 ---

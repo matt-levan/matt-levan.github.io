@@ -46,7 +46,7 @@ The following section will step through the process of installing the Fusion Bac
 The process to install the IBM Fusion Backup & Restore server and local agent has been completed. The Custom Resource YAML that would be used to do this without a GUI would be as follows. The YAML displayed here could be applied manually to install the IBM Backup & restore server and local agent via either the command-line interface or the Import YAML page.
 > Note: The fusionServiceInstance custom resource YAML presented here is for informational purposes only. Installs during a Proof of Experience (PoX) may differ depending on the configuration and options selected.
 
-```
+```yaml
 apiVersion: service.isf.ibm.com/v1
 kind: FusionServiceInstance
 metadata:
@@ -68,6 +68,7 @@ value: ocs-storagecluster-ceph-rbd
 serviceDefinition: ibm-backup-restore-service
 triggerUpdate: false
 updateServiceCRSpec: false
+
 ```
 
 ## Create Backup Locations and Policies

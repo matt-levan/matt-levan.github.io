@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "Reserve or provision your environment"
+title: "Reserve or Provision Your Environment"
 permalink: /reserve-or-provision-your-environment/
 nav_order: 3
 ---

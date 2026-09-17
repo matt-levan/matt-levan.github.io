@@ -1,8 +1,9 @@
 ---
 layout: default
-title: "Wait for the installation to complete"
+title: "Wait for Installation to Complete"
 permalink: /wait-for-the-installation-to-complete/
 nav_order: 9
+parent: "Provide Persistent Storage"
 ---
 
 # Wait for the installation to complete

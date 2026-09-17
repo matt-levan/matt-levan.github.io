@@ -41,8 +41,8 @@ The demonstration environment provided for you after provisioning is configured 
 
 1. To connect via SSH, open a terminal on a Mac or Linux system and enter a command that looks something like this:
 
-```
-`ssh itzuser@apps.ocp-50t6fjgae-droi.cloud.techzone.ibm.com -p ``10022 -``i`` ``sshkey.prv`
+```bash
+ssh itzuser@apps.ocp-50t6fjgae-droi.cloud.techzone.ibm.com -p 10022 -i sshkey.prv
 ```
 
 > Note: On Windows you can use PowerShell or an SSH utility like ‘putty’.
@@ -51,14 +51,15 @@ NOTE: the password does NOT work for SSH, you MUST use the private sshkey
 NOTE: Once you log in as itzuser, you can run “sudo -i” for root access
 1. Once you are in the bastion host, connect to the cluster with the API URL and the kubeadmin user and kubeadmin password by executing a command that looks like this:
 
-```
-`oc`` login -u ``kubeadmin`` [API_URL]`
+```bash
+oc login -u kubeadmin [API_URL]
 ```
 
 where `API_URL` is the API URL value obtained from your reservation page of your environment details. For example:
 
-```
-`oc`` login -u ``kubeadmin`` `[https://api.ocp-50t6fjkgae-droi.cloud.techzone.ibm.com:6443](https://api.ocp-50t6fjkgae-droi.cloud.techzone.ibm.com:6443)
+```bash
+oc login -u kubeadmin [https://api.ocp-50t6fjkgae-droi.cloud.techzone.ibm.com:6443](https://api.ocp-50t6fjkgae-droi.cloud.techzone.ibm.com:6443)
+
 ```
 
 (When prompted, enter the kubeadmin “Cluster Admin Password”)
@@ -67,9 +68,9 @@ where `API_URL` is the API URL value obtained from your reservation page of your
 
 1. Now, that you can access the cluster, run a couple of OpenShift commands from the ‘oc’ command line:
 
-```
-`oc`` get nodes`
-`oc`` get ``clusterversion`
+```bash
+oc get nodes
+oc get clusterversion
 ```
 
 ![Screenshot]({{ site.baseurl }}/assets/images/openshift-command-line-access-03.png)

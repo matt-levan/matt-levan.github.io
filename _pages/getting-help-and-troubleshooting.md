@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "Getting help and troubleshooting"
+title: "Getting Help and Troubleshooting"
 permalink: /getting-help-and-troubleshooting/
 nav_order: 12
 ---

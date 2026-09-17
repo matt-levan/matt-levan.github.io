@@ -1,8 +1,9 @@
 ---
 layout: default
-title: "Persistent Storage – Fusion Data Foundation – FDF"
+title: "Persistent Storage – Fusion Data Foundation"
 permalink: /persistent-storage-fusion-data-foundation-fdf/
 nav_order: 10
+parent: "Provide Persistent Storage"
 ---
 
 # Persistent Storage – Fusion Data Foundation – FDF
@@ -151,38 +152,38 @@ In this section, you will be instructed to issue appropriate native IBM Storage 
 The screenshots provided will also help you with more details about what is being requested with the “Add IBM Storage Scale file system” prompts.
 Connect to the Bastion host via SSH by opening a terminal on a Mac or Linux system and entering a command that looks something like this:
 
-```
-`ssh itzuser@apps.ocp-50t6fjgae-droi.cloud.techzone.ibm.com -p 40222`` -``i`` <``ssh_private_key``>`
+```bash
+ssh itzuser@apps.ocp-50t6fjgae-droi.cloud.techzone.ibm.com -p 40222 -i <ssh_private_key>
 ```
 
 (Use the Bastion Password provided with your IBM Technology Zone reservation. Also, the hostname is an example; get the real host name from your reservation.)
 Connect to the Scale node from the Bastion host by entering the following command in the terminal. The password for the itzuser of the Storage Scale node is in the console page of the reservation.
 
-```
-`ssh `[itzuser@10.10.10.202](mailto:itzuser@10.10.10.202)`
-``sudo`` -``i`` `
+```bash
+ssh [itzuser@10.10.10.202](mailto:itzuser@10.10.10.202)
+sudo -i 
 ```
 
 List the Storage Scale cluster name, id, and nodes associated with the Storage Scale cluster by entering the following command in the terminal window.
 
-```
-`mmlscluster`
+```bash
+mmlscluster
 ```
 
 ![Screenshot]({{ site.baseurl }}/assets/images/logon-to-the-storage-scale-command-line-and-issue-storage-sc-01.png)
 
 List the Storage Scale GUI users by entering the following command in the terminal window.
 
-```
-`/``usr``/``lpp``/``mmfs``/``gui``/cli/``lsuser`
+```bash
+/usr/lpp/mmfs/gui/cli/lsuser
 ```
 
 ![Screenshot]({{ site.baseurl }}/assets/images/logon-to-the-storage-scale-command-line-and-issue-storage-sc-02.png)
 
 List the Storage Scale file systems and their mount points by entering the following command in the terminal window.
 
-```
-`mmlsfs`` all -T`
+```bash
+mmlsfs all -T
 ```
 
 ![Screenshot]({{ site.baseurl }}/assets/images/logon-to-the-storage-scale-command-line-and-issue-storage-sc-03.png)
@@ -191,9 +192,10 @@ List the Storage Scale file systems and their mount points by entering the follo
 You can use the representational state transfer (REST) method to issue commands in your SSH “Terminal” window if an IBM Storage Scale username and password have been provided for a user that has been granted the permissions necessary to access the IBM Storage Scale RESTful API.
 In the terminal window, execute the following command:
 
-```
-`curl -u ``csi-storage-gui-``user:csi``-storage-gui-password`` -X GET -k \``
-https://``10.10.10.202``/scalemgmt/v2/cluster `
+```bash
+curl -u csi-storage-gui-user:csi-storage-gui-password -X GET -k \
+https://10.10.10.202/scalemgmt/v2/cluster 
+
 ```
 
 ![Screenshot]({{ site.baseurl }}/assets/images/use-the-storage-scale-rest-api-and-the-linux-curl-command-01.png)
