@@ -9,37 +9,39 @@ grand_parent: "IBM Fusion Demo Guide"
 
 # Persistent Storage – Fusion Data Foundation – FDF
 
+Now install Fusion Data Foundation for local storage on the cluster.
+
+1. Select **Storage → Local storage** and click **Getting Started**.
 
 ![Screenshot]({{ site.baseurl }}/assets/images/fusion-demo-guide/persistent-storage-fusion-data-foundation-fdf-01.png)
 
-Select Storage  Local storage and Click “Getting Started”
+The screen will go to the OpenShift Console and bring up the Create Storage menu.
 
 ![Screenshot]({{ site.baseurl }}/assets/images/fusion-demo-guide/persistent-storage-fusion-data-foundation-fdf-02.png)
 
-The screen will go to the OpenShift Console and bring up the create storage menu
+1. **"Create a new StorageClass using local storage devices"** will be pre-selected. Click **Next**.
 
 ![Screenshot]({{ site.baseurl }}/assets/images/fusion-demo-guide/persistent-storage-fusion-data-foundation-fdf-03.png)
 
-“create a new StorageClass using local storage devices” will be pre-selected. And check “Next”
-We only need to enable the default storage class of Ceph RBD and set the default storage class for Virtualization (if you plan to setup Virtualization)
+1. Enable the default storage class of **Ceph RBD** and set the default storage class for **Virtualization** (if you plan to set up Virtualization).
 
 ![Screenshot]({{ site.baseurl }}/assets/images/fusion-demo-guide/persistent-storage-fusion-data-foundation-fdf-04.png)
 
 
 ![Screenshot]({{ site.baseurl }}/assets/images/fusion-demo-guide/persistent-storage-fusion-data-foundation-fdf-05.png)
 
-We need the local operator for the local system, click install to install the local storage operator
+1. The local storage operator is required. Click **Install** to install it.
 
 ![Screenshot]({{ site.baseurl }}/assets/images/fusion-demo-guide/persistent-storage-fusion-data-foundation-fdf-06.png)
 
-Install the local storage operator
+1. Complete the local storage operator installation.
 
 ![Screenshot]({{ site.baseurl }}/assets/images/fusion-demo-guide/persistent-storage-fusion-data-foundation-fdf-07.png)
 
 
 ![Screenshot]({{ site.baseurl }}/assets/images/fusion-demo-guide/persistent-storage-fusion-data-foundation-fdf-08.png)
 
-When complete, select view operator
+1. When the installation is complete, click **View Operator**.
 
 ![Screenshot]({{ site.baseurl }}/assets/images/fusion-demo-guide/persistent-storage-fusion-data-foundation-fdf-09.png)
 
@@ -47,9 +49,8 @@ When complete, select view operator
 
 ![Screenshot]({{ site.baseurl }}/assets/images/fusion-demo-guide/create-local-storage-cluster-fdf-01.png)
 
-Now navigate back to Storage  Data Foundation  Storage Cluster
-and “select configure data foundation”
-Then Select Create Storage Cluster
+1. Navigate back to **Storage → Data Foundation → Storage Cluster** and select **Configure data foundation**.
+1. Then select **Create Storage Cluster**.
 
 ![Screenshot]({{ site.baseurl }}/assets/images/fusion-demo-guide/create-local-storage-cluster-fdf-02.png)
 
@@ -59,20 +60,18 @@ Then Select Create Storage Cluster
 
 ![Screenshot]({{ site.baseurl }}/assets/images/fusion-demo-guide/create-local-storage-cluster-fdf-04.png)
 
-Continue the installation and configuration
+Continue the installation and configuration.
 
 ![Screenshot]({{ site.baseurl }}/assets/images/fusion-demo-guide/create-local-storage-cluster-fdf-05.png)
 
 
 ![Screenshot]({{ site.baseurl }}/assets/images/fusion-demo-guide/create-local-storage-cluster-fdf-06.png)
 
-After the local storage is discovered, you can select where and how to install Data foundation
-
-You can either use all of the nodes and disks, or use a subset.
+After the local storage is discovered, you can select where and how to install Data Foundation. You can either use all of the nodes and disks, or use a subset.
 
 ![Screenshot]({{ site.baseurl }}/assets/images/fusion-demo-guide/create-local-storage-cluster-fdf-07.png)
 
-Use the infra nodes for data foundation.
+Use the infra nodes for Data Foundation.
 
 ![Screenshot]({{ site.baseurl }}/assets/images/fusion-demo-guide/create-local-storage-cluster-fdf-08.png)
 
@@ -82,35 +81,37 @@ Use the infra nodes for data foundation.
 
 ![Screenshot]({{ site.baseurl }}/assets/images/fusion-demo-guide/create-local-storage-cluster-fdf-10.png)
 
-Then select if you want to enable provider mode or not
+Select whether you want to enable provider mode or not.
 
 ![Screenshot]({{ site.baseurl }}/assets/images/fusion-demo-guide/create-local-storage-cluster-fdf-11.png)
 
-Selecting Default, will only enable local use. Selecting Host will enable provider mode for hosted clusters.
-It will now create a storage cluster, this will take some time.
+- Selecting **Default** will only enable local use.
+- Selecting **Host** will enable provider mode for hosted clusters.
+
+It will now create a storage cluster — this will take some time.
 
 ![Screenshot]({{ site.baseurl }}/assets/images/fusion-demo-guide/create-local-storage-cluster-fdf-12.png)
 
-Wait for the cluster to become healthy
-Validate the storage classes where created
+Wait for the cluster to become healthy, then validate the storage classes were created.
 
 ![Screenshot]({{ site.baseurl }}/assets/images/fusion-demo-guide/create-local-storage-cluster-fdf-13.png)
 
 ## Remote File Systems – External Mount of Storage Scale Cluster
-This section will demonstrate how to connect IBM Fusion to a remote IBM Storage Scale cluster. The remote Storage Scale cluster will provide persistent storage for OpenShift workloads.
+
+This section demonstrates how to connect IBM Fusion to a remote IBM Storage Scale cluster. The remote Storage Scale cluster will provide persistent storage for OpenShift workloads.
+
 Without IBM Fusion, an OpenShift administrator who wanted to use Storage Scale for OpenShift had to install Storage Scale Container Native Scale Access (CNSA) and manage all the configurations needed to connect CNSA with the remote Storage Scale cluster.
+
 With Fusion, all these steps can be done through a simple GUI and the installation and connection to the remote Storage Scale cluster is handled automatically.
-If you had selected Data Foundation External when install the Data Foundation service, you will see 
-“external systems” on the menu
+
+If you selected **Data Foundation External** when installing the Data Foundation service, you will see **External systems** in the menu.
 
 ![Screenshot]({{ site.baseurl }}/assets/images/fusion-demo-guide/remote-file-systems-external-mount-of-storage-scale-cluster-01.png)
 
 
 ![Screenshot]({{ site.baseurl }}/assets/images/fusion-demo-guide/remote-file-systems-external-mount-of-storage-scale-cluster-02.png)
 
-Select “Connect to external Systems”
-Then select
-IBM Scale
+1. Select **Connect to external Systems**, then select **IBM Scale**.
 
 ![Screenshot]({{ site.baseurl }}/assets/images/fusion-demo-guide/remote-file-systems-external-mount-of-storage-scale-cluster-03.png)
 

@@ -8,12 +8,14 @@ parent: "IBM Fusion Demo Guide"
 
 # Provide Persistent Storage
 
-As of Fusion 2.13, Storage is installed via the Data Foundation service. The first step is install Data Foundation via the Data Foundation Service tile:
-Note: if you are going to setup remote mount of and external scale cluster, apply the MachineConfig Operator (MCO) required for IBM Storage Scale.
+As of Fusion 2.13, Storage is installed via the Data Foundation service. The first step is to install Data Foundation via the Data Foundation Service tile.
 
-Log into the bastion server, log into the cluster with the cli “OC”
-Then run the follow command:
+> **Note:** If you are going to set up a remote mount of an external Storage Scale cluster, apply the MachineConfig Operator (MCO) required for IBM Storage Scale first. Log into the bastion server and connect to the cluster with the `oc` CLI, then run:
+
+```bash
 oc apply -f https://raw.githubusercontent.com/IBM/ibm-spectrum-scale-container-native/v6.0.0.x/generated/scale/mco/mco.yaml
+```
+
 After applying the MCO, wait for the machine ready count to complete:
 
 ![Screenshot]({{ site.baseurl }}/assets/images/fusion-demo-guide/provide-persistent-storage-01.png)
