@@ -78,6 +78,7 @@ Access to the lab environment is provided through your desktop web browser. The 
 ![Screenshot]({{ site.baseurl }}/assets/images/rdr-lab-guide/addressing-plan-and-credentials-01.png)
 
 1. Note the username and password credentials (the information highlighted in the red rectangle in the previous screen shot).
+
 The table below is a summary of the reservation detail information you will use. This information is listed on the environment reservation page.
 
 |  | IP Address | User | Password |

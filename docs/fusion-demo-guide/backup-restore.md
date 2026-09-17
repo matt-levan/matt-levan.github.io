@@ -87,6 +87,7 @@ IBM Fusion backups can use one of two methods: local snapshots that are stored o
 ![Screenshot]({{ site.baseurl }}/assets/images/fusion-demo-guide/backup-location-01.png)
 
 1. S3 Backup Bucket
+
 Create an S3 backup location using IBM Data Foundation. Data Foundation must be installed and setup. In the OpenShift Console, navigate to **Data Foundation → Object Storage** and select the tab "Object Bucket Claims".
 
 ![Screenshot]({{ site.baseurl }}/assets/images/fusion-demo-guide/backup-location-02.png)
@@ -102,6 +103,7 @@ We will use the “Bucket Name”, “Access Key” and “Secret Key”.
 ![Screenshot]({{ site.baseurl }}/assets/images/fusion-demo-guide/backup-location-04.png)
 
 1. Next we need to get the external endpoint
+
 Navigate to “networking”  “routes” and choose all projects and search for “S3”
 1. There you will find the correct route to use.
 1. In the Fusion GUI, navigate to the Locations screen by clicking on the Backup & restore (A) menu item shown in the left-hand side navigation pane and selecting the Locations (B) sub-item. When the Locations screen is shown, click the Add location + (C) button and use the wizard to provide the appropriate S3 endpoint information and credentials.

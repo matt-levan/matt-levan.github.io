@@ -160,11 +160,13 @@ curl -L -O [PASTE CLIPBOARD CONTENTS]
 where:
 - -L informs the curl command follow any redirects returned
 - -O informs curl to write the output returned to disk
+
 Confirm the file was successfully downloaded by executing the command ls -al.
 
 ![Screenshot]({{ site.baseurl }}/assets/images/hcp-lab-guide/install-virtctl-on-bastion-host-04.png)
 
 1. Enter the command tar xzvf virtctl.tar.gz to extract the virtctl executable.
+
 Output:
 ```bash
 virtctl

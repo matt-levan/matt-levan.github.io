@@ -56,6 +56,7 @@ parent: "IBM Fusion HCP Lab Guide"
 ![Screenshot]({{ site.baseurl }}/assets/images/hcp-lab-guide/create-cluster-03.png)
 
 1. Enter the Cluster details provided in Table 1 – Add Cluster details.
+
 *Table  – Add Cluster details*
 
 | Field name | Value | Callout |
@@ -82,6 +83,7 @@ Click on the Next (B) button.
 ![Screenshot]({{ site.baseurl }}/assets/images/hcp-lab-guide/create-cluster-05.png)
 
 1. Enter the Node pool 1 details provided in Table 2 - Node pool 1 details.
+
 *Table  - Node pool 1 details*
 
 | Field name | Value | Callout |
@@ -95,6 +97,7 @@ Click on the Next (B) button.
 ![Screenshot]({{ site.baseurl }}/assets/images/hcp-lab-guide/create-cluster-06.png)
 
 1. Scroll down until Root volume option is displayed and click on the Root volume option or > dropdown carat (A) to reveal the Root volume options section is displayed. Enter the Root volume details provided in Table 3 - Root volume options and click on the Next (E) button.
+
 *Table  - Root volume options*
 
 | Field name | Value | Callout |

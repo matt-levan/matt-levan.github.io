@@ -404,6 +404,7 @@ The IBM Storage Fusion Backup & Restore service protection involves the backup o
 ![Screenshot]({{ site.baseurl }}/assets/images/backup-restore-guide/backup-service-protection-03.png)
 
 1. Enter the S3 endpoint and connection information provided in Table 2 - Service protection object bucket details in the Connect IBM Storage Fusion to your backup location and click Add (E). Additionally, the Show/Hide button on the Secret key can be used to display the text or hide it.
+
 *Table  - Service protection object bucket details*
 
 | Field name | Value | Callout |

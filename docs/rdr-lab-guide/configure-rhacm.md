@@ -107,6 +107,7 @@ In this section, Red Hat Advanced Cluster Management (RHACM) will be configured 
 
 ## Configure submariner
 1. In the OpenShift GUI, navigate to the Nodes screen by clicking on the Compute (A) menu item shown in the left-hand side navigation pane and selecting the Nodes (B) sub-item. Select worker-1 (C) from the Nodes list.
+
 > IMPORTANT: The IBM Technology Zone environment has been configured to forward submariner traffic exclusively to worker-1. If another worker node is used, submariner will fail to establish a connection.
 
 ![Screenshot]({{ site.baseurl }}/assets/images/rdr-lab-guide/configure-submariner-01.png)
@@ -124,6 +125,8 @@ In this section, Red Hat Advanced Cluster Management (RHACM) will be configured 
 ![Screenshot]({{ site.baseurl }}/assets/images/rdr-lab-guide/configure-submariner-04.png)
 
 1. Complete Steps 1 through 4 again on the second cluster (ocp2).
+
+
 > IMPORTANT: Before proceeding, ensure that the submariner.io/gateway=true label is applied to the worker-1 nodes in both the local-cluster and ocp2 clusters. This step is critical for submariner connectivity.
 
 1. In the OpenShift GUI of local-cluster, navigate to the Advanced Cluster Manager by clicking on the local-cluster drop-down list (A) in the masthead and click on All clusters (B).
@@ -159,7 +162,8 @@ In this section, Red Hat Advanced Cluster Management (RHACM) will be configured 
 ![Screenshot]({{ site.baseurl }}/assets/images/rdr-lab-guide/configure-submariner-11.png)
 
 1. The status of the submariner connection should show the following after installation.
-> NOTE: ‘Connection status’ may show degraded for a short period of time until the links are established and ‘Healthy’.
+
+> NOTE: 'Connection status' may show degraded for a short period of time until the links are established and 'Healthy'.
 
 ![Screenshot]({{ site.baseurl }}/assets/images/rdr-lab-guide/configure-submariner-12.png)
 

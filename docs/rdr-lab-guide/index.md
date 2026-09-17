@@ -12,6 +12,7 @@ Fusion Data Foundation is backed by Ceph as the storage provider, whose lifecycl
 - Enable pools for mirroring.
 - Automatically mirror images across RBD pools.
 - Provides csi-addons to manage per Persistent Volume Claim mirroring.
+
 Regional-DR supports a multi-cluster configuration that is deployed across different regions and data centers. For example, a 2-way replication across two clusters located in two different regions or data centers. This solution is entitled with Red Hat Advanced Cluster Management (RHACM) and Fusion Data Foundation Advanced SKUs and related bundles.
 ## About this lab
 The Fusion Regional Disaster Recovery Hands-On Lab is a comprehensive, real-world learning environment designed to help you explore and master disaster recovery strategies using Red Hat and IBM technologies.
@@ -41,6 +42,7 @@ RHACM is split into two parts:
   - Components that run on the multi-cluster control plane.
 - Managed clusters
   - Components that run on the clusters that are managed.
+
 For more information about RHACM, see the [Red Hat Advanced Cluster Management for Kubernetes](https://access.redhat.com/documentation/en-us/red_hat_advanced_cluster_management_for_kubernetes/2.13) product documentation.
 ### Fusion Data Foundation
 Fusion Data Foundation provides the ability to provision and manage storage for stateful applications in an OpenShift Container Platform cluster. It is backed by Ceph as the storage provider, whose lifecycle is managed by Rook in the Fusion Data Foundation component stack and Ceph-CSI provides the provisioning and management of Persistent Volumes for stateful applications.
@@ -53,6 +55,7 @@ OpenShift DR is a disaster recovery orchestrator for stateful applications acros
 - Protecting an application and its state relationship across OpenShift clusters.
 - Failing over an application and its state to a peer cluster.
 - Relocate an application and its state to the previously deployed cluster.
+
 OpenShift DR is split into three components:
 - **IBM Fusion Data Foundation Multicluster Orchestrator** — Installed on the Hub cluster with RHACM, it orchestrates configuration and peering of Fusion Data Foundation clusters for Metro and Regional DR relationships.
 - **IBM Fusion Data Foundation DR Hub Operator** — Automatically installed as part of IBM Fusion Data Foundation Multicluster Orchestrator installation on the hub cluster to orchestrate failover or relocation of DR enabled applications.
