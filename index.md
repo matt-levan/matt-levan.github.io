@@ -35,6 +35,12 @@ Welcome to the IBM Storage technical documentation library. Select a guide below
     <span class="doc-card-badge">Coming soon</span>
   </a>
 
+
+  <a href="/hcp-lab-guide/" class="doc-card">
+    <h2>IBM Fusion HCP Lab Guide</h2>
+    <p>Deploy IBM Fusion with OpenShift Hosted Control Planes — LVM storage, Fusion Data Foundation in Provider mode, MetalLB, multicluster engine, and hosted cluster creation.</p>
+    <span class="doc-card-version">v2.11.0.0</span>
+  </a>
 </div>
 
 <style>
