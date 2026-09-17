@@ -84,13 +84,13 @@ oc get storageclass | grep fusion
 oc get templates -n openshift
 ```
 
-== Follow-up resources
+## Follow-up resources
 
 ### Next steps for participants
 
-- link:https://docs.redhat.com/en/documentation/openshift_container_platform/4.20/html/virtualization/index[Red Hat OpenShift Virtualization documentation^]
-- link:https://www.ibm.com/docs/en/fusion-software/2.12.0[IBM Fusion 2.12 documentation^]
-- link:https://docs.redhat.com/en/documentation/migration_toolkit_for_virtualization/[Migration Toolkit for Virtualization documentation^]
+- [Red Hat OpenShift Virtualization documentation](https://docs.redhat.com/en/documentation/openshift_container_platform/4.20/html/virtualization/index)
+- [IBM Fusion 2.12 documentation](https://www.ibm.com/docs/en/fusion-software/2.12.0)
+- [Migration Toolkit for Virtualization documentation](https://docs.redhat.com/en/documentation/migration_toolkit_for_virtualization/)
 
 ### Additional learning paths
 
@@ -98,7 +98,7 @@ oc get templates -n openshift
 - **Advanced**: Disaster recovery and high availability patterns with IBM Fusion
 - **Certification**: Red Hat Certified Specialist in OpenShift Virtualization
 
-== Authors and contributors
+## Authors and contributors
 
 **Lab ID**: LB2298 +
 **Primary Author**: Red Hat Technical Marketing +

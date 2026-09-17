@@ -33,29 +33,29 @@ ACTION=="add|change", SUBSYSTEM=="block", KERNEL=="dm-[0-9]*", ENV{ID_PART_TABLE
 apiVersion: machineconfiguration.openshift.io/v1
 kind: MachineConfig
 metadata:
-annotations:
-kubernetes.io/description: "udev rule to modify the queue/rotational attribute on unused block devices"
-labels:
-machineconfiguration.openshift.io/role: worker
-name: 99-worker-udev-configuration
+  annotations:
+    kubernetes.io/description: "udev rule to modify the queue/rotational attribute on unused block devices"
+  labels:
+    machineconfiguration.openshift.io/role: worker
+  name: 99-worker-udev-configuration
 spec:
-config:
-ignition:
-config: {}
-security:
-tls: {}
-timeouts: {}
-version: 3.2.0
-networkd: {}
-passwd: {}
-storage:
-files:
-- contents:
-source: data:text/plain;charset=utf-8;base64,QUNUSU9OPT0iYWRkfGNoYW5nZSIsIFNVQlNZU1RFTT09ImJsb2NrIiwgS0VSTkVMPT0ic2RbYS16XSIsIEVOVntJRF9QQVJUX1RBQkxFX1RZUEV9PT0iIiwgQVRUUntxdWV1ZS9yb3RhdGlvbmFsfT0iMCIKQUNUSU9OPT0iYWRkfGNoYW5nZSIsIFNVQlNZU1RFTT09ImJsb2NrIiwgS0VSTkVMPT0iZG0tWzAtOV0qIiwgRU5We0lEX1BBUlRfVEFCTEVfVFlQRX09PSIiLCBBVFRSe3F1ZXVlL3JvdGF0aW9uYWx9PSIwIgo=
-verification: {}
-filesystem: root
-mode: 420
-path: /etc/udev/rules.d/99-ibm.rules
+  config:
+    ignition:
+      config: {}
+      security:
+        tls: {}
+      timeouts: {}
+      version: 3.2.0
+    networkd: {}
+    passwd: {}
+    storage:
+      files:
+      - contents:
+          source: data:text/plain;charset=utf-8;base64,QUNUSU9OPT0iYWRkfGNoYW5nZSIsIFNVQlNZU1RFTT09ImJsb2NrIiwgS0VSTkVMPT0ic2RbYS16XSIsIEVOVntJRF9QQVJUX1RBQkxFX1RZUEV9PT0iIiwgQVRUUntxdWV1ZS9yb3RhdGlvbmFsfT0iMCIKQUNUSU9OPT0iYWRkfGNoYW5nZSIsIFNVQlNZU1RFTT09ImJsb2NrIiwgS0VSTkVMPT0iZG0tWzAtOV0qIiwgRU5We0lEX1BBUlRfVEFCTEVfVFlQRX09PSIiLCBBVFRSe3F1ZXVlL3JvdGF0aW9uYWx9PSIwIgo=
+          verification: {}
+        filesystem: root
+        mode: 420
+        path: /etc/udev/rules.d/99-ibm.rules
 ```
 
 1. Use Ctrl-V (windows), CMD-V (Mac) or the browser Edit -> Paste function to paste the contents of the clipboard into the editor (A) text entry field. Click the Create (B) button to create the recipe.

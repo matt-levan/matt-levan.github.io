@@ -40,7 +40,7 @@ RHACM is split into two parts:
   - Components that run on the multi-cluster control plane.
 - Managed clusters
   - Components that run on the clusters that are managed.
-For more information about RHACM, see about this product, see About > Welcome to Red Hat Advanced Cluster Management for Kubernetes > Welcome to Red Hat Advanced Cluster Management for Kubernetes within [Red Hat Advanced Cluster Management for Kubernetes](https://www.ibm.com/links?url=https%3A%2F%2Faccess.redhat.com%2Fdocumentation%2Fen-us%2Fred_hat_advanced_cluster_management_for_kubernetes%2F2.11) (https://access.redhat.com/documentation/en-us/red_hat_advanced_cluster_management_for_kubernetes/2.13) product documentation.
+For more information about RHACM, see the [Red Hat Advanced Cluster Management for Kubernetes](https://access.redhat.com/documentation/en-us/red_hat_advanced_cluster_management_for_kubernetes/2.13) product documentation.
 ### Fusion Data Foundation
 Fusion Data Foundation provides the ability to provision and manage storage for stateful applications in an OpenShift Container Platform cluster. It is backed by Ceph as the storage provider, whose lifecycle is managed by Rook in the Fusion Data Foundation component stack and Ceph-CSI provides the provisioning and management of Persistent Volumes for stateful applications.
 Fusion Data Foundation is now enhanced with the following abilities for disaster recovery:

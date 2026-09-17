@@ -513,8 +513,7 @@ Login to the filebrowser application with the *Username* (A): `admin` and *Passw
 - The restored filebrowser application in the `filebrowser2` project is accessible via its route
 - The files and directories you uploaded earlier are present in the restored application
 
-[[exercise-3]]
-== Exercise 3: Backup and Restore Virtual Machines
+## Exercise 3: Backup and Restore Virtual Machines
 
 ### Backup a Virtual Machine
 
@@ -591,27 +590,19 @@ Return to the *OpenShift Console* tab. Navigate to the *VirtualMachines* screen 
 - The virtual machine `rhel9-backup` is in **Running** status in the `vmrestore` project
 - The VM was restored to a new namespace successfully
 
-[[exercise-4]]
-== Exercise 4: Backup and Restore an Application with a recipe
+## Exercise 4: Backup and Restore an Application with a recipe
 
 ### Create an application with Fusion recipe
 
 When you protect an application with Backup & Restore service, a default backup and restore workflow is used to protect an application. But while the backup and restore workflow is sufficient for some applications, there are some instances where you need to create a custom workflow for the backup and restore process to produce an application consistent backup. Recipes are used to create a custom workflow for the backup and restore process.
 
-****
-Types of consistency:
-
-No consistency: Snapshots are not consistent. If an application uses 4 persistent volumes (PV), it rolls through these temporally. At point in time A, a snapshot is taken of one of the PVs. Then a snapshot is taken of the second, and then the third, and so on. Even with scripts, the PVs will not be backed up at the same time. Therefore, they will not be consistent with one another.
-
-Consistency breaks if the application is doing active input/output (IO) to the persistent volumes. If the application is writing to the volumes in the middle of a snapshot and another snapshot of another volume was taken when the write was finished, it ends up being inconsistent.
-Crash consistent: IBM Fusion supports crash consistency. This ensures that all the snapshots of the PVs are taken at the exact same time so that they are consistent, even after a disaster. Crash consistency means that if, for example, a rack was to be unplugged and all the servers were to lose power at the same time, then all those PVs are consistent with one another because the writes to them stopped at the exact same time. 
-
-Application consistent: If a client has an application that has many, many persistent volumes, and that application is busy reading and writing to its PVs, there needs to be a way to instruct the application to stop writing or to pause. The application can complete any tasks in process but then stop briefly to allow a snapshot of the PVs to be taken. Then, the application can be instructed to resume. This is like quiescing a database.
-
-With application consistency, it’s possible to restore an application to another cluster without having data stuck in an I/O buffer, thus ensuring the application is back running in the exact state it was in at the time of the backup. Application consistency also means that there needs to be a workflow to back up those applications in a certain order, and Fusion provides this with recipes.
-
-Application consistent backups are important because they ensure that important files and data are saved in a way that keeps them safe and undamaged. This means that if something goes wrong, like a computer crash or a power outage, clients can restore their files and data to the way they were before the event, without losing any important information.
-****
+> **Types of consistency:**
+>
+> **No consistency:** Snapshots are not consistent. If an application uses 4 persistent volumes (PV), it rolls through these temporally. At point in time A, a snapshot is taken of one of the PVs. Then a snapshot is taken of the second, and then the third, and so on. Even with scripts, the PVs will not be backed up at the same time. Therefore, they will not be consistent with one another. Consistency breaks if the application is doing active input/output (IO) to the persistent volumes.
+>
+> **Crash consistent:** IBM Fusion supports crash consistency. This ensures that all the snapshots of the PVs are taken at the exact same time so that they are consistent, even after a disaster. Crash consistency means that if, for example, a rack was to be unplugged and all the servers were to lose power at the same time, then all those PVs are consistent with one another because the writes to them stopped at the exact same time.
+>
+> **Application consistent:** If a client has an application that has many, many persistent volumes, and that application is busy reading and writing to its PVs, there needs to be a way to instruct the application to stop writing or to pause. The application can complete any tasks in process but then stop briefly to allow a snapshot of the PVs to be taken. Then, the application can be instructed to resume. This is like quiescing a database. With application consistency, it's possible to restore an application to another cluster without having data stuck in an I/O buffer. Application consistency also means that there needs to be a workflow to back up those applications in a certain order, and Fusion provides this with recipes.
 
 In the *OpenShift Console* tab, navigate to the *Projects* screen by clicking on the *Home* (A) menu item in the left-hand side navigation pane and selecting the *Projects* (B) sub-item. When the Projects screen is shown, click on the *Create Project* +(C)+ button.
 
@@ -853,14 +844,11 @@ Continue investigating the mongodb logs and find the fsyncUnlock log entry.
 - The backup job for the `pacman` application completed successfully with the recipe hooks
 - The MongoDB logs show `fsyncLock` and `fsyncUnlock` commands, confirming application-consistent backup
 
-[[exercise-5]]
-== Exercise 5: Backup Service Protection
+## Exercise 5: Backup Service Protection
 
 The IBM Storage Fusion Backup & Restore service protection involves the backup of the control plane to a S3 object bucket. In the event of cluster failure, you can use this feature to restore the Backup & Restore service to another cluster. In this section you will configure service protection and run the initial service backup.
 
-****
-Service protection is just for backup/restore on the hub cluster and not for other configurations that exist in IBM Storage Fusion. For example, Red Hat OpenShift Container Platform cluster, disaster recovery, Red Hat OpenShift Data Foundation.
-****
+> **Note:** Service protection is just for backup/restore on the hub cluster and not for other configurations that exist in IBM Storage Fusion. For example, Red Hat OpenShift Container Platform cluster, disaster recovery, Red Hat OpenShift Data Foundation.
 
 NOTE: To follow this section, create a new object bucket claim, as was done in the backup location section and use the new bucket claim info service protection.
 
@@ -905,7 +893,7 @@ Confirm that backup service protection has been enabled for the IBM Fusion Backu
 - The Backup & Restore service protection is enabled
 - A service backup schedule is configured with the weekly policy
 
-== Module summary
+## Module summary
 You have successfully explored the IBM Fusion Backup and Restore Service.
 
 **What you accomplished:**

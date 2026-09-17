@@ -81,15 +81,15 @@ In this section, a `lvm-config` configMap will be generated. This configMap is u
 kind: ConfigMap
 apiVersion: v1
 metadata:
-name: lvm-config
-namespace: ibm-spectrum-fusion-ns
+  name: lvm-config
+  namespace: ibm-spectrum-fusion-ns
 data:
-computeNodes: |
-- infra-1
-- infra-2
-- infra-3
-drives: '- /dev/disk/by-path/pci-0000:03:00.0-scsi-0:0:1:0'
-nodeType: compute
+  computeNodes: |
+    - infra-1
+    - infra-2
+    - infra-3
+  drives: '- /dev/disk/by-path/pci-0000:03:00.0-scsi-0:0:1:0'
+  nodeType: compute
 ```
 
 1. Use Ctrl-V (windows), CMD-V (Mac) or the browser Edit -> Paste function to paste the contents of the clipboard into the editor (A) text entry field. Click the Create (B) button to create the configMap.

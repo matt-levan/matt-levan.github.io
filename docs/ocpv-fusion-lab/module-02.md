@@ -40,8 +40,8 @@ A CDI (Containerized Data Importer) object that manages the import, cloning, or 
 
 A virtual machine transitions through specific states during its lifecycle. It is essential to understand each state:
 
-[cols="1,2,2",options="header"]
 | State | Description | Allowed Transitions |
+| --- | --- | --- |
 | Stopped | VM is defined but not running. No CPU or memory consumed but storage is allocated. | → Running, → Paused (offline) |
 | Starting | VMI pod is being scheduled and then launched. | → Running, → Failed |
 | Running | VM is active. A VMI object and pod exist on a node for this VM. | → Paused, → Stopped, → Migrating |
@@ -172,8 +172,7 @@ write_files:
       <h1>Hello from OpenShift Virtualization!</h1>
 ```
 
-[[exercise-1]]
-== Exercise 1: Create and Inspect Virtual Machine
+## Exercise 1: Create and Inspect Virtual Machine
 
 In this exercise you will create a RHEL 9 virtual machine from a YAML manifest, verify the underlying Kubernetes objects, and connect to the VM console.
 
@@ -551,7 +550,7 @@ In this exercise you have verified:
 - The number of DataVolumes for this VM is 1
 - You have verified the IP address assigned to the VM
 
-== Operating virtual machines
+## Operating virtual machines
 
 ### `virtctl` CLI
 
@@ -567,21 +566,19 @@ virtctl version
 
 Key `virtctl` commands and their purposes:
 
-[cols="1,2",options="header"]
-|===
-| Command | Purpose
-| `virtctl start <vm>` | Power on a stopped VM
-| `virtctl stop <vm>` | Gracefully power off a running VM
-| `virtctl restart <vm>` | Graceful reboot (stop + start)
-| `virtctl pause <vm>` | Freeze vCPU execution (memory retained)
-| `virtctl unpause <vm>` | Resume a paused VM
-| `virtctl migrate <vm>` | Initiate live migration to another node
-| `virtctl console <vm>` | Attach to the VM serial console
-| `virtctl vnc <vm>` | Open a VNC session to the VM display
-| `virtctl ssh <vm>` | SSH into the VM via API tunnel
-| `virtctl addvolume <vm>` | Hot-plug a PVC as a disk
-| `virtctl removevolume <vm>` | Hot-unplug a previously attached disk
-|===
+| Command | Purpose |
+| --- | --- |
+| `virtctl start <vm>` | Power on a stopped VM |
+| `virtctl stop <vm>` | Gracefully power off a running VM |
+| `virtctl restart <vm>` | Graceful reboot (stop + start) |
+| `virtctl pause <vm>` | Freeze vCPU execution (memory retained) |
+| `virtctl unpause <vm>` | Resume a paused VM |
+| `virtctl migrate <vm>` | Initiate live migration to another node |
+| `virtctl console <vm>` | Attach to the VM serial console |
+| `virtctl vnc <vm>` | Open a VNC session to the VM display |
+| `virtctl ssh <vm>` | SSH into the VM via API tunnel |
+| `virtctl addvolume <vm>` | Hot-plug a PVC as a disk |
+| `virtctl removevolume <vm>` | Hot-unplug a previously attached disk |
 
 ### Power operations
 
@@ -724,8 +721,7 @@ virtctl removevolume <vm-name> \
   -n <namespace>
 ```
 
-[[exercise-2]]
-== Exercise 2: Power Operations and Console Access
+## Exercise 2: Power Operations and Console Access
 
 1. Confirm the VM is running
 
@@ -908,7 +904,7 @@ Expected output should show the following
 - The status of the `virt-launcher` when VM is stopped
 - A new VMI object is created upon a restart
 
-== Snapshots
+## Snapshots
 
 ### VM snapshots
 
@@ -968,8 +964,7 @@ oc get vmrestore -n <namespace> -w
 virtctl start <vm-name> -n <namespace>
 ```
 
-[[exercise-3]]
-== Exercise 3: Snapshot, Corrupt Data, and Restore
+## Exercise 3: Snapshot, Corrupt Data, and Restore
 
 1. Stop the virtual machine
 
@@ -1143,7 +1138,7 @@ Expected output should show the following
 
 - The webserver is operational
 
-== VM decommissioning and cleanup
+## VM decommissioning and cleanup
 
 ### Planned decommissioning
 
@@ -1194,7 +1189,7 @@ oc annotate vm <vm-name> -n <namespace> \
   kubevirt.io/vm-deletion-protection-
 ```
 
-== VM lifecycle issues
+## VM lifecycle issues
 
 ### VM stuck in scheduling state
 
@@ -1216,7 +1211,7 @@ oc get dv -n <namespace>
 oc describe dv <root-disk-name> -n <namespace> | grep -A10 Conditions
 ```
 
-== Learning outcomes
+## Learning outcomes
 
 By completing this module, you should now understand:
 
@@ -1226,7 +1221,7 @@ By completing this module, you should now understand:
 - How to snapshot virtual machines as a user
 - How to restore virtual machines as a user
 
-== Module summary
+## Module summary
 
 You have successfully explored the OpenShift Virtualization lifecycle management.
 

@@ -284,7 +284,7 @@ When you protect an application with Backup & Restore service, a default backup 
 
 ![Screenshot]({{ site.baseurl }}/assets/images/backup-restore-guide/create-an-application-with-fusion-recipe-11.png)
 
-> You need a recipe to create a custom workflow for the backup and restore process. The recipe used during this lab is designed for a standalone MongoDB instance running as a Deployment. There are additional recipes available in the [IBM Fusion public GitHub repository](https://github.com/IBM/storage-fusion) (https://github.com/IBM/storage-fusion) for many common applications and databases.
+> You need a recipe to create a custom workflow for the backup and restore process. The recipe used during this lab is designed for a standalone MongoDB instance running as a Deployment. There are additional recipes available in the [IBM Fusion public GitHub repository](https://github.com/IBM/storage-fusion) for many common applications and databases.
 > The recipe custom resource has three basic specification elements:
 > Groups: A group defines a set of resources or PVCs that are processed together within a backup or restore. For example, a group can be a subset of specific resources that are specified with an exclude statement or an include statement.
 > In the MongoDB script the volumes and resources, excluding event, pods, and replicasets, are included in the backup.

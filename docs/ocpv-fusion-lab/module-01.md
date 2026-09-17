@@ -93,8 +93,7 @@ kubevirt-hyperconverged   <age>
 - HyperConverged CR status shows as available
 - OpenShift Virtualization CSV phase is "Succeeded"
 
-[[exercise-2]]
-== Exercise 2: Exploring IBM Fusion storage integration
+## Exercise 2: Exploring IBM Fusion storage integration
 
 IBM Fusion provides enterprise-grade storage for your OpenShift cluster. In this exercise, you will examine the storage classes available and understand how they support VM workloads.
 
@@ -245,8 +244,7 @@ Expected output from the two commands above show.
 - Two `volumesnapshotclass` are available in your cluster for `openshift-storage` drivers
 - The IBM Fusion Data Foundation cluster shows `PHASE` as `Ready`
 
-[[exercise-3]]
-== Exercise 3: Explore IBM Fusion Backup and Restore Service
+## Exercise 3: Explore IBM Fusion Backup and Restore Service
 
 Along with IBM Fusion enterprise-grade storage for your OpenShift cluster, it also provides backup and restore services for your virtual machines and applications.
 In this exercise, you will examine the backup and restore service and its configuration.
@@ -293,8 +291,7 @@ Confirm that the IBM Fusion Backup & Restore service installation has started:
 
 This completes this part of the lab. The IBM Fusion Backup & Restore functionality will be configured and used in the optional **Module 4**.
 
-[[exercise-4]]
-== Exercise 4: Creating your first virtual machine
+## Exercise 4: Creating your first virtual machine
 
 Now that you understand the environment, it is time to create your first virtual machine using the OpenShift Virtualization console.
 
@@ -367,7 +364,7 @@ rhel9-test-vm-volume   Bound    pvc-<UUID>                                 30Gi 
 - A persistent volume claim exists for the VM boot disk
 - The PVC uses an IBM Fusion storage class
 
-== Learning outcomes
+## Learning outcomes
 
 By completing this module, you should now understand:
 
@@ -376,7 +373,7 @@ By completing this module, you should now understand:
 - How to create a virtual machine from a template using the OpenShift console
 - How to verify VM status using both the console and the command line
 
-== Module summary
+## Module summary
 
 You have successfully explored the OpenShift Virtualization environment and created your first VM.
 
