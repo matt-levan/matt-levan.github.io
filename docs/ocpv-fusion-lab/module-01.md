@@ -107,11 +107,11 @@ NOTE: IBM Fusion storage classes provide features critical for VM workloads, inc
 
 1. In the OpenShift console, switch to the *Administrator* perspective and navigate to **Storage** > **Data Foundation** in the left navigation menu.
 
-![Overview of IBM Fusion Data Foundation]({{ site.baseurl }}/assets/images/ocpv-fusion-lab/03-module-01-console-datafoundation-overview.png)
+   ![Overview of IBM Fusion Data Foundation]({{ site.baseurl }}/assets/images/ocpv-fusion-lab/03-module-01-console-datafoundation-overview.png)
 
 1. In the OpenShift console, navigate to **Storage** > **Storage Cluster** in the left navigation menu.
 
-![Overview of IBM Fusion Storage Cluster]({{ site.baseurl }}/assets/images/ocpv-fusion-lab/03-module-01-console-datafoundation-storagecluster.png)
+   ![Overview of IBM Fusion Storage Cluster]({{ site.baseurl }}/assets/images/ocpv-fusion-lab/03-module-01-console-datafoundation-storagecluster.png)
 
 TIP: Once in the Storage Cluster overview you can look at the specific storage type provided by clicking the specific types of storage as highlighted with a number 2.
 
@@ -122,9 +122,9 @@ TIP: Once in the Storage Cluster overview you can look at the specific storage t
 
 1. From the command line, list all available storage classes:
 
-```bash
-oc get storageclass
-```
+   ```bash
+   oc get storageclass
+   ```
 
 Expected output:
 
@@ -140,9 +140,9 @@ openshift-storage.noobaa.io                  openshift-storage.noobaa.io/obc    
 
 1. Examine the details of an IBM Fusion storage class:
 
-```bash
-oc get storageclass ocs-storagecluster-ceph-rbd -o yaml
-```
+   ```bash
+   oc get storageclass ocs-storagecluster-ceph-rbd -o yaml
+   ```
 
 Expected output:
 
@@ -187,9 +187,9 @@ volumeBindingMode: Immediate
 
 1. Check what persistent volumes are currently provisioned:
 
-```bash
-oc get pv -o custom-columns="NAME:.metadata.name,SIZE:.spec.capacity.storage,ACCESS MODES:.spec.accessModes[0],STORAGE CLASS:.spec.storageClassName,CLAIM:.spec.claimRef.name"
-```
+   ```bash
+   oc get pv -o custom-columns="NAME:.metadata.name,SIZE:.spec.capacity.storage,ACCESS MODES:.spec.accessModes[0],STORAGE CLASS:.spec.storageClassName,CLAIM:.spec.claimRef.name"
+   ```
 
 Expected output:
 
@@ -213,9 +213,9 @@ TIP: Have a look specifically at the one for the IBM Fusion storage class named 
 
 1. Verify that volume snapshot classes are available for VM snapshots:
 
-```bash
-oc get volumesnapshotclass
-```
+   ```bash
+   oc get volumesnapshotclass
+   ```
 
 Expected output:
 
@@ -228,9 +228,9 @@ ocs-storagecluster-rbdplugin-snapclass      openshift-storage.rbd.csi.ceph.com  
 
 1. Verify that IBM Fusion storage is operational:
 
-```bash
-oc get storagecluster -n openshift-storage
-```
+   ```bash
+   oc get storagecluster -n openshift-storage
+   ```
 
 Expected output:
 
@@ -251,7 +251,7 @@ In this exercise, you will examine the backup and restore service and its config
 
 1. Switch to the IBM Fusion tab on the right:
 
-![Switch to IBM Fusion Showroom Tab]({{ site.baseurl }}/assets/images/ocpv-fusion-lab/03-module-01-FusionUI-FromShowroomTab.png)
+   ![Switch to IBM Fusion Showroom Tab]({{ site.baseurl }}/assets/images/ocpv-fusion-lab/03-module-01-FusionUI-FromShowroomTab.png)
 
 TIP: You can also open the IBM Fusion UI using the application selector at the top of the Red Hat OpenShift Web Console as illustrated below.
 
@@ -260,27 +260,27 @@ TIP: You can also open the IBM Fusion UI using the application selector at the t
 1. Using single sign on you are already logged into the IBM Fusion Web Console as `kubeadmin`.
 1. Once in the IBM Fusion Web Console click on the `Services` menu on the left hand side pane as illustrated below.
 
-![IBM Fusion Web Console Service Tab]({{ site.baseurl }}/assets/images/ocpv-fusion-lab/03-module-01-FusionUI-ServiceTab.png)
+   ![IBM Fusion Web Console Service Tab]({{ site.baseurl }}/assets/images/ocpv-fusion-lab/03-module-01-FusionUI-ServiceTab.png)
 
 1. Click the `Backup & Restore` tile to open the install window for the IBM Fusion Backup & Restore service as illustrated below.
 
-![IBM Fusion Backup & Restore Service Tile]({{ site.baseurl }}/assets/images/ocpv-fusion-lab/03-module-01-FusionUI-BnR-NewInstall-1.png)
+   ![IBM Fusion Backup & Restore Service Tile]({{ site.baseurl }}/assets/images/ocpv-fusion-lab/03-module-01-FusionUI-BnR-NewInstall-1.png)
 
 1. Click the `Install` button to start the installation process for the service as illustrated below.
 
-![IBM Fusion Backup & Restore Installation]({{ site.baseurl }}/assets/images/ocpv-fusion-lab/03-module-01-FusionUI-BnR-NewInstall-2.png)
+   ![IBM Fusion Backup & Restore Installation]({{ site.baseurl }}/assets/images/ocpv-fusion-lab/03-module-01-FusionUI-BnR-NewInstall-2.png)
 
 1. In the drop-down list associated with the `Storage class to be used to deploy the service` field select the value `ocs-storagecluster-ceph-rbd` as illustrated below.
 
-![Select IBM Fusion Backup & Restore Service StorageClass]({{ site.baseurl }}/assets/images/ocpv-fusion-lab/03-module-01-FusionUI-BnR-NewInstall-3.png)
+   ![Select IBM Fusion Backup & Restore Service StorageClass]({{ site.baseurl }}/assets/images/ocpv-fusion-lab/03-module-01-FusionUI-BnR-NewInstall-3.png)
 
 1. Initiate the deployment of the service by clicking the `Install` button as illustrated below.
 
-![Initiate the Deployment of IBM Fusion Backup & Restore]({{ site.baseurl }}/assets/images/ocpv-fusion-lab/03-module-01-FusionUI-BnR-NewInstall-4.png)
+   ![Initiate the Deployment of IBM Fusion Backup & Restore]({{ site.baseurl }}/assets/images/ocpv-fusion-lab/03-module-01-FusionUI-BnR-NewInstall-4.png)
 
 1. The IBM Fusion Backup & Restore Service is now being installed as illustrated below.
 
-![IBM Fusion Backup & Restore is being installed]({{ site.baseurl }}/assets/images/ocpv-fusion-lab/03-module-01-FusionUI-BnR-NewInstall-5.png)
+   ![IBM Fusion Backup & Restore is being installed]({{ site.baseurl }}/assets/images/ocpv-fusion-lab/03-module-01-FusionUI-BnR-NewInstall-5.png)
 
 ### Verify
 
@@ -299,7 +299,7 @@ Now that you understand the environment, it is time to create your first virtual
 1. For *Project* open the drop-down, click *Show default projects* and select the `default` project.
 1. Select **Red Hat Enterprise Linux 9 VM** as illustrated below.
 
-![Red Hat OpenShift Virtualization Catalog]({{ site.baseurl }}/assets/images/ocpv-fusion-lab/03-module-01-console-virtualization-createvm-1b.png)
+   ![Red Hat OpenShift Virtualization Catalog]({{ site.baseurl }}/assets/images/ocpv-fusion-lab/03-module-01-console-virtualization-createvm-1b.png)
 
 TIP: The catalog can be customized post Red Hat OpenShift Virtualization deployment. Visit the **Templates** tab for existing predefined templates.
 
@@ -320,11 +320,11 @@ TIP: Use the checkbox just above the **Create Virtual Machine** button if you do
 
 1. Wait for the VM status to change from **Starting** to **Running** as illustrated below (Item `1`). This may take a few minutes as the boot source is provisioned.
 
-![Running VM]({{ site.baseurl }}/assets/images/ocpv-fusion-lab/03-module-01-console-virtualization-createvm-3b.png)
+   ![Running VM]({{ site.baseurl }}/assets/images/ocpv-fusion-lab/03-module-01-console-virtualization-createvm-3b.png)
 
 1. Once the VM is running, click the **Console** tab to access the VM console directly from the browser.
 
-![Accessing the VM Console]({{ site.baseurl }}/assets/images/ocpv-fusion-lab/03-module-01-console-virtualization-createvm-4b.png)
+   ![Accessing the VM Console]({{ site.baseurl }}/assets/images/ocpv-fusion-lab/03-module-01-console-virtualization-createvm-4b.png)
 
 ### Verify
 

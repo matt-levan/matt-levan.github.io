@@ -13,7 +13,7 @@ Now install Fusion Data Foundation for local storage on the cluster.
 
 1. Select **Storage → Local storage** and click **Getting Started**.
 
-![Screenshot]({{ site.baseurl }}/assets/images/fusion-demo-guide/persistent-storage-fusion-data-foundation-fdf-01.png)
+   ![Screenshot]({{ site.baseurl }}/assets/images/fusion-demo-guide/persistent-storage-fusion-data-foundation-fdf-01.png)
 
 The screen will go to the OpenShift Console and bring up the Create Storage menu.
 
@@ -21,29 +21,29 @@ The screen will go to the OpenShift Console and bring up the Create Storage menu
 
 1. **"Create a new StorageClass using local storage devices"** will be pre-selected. Click **Next**.
 
-![Screenshot]({{ site.baseurl }}/assets/images/fusion-demo-guide/persistent-storage-fusion-data-foundation-fdf-03.png)
+   ![Screenshot]({{ site.baseurl }}/assets/images/fusion-demo-guide/persistent-storage-fusion-data-foundation-fdf-03.png)
 
 1. Enable the default storage class of **Ceph RBD** and set the default storage class for **Virtualization** (if you plan to set up Virtualization).
 
-![Screenshot]({{ site.baseurl }}/assets/images/fusion-demo-guide/persistent-storage-fusion-data-foundation-fdf-04.png)
+   ![Screenshot]({{ site.baseurl }}/assets/images/fusion-demo-guide/persistent-storage-fusion-data-foundation-fdf-04.png)
 
 
-![Screenshot]({{ site.baseurl }}/assets/images/fusion-demo-guide/persistent-storage-fusion-data-foundation-fdf-05.png)
+   ![Screenshot]({{ site.baseurl }}/assets/images/fusion-demo-guide/persistent-storage-fusion-data-foundation-fdf-05.png)
 
 1. The local storage operator is required. Click **Install** to install it.
 
-![Screenshot]({{ site.baseurl }}/assets/images/fusion-demo-guide/persistent-storage-fusion-data-foundation-fdf-06.png)
+   ![Screenshot]({{ site.baseurl }}/assets/images/fusion-demo-guide/persistent-storage-fusion-data-foundation-fdf-06.png)
 
 1. Complete the local storage operator installation.
 
-![Screenshot]({{ site.baseurl }}/assets/images/fusion-demo-guide/persistent-storage-fusion-data-foundation-fdf-07.png)
+   ![Screenshot]({{ site.baseurl }}/assets/images/fusion-demo-guide/persistent-storage-fusion-data-foundation-fdf-07.png)
 
 
-![Screenshot]({{ site.baseurl }}/assets/images/fusion-demo-guide/persistent-storage-fusion-data-foundation-fdf-08.png)
+   ![Screenshot]({{ site.baseurl }}/assets/images/fusion-demo-guide/persistent-storage-fusion-data-foundation-fdf-08.png)
 
 1. When the installation is complete, click **View Operator**.
 
-![Screenshot]({{ site.baseurl }}/assets/images/fusion-demo-guide/persistent-storage-fusion-data-foundation-fdf-09.png)
+   ![Screenshot]({{ site.baseurl }}/assets/images/fusion-demo-guide/persistent-storage-fusion-data-foundation-fdf-09.png)
 
 ## Create local Storage Cluster – FDF
 
@@ -52,13 +52,13 @@ The screen will go to the OpenShift Console and bring up the Create Storage menu
 1. Navigate back to **Storage → Data Foundation → Storage Cluster** and select **Configure data foundation**.
 1. Then select **Create Storage Cluster**.
 
-![Screenshot]({{ site.baseurl }}/assets/images/fusion-demo-guide/create-local-storage-cluster-fdf-02.png)
+   ![Screenshot]({{ site.baseurl }}/assets/images/fusion-demo-guide/create-local-storage-cluster-fdf-02.png)
 
 
-![Screenshot]({{ site.baseurl }}/assets/images/fusion-demo-guide/create-local-storage-cluster-fdf-03.png)
+   ![Screenshot]({{ site.baseurl }}/assets/images/fusion-demo-guide/create-local-storage-cluster-fdf-03.png)
 
 
-![Screenshot]({{ site.baseurl }}/assets/images/fusion-demo-guide/create-local-storage-cluster-fdf-04.png)
+   ![Screenshot]({{ site.baseurl }}/assets/images/fusion-demo-guide/create-local-storage-cluster-fdf-04.png)
 
 Continue the installation and configuration.
 
@@ -113,10 +113,10 @@ If you selected **Data Foundation External** when installing the Data Foundation
 
 1. Select **Connect to external Systems**, then select **IBM Scale**.
 
-![Screenshot]({{ site.baseurl }}/assets/images/fusion-demo-guide/remote-file-systems-external-mount-of-storage-scale-cluster-03.png)
+   ![Screenshot]({{ site.baseurl }}/assets/images/fusion-demo-guide/remote-file-systems-external-mount-of-storage-scale-cluster-03.png)
 
 
-![Screenshot]({{ site.baseurl }}/assets/images/fusion-demo-guide/remote-file-systems-external-mount-of-storage-scale-cluster-04.png)
+   ![Screenshot]({{ site.baseurl }}/assets/images/fusion-demo-guide/remote-file-systems-external-mount-of-storage-scale-cluster-04.png)
 
 *Table  – Add file system details*
 
@@ -146,7 +146,7 @@ If you selected **Data Foundation External** when installing the Data Foundation
 1. Wait for the cluster to show “ready”
 1. Then check the “Storage Classes”, look for the ibm-spectrum-scale-sample class
 
-![Screenshot]({{ site.baseurl }}/assets/images/fusion-demo-guide/remote-file-systems-external-mount-of-storage-scale-cluster-09.png)
+   ![Screenshot]({{ site.baseurl }}/assets/images/fusion-demo-guide/remote-file-systems-external-mount-of-storage-scale-cluster-09.png)
 
 ### Logon to the Storage Scale command line and issue Storage Scale commands
 > Note: For visual guidance, refer to the supplemental PowerPoint available at [https://ibm.box.com/v/TechzoneSpFusionScreenshots](https://ibm.box.com/v/TechzoneSpFusionScreenshots). Screenshots of this process can be found in the section titled “SSH to Storage Scale Node.”
