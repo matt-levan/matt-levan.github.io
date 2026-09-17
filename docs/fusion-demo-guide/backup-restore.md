@@ -51,25 +51,24 @@ The process to install the IBM Fusion Backup & Restore server and local agent ha
 apiVersion: service.isf.ibm.com/v1
 kind: FusionServiceInstance
 metadata:
-name: ibm-backup-restore-service-instance
-namespace: ibm-spectrum-fusion-ns
+  name: ibm-backup-restore-service-instance
+  namespace: ibm-spectrum-fusion-ns
 spec:
-creator: User
-doInstall: true
-parameters:
-- name: namespace
-provided: false
-value: ibm-backup-restore
-- name: doInstall
-provided: false
-value: "true"
-- name: storageClass
-provided: true
-value: ocs-storagecluster-ceph-rbd
-serviceDefinition: ibm-backup-restore-service
-triggerUpdate: false
-updateServiceCRSpec: false
-
+  creator: User
+  doInstall: true
+  parameters:
+  - name: namespace
+    provided: false
+    value: ibm-backup-restore
+  - name: doInstall
+    provided: false
+    value: "true"
+  - name: storageClass
+    provided: true
+    value: ocs-storagecluster-ceph-rbd
+  serviceDefinition: ibm-backup-restore-service
+  triggerUpdate: false
+  updateServiceCRSpec: false
 ```
 
 ## Create Backup Locations and Policies
@@ -88,7 +87,7 @@ IBM Fusion backups can use one of two methods: local snapshots that are stored o
 ![Screenshot]({{ site.baseurl }}/assets/images/fusion-demo-guide/backup-location-01.png)
 
 1. S3 Backup Bucket
-Create an S3 backup location using IBM Data Foundation. Data Foundation must be installed and setup. In the OpenShift Console, navigate to “Data Foundation”  “object storage” and select the tab “Object Bucket Claims”.
+Create an S3 backup location using IBM Data Foundation. Data Foundation must be installed and setup. In the OpenShift Console, navigate to **Data Foundation → Object Storage** and select the tab "Object Bucket Claims".
 
 ![Screenshot]({{ site.baseurl }}/assets/images/fusion-demo-guide/backup-location-02.png)
 

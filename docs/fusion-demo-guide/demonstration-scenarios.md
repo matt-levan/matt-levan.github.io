@@ -59,8 +59,7 @@ oc login -u kubeadmin [API_URL]
 where `API_URL` is the API URL value obtained from your reservation page of your environment details. For example:
 
 ```bash
-oc login -u kubeadmin [https://api.ocp-50t6fjkgae-droi.cloud.techzone.ibm.com:6443](https://api.ocp-50t6fjkgae-droi.cloud.techzone.ibm.com:6443)
-
+oc login -u kubeadmin https://api.ocp-50t6fjkgae-droi.cloud.techzone.ibm.com:6443
 ```
 
 (When prompted, enter the kubeadmin “Cluster Admin Password”)

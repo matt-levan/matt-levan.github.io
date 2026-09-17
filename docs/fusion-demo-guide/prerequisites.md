@@ -24,11 +24,11 @@ Additionally, you might need to configure an OpenVPN connection to be able to ac
 
 ![Screenshot]({{ site.baseurl }}/assets/images/fusion-demo-guide/creating-an-ibmid-01.png)
 
-1. The Log in to IBM page is displayed. Click **Create an ****IBMid** (A).
+1. The Log in to IBM page is displayed. Click **Create an IBMid** (A).
 
 ![Screenshot]({{ site.baseurl }}/assets/images/fusion-demo-guide/creating-an-ibmid-02.png)
 
-1. On the **Create an ****IBMid** page, enter the following information:
+1. On the **Create an IBMid** page, enter the following information:
 - Your email address (A)
 - A password for your IBMid account (B)
 - First name (C)
@@ -39,11 +39,11 @@ Additionally, you might need to configure an OpenVPN connection to be able to ac
 
 ![Screenshot]({{ site.baseurl }}/assets/images/fusion-demo-guide/creating-an-ibmid-03.png)
 
-1. You are then prompted to verify your email and complete your account creation. Enter the code that was emailed to you in **Verification token**** (A)**, and then click **Create account**** (B)**.
+1. You are then prompted to verify your email and complete your account creation. Enter the code that was emailed to you in **Verification token** (A), and then click **Create account** (B).
 
 ![Screenshot]({{ site.baseurl }}/assets/images/fusion-demo-guide/creating-an-ibmid-04.png)
 
-1. The **About your ****IBMid**** Account** page is shown. Click **Proceed**** (A)**.
+1. The **About your IBMid Account** page is shown. Click **Proceed** (A).
 
 ![Screenshot]({{ site.baseurl }}/assets/images/fusion-demo-guide/creating-an-ibmid-05.png)
 

@@ -23,11 +23,11 @@ Additionally, you might need to configure an OpenVPN connection to be able to ac
 
 ![Screenshot]({{ site.baseurl }}/assets/images/rdr-lab-guide/creating-an-ibmid-01.png)
 
-1. The Log in to IBM page is displayed. Click **Create an ****IBMid** (A).
+1. The Log in to IBM page is displayed. Click **Create an IBMid** (A).
 
 ![Screenshot]({{ site.baseurl }}/assets/images/rdr-lab-guide/creating-an-ibmid-02.png)
 
-1. On the **Create an ****IBMid** page, enter the following information:
+1. On the **Create an IBMid** page, enter the following information:
 - Your email address (A)
 - A password for your IBMid account (B)
 - First name (C)
@@ -38,11 +38,11 @@ Additionally, you might need to configure an OpenVPN connection to be able to ac
 
 ![Screenshot]({{ site.baseurl }}/assets/images/rdr-lab-guide/creating-an-ibmid-03.png)
 
-1. You are then prompted to verify your email and complete your account creation. Enter the code that was emailed to you in **Verification token**** (A)**, and then click **Create account**** (B)**.
+1. You are then prompted to verify your email and complete your account creation. Enter the code that was emailed to you in **Verification token** (A), and then click **Create account** (B).
 
 ![Screenshot]({{ site.baseurl }}/assets/images/rdr-lab-guide/creating-an-ibmid-04.png)
 
-1. The **About your ****IBMid**** Account** page is shown. Click **Proceed**** (A)**.
+1. The **About your IBMid Account** page is shown. Click **Proceed** (A).
 
 ![Screenshot]({{ site.baseurl }}/assets/images/rdr-lab-guide/creating-an-ibmid-05.png)
 
@@ -59,16 +59,14 @@ The desktop URL provided is used for direct access to the OpenShift Console.
 
 ![Screenshot]({{ site.baseurl }}/assets/images/rdr-lab-guide/connect-to-the-lab-environment-02.png)
 
-Desktop url: https://console-openshift-console.apps.ocp-xxxxxxxxx-xxxx.cloud.techzone.ibm.com
-Shared Reservation
-UsernamePassword
+| Field | Value |
+| --- | --- |
+| Desktop url | `https://console-openshift-console.apps.ocp-xxxxxxxxx-xxxx.cloud.techzone.ibm.com` |
+| Username | `kubeadmin` |
+| Password | provided in your reservation |
 
 ![Screenshot]({{ site.baseurl }}/assets/images/rdr-lab-guide/connect-to-the-lab-environment-03.png)
 
-
-![Screenshot]({{ site.baseurl }}/assets/images/rdr-lab-guide/connect-to-the-lab-environment-03.png)
-
-kubeadmin           xxxx-xxxx-xxxx-xxxx
 This gives you direct access to the OpenShift Console via your browser.
 ## Addressing plan and credentials
 Access to the lab environment is provided through your desktop web browser. The access information needed is provided in the Technology Zone Reservations page.

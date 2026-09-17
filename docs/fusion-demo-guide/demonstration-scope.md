@@ -17,8 +17,8 @@ The different steps will be:
 - Connecting to the OpenShift Cluster
 - Installing IBM Fusion via the Operator
 - Installing the components of Fusion:
-- Storage Layer
-- Global Data Platform
-- Fusion Data. Foundation
-- Backup and Restore Utility
-- Data Cataloging
+  - Storage Layer
+  - Global Data Platform
+  - Fusion Data Foundation
+  - Backup and Restore Utility
+  - Data Cataloging

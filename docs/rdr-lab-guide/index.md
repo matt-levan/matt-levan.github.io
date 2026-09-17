@@ -15,21 +15,22 @@ Fusion Data Foundation is backed by Ceph as the storage provider, whose lifecycl
 Regional-DR supports a multi-cluster configuration that is deployed across different regions and data centers. For example, a 2-way replication across two clusters located in two different regions or data centers. This solution is entitled with Red Hat Advanced Cluster Management (RHACM) and Fusion Data Foundation Advanced SKUs and related bundles.
 ## About this lab
 The Fusion Regional Disaster Recovery Hands-On Lab is a comprehensive, real-world learning environment designed to help you explore and master disaster recovery strategies using Red Hat and IBM technologies.
-Lab Overview
+### Lab Overview
 This lab features two fully deployed OpenShift clusters integrated with Fusion Data Foundation (FDF) and managed through Red Hat Advanced Cluster Management (ACM). It is purpose-built to simulate a multi-region architecture and demonstrate how to implement and validate Fusion Regional Disaster Recovery (RDR) capabilities.
-What You’ll Learn
-Participants will gain hands-on experience with:
-Deploying and configuring Fusion RDR across geographically distributed OpenShift clusters.
-Managing and monitoring clusters using Red Hat ACM.
-Setting up replication policies and failover/relocate procedures using FDF.
-Testing application resilience and data integrity in the event of a regional outage.
-Understanding the architecture and best practices for high availability and business continuity in cloud-native environments.
 
-Lab Components
-local-cluster (Primary Region): Hosts the primary workloads, data services and Red Hat ACM.
-ocp2 (Secondary Region): Configured as the disaster recovery site.
-Fusion Data Foundation: Provides the underlying storage and replication layer.
-Red Hat Advanced Cluster Management: Centralized control plane for managing both clusters and orchestrating DR workflows.
+### What You'll Learn
+Participants will gain hands-on experience with:
+- Deploying and configuring Fusion RDR across geographically distributed OpenShift clusters.
+- Managing and monitoring clusters using Red Hat ACM.
+- Setting up replication policies and failover/relocate procedures using FDF.
+- Testing application resilience and data integrity in the event of a regional outage.
+- Understanding the architecture and best practices for high availability and business continuity in cloud-native environments.
+
+### Lab Components
+- **local-cluster (Primary Region):** Hosts the primary workloads, data services and Red Hat ACM.
+- **ocp2 (Secondary Region):** Configured as the disaster recovery site.
+- **Fusion Data Foundation:** Provides the underlying storage and replication layer.
+- **Red Hat Advanced Cluster Management:** Centralized control plane for managing both clusters and orchestrating DR workflows.
 > IMPORTANT: This configuration is not supported for Regional Disaster Recovery and is intended solely for learning purposes. In a production environment, Red Hat Advanced Cluster Management should be deployed on a separate, third cluster that does not participate in data replication.
 ## Components of Fusion Regional Disaster recovery
 ### Red Hat Advanced Cluster Management for Kubernetes
@@ -63,28 +64,31 @@ Managed applications are applications that are part of the ACM application model
 Discovered applications are applications that already exist on managed clusters and are not part of the ACM application model. ACM can discover these applications through mechanisms like OpenShift Container Platform GitOps or Argo CD operators, allowing for some level of visibility and potentially limited management. For example, ACM might be able to monitor their health, enforce policies on them, or integrate them with other ACM features like disaster recovery. OpenShift API for Data Protection is deployed along with ACM to backup and restore the application components in case of failure or relocation of the application.
 ## Failover vs Relocate
 In OpenShift disaster recovery, failover refers to switching an application and its state from a primary cluster to a secondary cluster during a disaster, while relocate refers to moving an application and its state back to the original primary cluster after it is recovered. Both are managed through Fusion Data Foundation's DR solution and utilize the PlacementRule for application placement.
-Failover:
-- Purpose:
+
+### Failover
+- **Purpose:**
 - Switches application and state to a secondary cluster when the primary cluster is unavailable due to a disaster.
 - Process:
 - Initiated by an administrator, the DR solution orchestrates the application's relocation to the secondary cluster.
 - Data Loss:
 - Ideally, failover is designed to be non-disruptive, minimizing data loss.
-- Example:
-- A cluster in one region becomes unavailable, and the application is automatically moved to a secondary cluster in a different region.
-Relocate (Failback):
-- Purpose:
+- **Example:**
+  - A cluster in one region becomes unavailable, and the application is automatically moved to a secondary cluster in a different region.
+
+### Relocate (Failback)
+- **Purpose:**
 - Moves the application and its state back to the original primary cluster after the disaster has been resolved and the primary cluster is restored.
 - Process:
 - Also initiated by an administrator, the DR solution orchestrates the relocation back to the primary cluster.
 - Data Loss:
 - Relocation is planned and controlled to ensure no data loss occurs during the switchback.
-- Example:
-- The cluster in the original region is restored and operational, and the application is moved back to its original location.
-Key Differences:
-- Direction: Failover moves the application away from the primary cluster, while relocate (failback) moves it back.
-- Purpose: Failover is a defensive measure during a disaster, while relocate is the recovery step after the disaster.
-- Initiation: Both are typically administrator-initiated processes.
+- **Example:**
+  - The cluster in the original region is restored and operational, and the application is moved back to its original location.
+
+### Key Differences
+- **Direction:** Failover moves the application away from the primary cluster, while relocate (failback) moves it back.
+- **Purpose:** Failover is a defensive measure during a disaster, while relocate is the recovery step after the disaster.
+- **Initiation:** Both are typically administrator-initiated processes.
 ## Product disclaimer
 
 {% include shared/product-disclaimer.md %}

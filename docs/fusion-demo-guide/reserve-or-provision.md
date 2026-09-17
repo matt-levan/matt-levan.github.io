@@ -102,7 +102,9 @@ Toggle the down arrow next to the name to see the details
 Notes:
 To access the Bastion via ssh:
 Copy the ssh command, but you will need to download the SSH private key, save it, change the mode to 600 (chmod 600 keyfile) on mac or linux and then use it in the command line
-# ssh [itzuser@api.itz-xxxxxx.sysd05.techzone.ibm.com](mailto:itzuser@api.itz-xxxxxx.sysd05.techzone.ibm.com) -p 10022 -i keyfile
+```bash
+ssh itzuser@api.itz-xxxxxx.sysd05.techzone.ibm.com -p 10022 -i keyfile
+```
 
 ![Screenshot]({{ site.baseurl }}/assets/images/fusion-demo-guide/connect-to-the-lab-environment-05.png)
 
