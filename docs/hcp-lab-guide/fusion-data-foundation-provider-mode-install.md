@@ -21,7 +21,7 @@ ACTION=="add|change", SUBSYSTEM=="block", KERNEL=="sd[a-z]", ENV{ID_PART_TABLE_T
 ACTION=="add|change", SUBSYSTEM=="block", KERNEL=="dm-[0-9]*", ENV{ID_PART_TABLE_TYPE}=="", ATTR{queue/rotational}="0"
 ```
 
-1. Click the Quick create (A) (the icon that looks like a + sign) button on the OpenShift GUI masthead.
+1. Click the **Quick create** (A) (the icon that looks like a + sign) button on the OpenShift GUI masthead.
 
    ![Screenshot]({{ site.baseurl }}/assets/images/hcp-lab-guide/install-and-configure-lvm-storage-01.png)
 
@@ -59,7 +59,7 @@ ACTION=="add|change", SUBSYSTEM=="block", KERNEL=="dm-[0-9]*", ENV{ID_PART_TABLE
            path: /etc/udev/rules.d/99-ibm.rules
    ```
 
-1. Use Ctrl-V (windows), CMD-V (Mac) or the browser Edit -> Paste function to paste the contents of the clipboard into the **editor** (A) text entry field. Click the Create (B) button to create the recipe.
+1. Use Ctrl-V (windows), CMD-V (Mac) or the browser Edit -> Paste function to paste the contents of the clipboard into the **editor** (A) text entry field. Click the **Create** (B) button to create the recipe.
 
    ![Screenshot]({{ site.baseurl }}/assets/images/hcp-lab-guide/allow-vmdk-disks-to-be-used-by-fdf-01.png)
 
@@ -110,11 +110,11 @@ In this section, Fusion Data Foundation StorageSystem custom resource will be cr
 
    ![Screenshot]({{ site.baseurl }}/assets/images/hcp-lab-guide/install-fdf-in-provider-mode-03.png)
 
-1. Select the radial button next to the Create a new StorageClass using **local storage devices** (A) and then click on the Next (B) button.
+1. Select the radial button next to the Create a new StorageClass using **local storage devices** (A) and then click on the **Next** (B) button.
 
    ![Screenshot]({{ site.baseurl }}/assets/images/hcp-lab-guide/install-fdf-in-provider-mode-04.png)
 
-1. (A) Enter ibm-spectrum-fusion-local in the LocalVolumeSet name text entry field and click on the Next (B) button.
+1. (A) Enter **ibm-spectrum-fusion-local** in the LocalVolumeSet name text entry field and click on the **Next** (B) button.
    > NOTE: If the lvm-config configMap had not been created, configuration of the LocalVolumeSet would require selecting the Disks on selected nodes radial button and manually selecting the nodes named, storage-1, storage-2, and storage-3.
 
    ![Screenshot]({{ site.baseurl }}/assets/images/hcp-lab-guide/install-fdf-in-provider-mode-05.png)
@@ -123,11 +123,11 @@ In this section, Fusion Data Foundation StorageSystem custom resource will be cr
 
    ![Screenshot]({{ site.baseurl }}/assets/images/hcp-lab-guide/install-fdf-in-provider-mode-06.png)
 
-1. Wait for the PersistentVolumes are being provisioned on the selected nodes process to complete and click on the Next (A) button.
+1. Wait for the PersistentVolumes are being provisioned on the selected nodes process to complete and click on the **Next** (A) button.
 
    ![Screenshot]({{ site.baseurl }}/assets/images/hcp-lab-guide/install-fdf-in-provider-mode-07.png)
 
-1. Click on the Next (A) button.
+1. Click on the **Next** (A) button.
 
    ![Screenshot]({{ site.baseurl }}/assets/images/hcp-lab-guide/install-fdf-in-provider-mode-08.png)
 
@@ -172,7 +172,7 @@ It is recommended to use OpenShift Data Foundation RADOS Block Devices (RBDs) fo
 
    ![Screenshot]({{ site.baseurl }}/assets/images/hcp-lab-guide/configure-default-storageclass-07.png)
 
-1. Enter storageclass.kubernetes.io/is-default-class in the **Key** (A) text entry field and enter true in the Value (B) text entry field.
+1. Enter storageclass.kubernetes.io/is-default-class in the **Key** (A) text entry field and enter true in the **Value** (B) text entry field.
 
    ![Screenshot]({{ site.baseurl }}/assets/images/hcp-lab-guide/configure-default-storageclass-08.png)
 
@@ -189,7 +189,7 @@ It is recommended to use OpenShift Data Foundation RADOS Block Devices (RBDs) fo
 
    ![Screenshot]({{ site.baseurl }}/assets/images/hcp-lab-guide/configure-default-storageclass-11.png)
 
-1. Enter storageclass.kubevirt.io/is-default-virt-class in the **Key** (A) text entry field and enter true in the Value (B) text entry field.
+1. Enter storageclass.kubevirt.io/is-default-virt-class in the **Key** (A) text entry field and enter true in the **Value** (B) text entry field.
 
    ![Screenshot]({{ site.baseurl }}/assets/images/hcp-lab-guide/configure-default-storageclass-12.png)
 

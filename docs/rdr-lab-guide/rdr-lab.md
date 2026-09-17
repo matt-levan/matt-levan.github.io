@@ -14,11 +14,11 @@ This section guides you through the essential steps to implement and validate a 
 
    ![Screenshot]({{ site.baseurl }}/assets/images/rdr-lab-guide/create-sample-application-01.png)
 
-1. (A) Enter the value filebrowser in the Name text entry field and click the Create (B) button.
+1. (A) Enter the value **filebrowser** in the Name text entry field and click the **Create** (B) button.
 
    ![Screenshot]({{ site.baseurl }}/assets/images/rdr-lab-guide/create-sample-application-02.png)
 
-1. Verify that the project listed is set to the newly created filebrowser namespace. Click the Quick create (A) (the icon that looks like a + sign) button on the OpenShift GUI masthead.
+1. Verify that the project listed is set to the newly created filebrowser namespace. Click the **Quick create** (A) (the icon that looks like a + sign) button on the OpenShift GUI masthead.
 
    ![Screenshot]({{ site.baseurl }}/assets/images/rdr-lab-guide/create-sample-application-03.png)
 
@@ -30,7 +30,7 @@ This section guides you through the essential steps to implement and validate a 
 
    ![Screenshot]({{ site.baseurl }}/assets/images/rdr-lab-guide/create-sample-application-04.png)
 
-1. Return to the OpenShift GUI and use Ctrl-V (windows), CMD-V (Mac) or browser Edit -> Paste button to paste the contents of the clipboard into the **editor** (A) text entry field. Click the Create (B) button to create the filebrowser resources.
+1. Return to the OpenShift GUI and use Ctrl-V (windows), CMD-V (Mac) or browser Edit -> Paste button to paste the contents of the clipboard into the **editor** (A) text entry field. Click the **Create** (B) button to create the filebrowser resources.
 
    ![Screenshot]({{ site.baseurl }}/assets/images/rdr-lab-guide/create-sample-application-05.png)
 
@@ -72,7 +72,7 @@ This section guides you through the essential steps to implement and validate a 
 
    ![Screenshot]({{ site.baseurl }}/assets/images/rdr-lab-guide/assign-drpolicy-to-sample-application-03.png)
 
-1. Scroll down until the Namespaces selection box appears and scroll through the list of applications or use the search box and select the **filebrowser** (A) namespace. Scroll down again until the Name field appears, (B) enter filebrowser in the Name text-entry field and click on the Next (C) button.
+1. Scroll down until the Namespaces selection box appears and scroll through the list of applications or use the search box and select the **filebrowser** (A) namespace. Scroll down again until the Name field appears, (B) enter filebrowser in the Name text-entry field and click on the **Next** (C) button.
 
    ![Screenshot]({{ site.baseurl }}/assets/images/rdr-lab-guide/assign-drpolicy-to-sample-application-04.png)
 
@@ -88,11 +88,11 @@ This section guides you through the essential steps to implement and validate a 
 
    ![Screenshot]({{ site.baseurl }}/assets/images/rdr-lab-guide/assign-drpolicy-to-sample-application-07.png)
 
-1. Click on the Next (A) button.
+1. Click on the **Next** (A) button.
 
    ![Screenshot]({{ site.baseurl }}/assets/images/rdr-lab-guide/assign-drpolicy-to-sample-application-08.png)
 
-1. Click on the **Disaster Recovery policy** (A) button to open the policy list and then selecting the value **ocp1-ocp2-dr** (B) from the drop-down list. Click on the Next (C) button.
+1. Click on the **Disaster Recovery policy** (A) button to open the policy list and then selecting the value **ocp1-ocp2-dr** (B) from the drop-down list. Click on the **Next** (C) button.
 
    ![Screenshot]({{ site.baseurl }}/assets/images/rdr-lab-guide/assign-drpolicy-to-sample-application-09.png)
 
@@ -122,11 +122,11 @@ This section prepares the secondary cluster for failover or relocation by creati
 
    ![Screenshot]({{ site.baseurl }}/assets/images/rdr-lab-guide/prepare-secondary-cluster-for-failover-relocate-02.png)
 
-1. (A) Select all the text displayed in the YAML editor with CTRL-A (Windows/Linux) or CMD-A (Mac) and copy the contents to the clipboard with CTRL-C (Windows/Linux) or CMD-C (Mac) or browser Edit -> Copy button.
+1. (A) Select **all** the text displayed in the YAML editor with CTRL-A (Windows/Linux) or CMD-A (Mac) and copy the contents to the clipboard with CTRL-C (Windows/Linux) or CMD-C (Mac) or browser Edit -> Copy button.
 
    ![Screenshot]({{ site.baseurl }}/assets/images/rdr-lab-guide/prepare-secondary-cluster-for-failover-relocate-03.png)
 
-1. In the OpenShift GUI on the ocp2 cluster, click the Quick create (A) (the icon that looks like a + sign) button on the OpenShift GUI masthead.
+1. In the OpenShift GUI on the ocp2 cluster, click the **Quick create** (A) (the icon that looks like a + sign) button on the OpenShift GUI masthead.
 
    ![Screenshot]({{ site.baseurl }}/assets/images/rdr-lab-guide/prepare-secondary-cluster-for-failover-relocate-04.png)
 
@@ -134,11 +134,11 @@ This section prepares the secondary cluster for failover or relocation by creati
 
    ![Screenshot]({{ site.baseurl }}/assets/images/rdr-lab-guide/reserve-cluster-local-cluster-08.png)
 
-1. In the Import YAML screen use Ctrl-V (windows), CMD-V (Mac) or browser Edit -> Paste button to paste the contents of the clipboard into the editor text entry field. Click the Expand (A) (looks like a > when collapsed) action for the managedFields associative array.
+1. In the Import YAML screen use Ctrl-V (windows), CMD-V (Mac) or browser Edit -> Paste button to paste the contents of the clipboard into the editor text entry field. Click the **Expand** (A) (looks like a > when collapsed) action for the managedFields associative array.
 
    ![Screenshot]({{ site.baseurl }}/assets/images/rdr-lab-guide/prepare-secondary-cluster-for-failover-relocate-05.png)
 
-1. (A) Select all the lines associated with the managedFields associative array, (listed as lines 21 through 68 in the example shown), and delete them.
+1. (A) Select **all** the lines associated with the managedFields associative array, (listed as lines 21 through 68 in the example shown), and delete them.
 
    ![Screenshot]({{ site.baseurl }}/assets/images/rdr-lab-guide/prepare-secondary-cluster-for-failover-relocate-06.png)
 
@@ -146,7 +146,7 @@ This section prepares the secondary cluster for failover or relocation by creati
 
    ![Screenshot]({{ site.baseurl }}/assets/images/rdr-lab-guide/prepare-secondary-cluster-for-failover-relocate-07.png)
 
-1. Click on the Create (A) button after all unneeded sections have been deleted to recreate the project from cluster local-cluster on cluster ocp2.
+1. Click on the **Create** (A) button after all unneeded sections have been deleted to recreate the project from cluster local-cluster on cluster ocp2.
 
    ![Screenshot]({{ site.baseurl }}/assets/images/rdr-lab-guide/prepare-secondary-cluster-for-failover-relocate-08.png)
 

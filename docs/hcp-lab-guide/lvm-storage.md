@@ -25,7 +25,7 @@ The three (3) infrastructure nodes were provisioned with 2 Terabyte (TB) of inte
 
    ![Screenshot]({{ site.baseurl }}/assets/images/hcp-lab-guide/label-infra-nodes-03.png)
 
-1. (A) Enter node-role.kubernetes.io/infra in the labels text entry box and click on the **Save** (B) button.
+1. (A) Enter **node-role.kubernetes.io/infra** in the labels text entry box and click on the **Save** (B) button.
 
    ![Screenshot]({{ site.baseurl }}/assets/images/hcp-lab-guide/label-infra-nodes-04.png)
 
@@ -69,7 +69,7 @@ ls -l /dev/disk/by-path/pci* | grep sdb
 1. Copy the value listed as /dev/disk/by-path/pci- to a text document as it will be used during the creation of an LVM Volume Group (VG) in the Install and Configure LVM Storage section.
 ## Install and Configure LVM Storage
 In this section, a `lvm-config` configMap will be generated. This configMap is used by the Fusion operator to automatically install and configure the Red Hat LVM Operator.
-1. Click the Quick create (A) (the icon that looks like a + sign) button on the OpenShift GUI masthead.
+1. Click the **Quick create** (A) (the icon that looks like a + sign) button on the OpenShift GUI masthead.
 
    ![Screenshot]({{ site.baseurl }}/assets/images/hcp-lab-guide/install-and-configure-lvm-storage-01.png)
 
@@ -93,7 +93,7 @@ In this section, a `lvm-config` configMap will be generated. This configMap is u
      nodeType: compute
    ```
 
-1. Use Ctrl-V (windows), CMD-V (Mac) or the browser Edit -> Paste function to paste the contents of the clipboard into the **editor** (A) text entry field. Click the Create (B) button to create the configMap.
+1. Use Ctrl-V (windows), CMD-V (Mac) or the browser Edit -> Paste function to paste the contents of the clipboard into the **editor** (A) text entry field. Click the **Create** (B) button to create the configMap.
 
    ![Screenshot]({{ site.baseurl }}/assets/images/hcp-lab-guide/install-and-configure-lvm-storage-03.png)
 

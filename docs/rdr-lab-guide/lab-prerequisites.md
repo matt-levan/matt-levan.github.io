@@ -70,7 +70,7 @@ ACTION=="add|change", SUBSYSTEM=="block", KERNEL=="sd[a-z]", ENV{ID_PART_TABLE_T
 ACTION=="add|change", SUBSYSTEM=="block", KERNEL=="dm-[0-9]*", ENV{ID_PART_TABLE_TYPE}=="", ATTR{queue/rotational}="0"
 ```
 
-1. Click the Quick create (A) (the icon that looks like a + sign) button on the OpenShift GUI masthead.
+1. Click the **Quick create** (A) (the icon that looks like a + sign) button on the OpenShift GUI masthead.
 
    ![Screenshot]({{ site.baseurl }}/assets/images/rdr-lab-guide/reserve-cluster-local-cluster-07.png)
 
@@ -82,7 +82,7 @@ ACTION=="add|change", SUBSYSTEM=="block", KERNEL=="dm-[0-9]*", ENV{ID_PART_TABLE
 
    ![Screenshot]({{ site.baseurl }}/assets/images/rdr-lab-guide/reserve-cluster-local-cluster-09.png)
 
-1. Navigate back to the OpenShift GUI and Use Ctrl-V (windows), CMD-V (Mac) or the browser Edit -> Paste function to paste the contents of the clipboard into the **editor** (A) text entry field. Click the Create (B) button to create the recipe.
+1. Navigate back to the OpenShift GUI and Use Ctrl-V (windows), CMD-V (Mac) or the browser Edit -> Paste function to paste the contents of the clipboard into the **editor** (A) text entry field. Click the **Create** (B) button to create the recipe.
 
    ![Screenshot]({{ site.baseurl }}/assets/images/rdr-lab-guide/reserve-cluster-ocp2-01.png)
 
@@ -122,11 +122,11 @@ Now that the supporting components for Data Foundation have been installed, it i
 
    ![Screenshot]({{ site.baseurl }}/assets/images/rdr-lab-guide/addressing-plan-and-credentials-01.png)
 
-1. A new window will open to the OpenShift Console to Create StorageSystem for Fusion Data Foundation. Select the Create a new StorageClass using local storage devices and select Use Ceph RBD as the default StorageClass. Click on the Next (C) button to continue to the Create local volume set step.
+1. A new window will open to the OpenShift Console to Create StorageSystem for Fusion Data Foundation. Select the Create a new StorageClass using local storage devices and select Use Ceph RBD as the default StorageClass. Click on the **Next** (C) button to continue to the Create local volume set step.
 
    ![Screenshot]({{ site.baseurl }}/assets/images/rdr-lab-guide/openshift-web-console-01.png)
 
-1. (A) Enter ibm-spectrum-fusion-local in the LocalVolumeSet name text entry field. Verify that 3 Node and 3 Disk appear on the right-hand side of the screen and click on the Next (B) button.
+1. (A) Enter **ibm-spectrum-fusion-local** in the LocalVolumeSet name text entry field. Verify that 3 Node and 3 Disk appear on the right-hand side of the screen and click on the **Next** (B) button.
 
    ![Screenshot]({{ site.baseurl }}/assets/images/rdr-lab-guide/openshift-web-console-02.png)
 
@@ -138,12 +138,12 @@ Now that the supporting components for Data Foundation have been installed, it i
 
    ![Screenshot]({{ site.baseurl }}/assets/images/rdr-lab-guide/openshift-web-console-04.png)
 
-1. Wait for the Local Volume Set to be created and click on the Next (A) button.
+1. Wait for the Local Volume Set to be created and click on the **Next** (A) button.
    > A taint applied to a node advises the scheduler about its suitability for hosting certain pods. A taint marks a node to repel pods unless those pods explicitly express tolerance for one or more of the node’s taints.
 
    ![Screenshot]({{ site.baseurl }}/assets/images/rdr-lab-guide/openshift-command-line-access-01.png)
 
-1. Click on the Next (A) button.
+1. Click on the **Next** (A) button.
    > As of Data Foundation 4.12, Hashicorp Vault Key/Value (KV) secret engine API, version 1 and 2 and Thales CipherTrust Manager are supported for cluster-wide and Persistent Volume encryption.
 
    ![Screenshot]({{ site.baseurl }}/assets/images/rdr-lab-guide/openshift-command-line-access-02.png)
@@ -196,7 +196,7 @@ It is recommended to use Fusion Data Foundation RADOS Block Devices (RBDs) for t
 
    ![Screenshot]({{ site.baseurl }}/assets/images/rdr-lab-guide/configure-default-storageclass-07.png)
 
-1. Enter storageclass.kubernetes.io/is-default-class in the **Key** (A) text entry field and enter true in the Value (B) text entry field. Click **Save** (C).
+1. Enter storageclass.kubernetes.io/is-default-class in the **Key** (A) text entry field and enter true in the **Value** (B) text entry field. Click **Save** (C).
 
    ![Screenshot]({{ site.baseurl }}/assets/images/rdr-lab-guide/configure-default-storageclass-08.png)
 
@@ -217,7 +217,7 @@ It is recommended to use Fusion Data Foundation RADOS Block Devices (RBDs) for t
 
    ![Screenshot]({{ site.baseurl }}/assets/images/rdr-lab-guide/openshift-application-data-protection-04.png)
 
-1. Click the Quick create (A) (the icon that looks like a + sign) button on the OpenShift GUI masthead.
+1. Click the **Quick create** (A) (the icon that looks like a + sign) button on the OpenShift GUI masthead.
 
    ![Screenshot]({{ site.baseurl }}/assets/images/rdr-lab-guide/openshift-application-data-protection-05.png)
 
@@ -229,7 +229,7 @@ It is recommended to use Fusion Data Foundation RADOS Block Devices (RBDs) for t
 
    ![Screenshot]({{ site.baseurl }}/assets/images/rdr-lab-guide/openshift-application-data-protection-06.png)
 
-1. Return to the OpenShift GUI and use Ctrl-V (windows), CMD-V (Mac) or browser Edit -> Paste button to paste the contents of the clipboard into the **editor** (A) text entry field. Click the Create (B) button to create the filebrowser resources.
+1. Return to the OpenShift GUI and use Ctrl-V (windows), CMD-V (Mac) or browser Edit -> Paste button to paste the contents of the clipboard into the **editor** (A) text entry field. Click the **Create** (B) button to create the filebrowser resources.
 
    ![Screenshot]({{ site.baseurl }}/assets/images/rdr-lab-guide/openshift-application-data-protection-07.png)
 
@@ -267,7 +267,7 @@ It is recommended to use Fusion Data Foundation RADOS Block Devices (RBDs) for t
 
    ![Screenshot]({{ site.baseurl }}/assets/images/rdr-lab-guide/configure-default-storageclass-07.png)
 
-1. Enter storageclass.kubernetes.io/is-default-class in the **Key** (A) text entry field and enter true in the Value (B) text entry field. Click **Save** (C).
+1. Enter storageclass.kubernetes.io/is-default-class in the **Key** (A) text entry field and enter true in the **Value** (B) text entry field. Click **Save** (C).
 
    ![Screenshot]({{ site.baseurl }}/assets/images/rdr-lab-guide/configure-default-storageclass-08.png)
 

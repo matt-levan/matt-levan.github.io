@@ -39,7 +39,7 @@ NOTE: This is a new pattern, and the some of the steps in the docs may be out of
 
    ![Screenshot]({{ site.baseurl }}/assets/images/fusion-demo-guide/reserve-an-environment-in-ibm-technology-zone-06.png)
 
-1. (A) Enter a description for what you are doing in the Purpose description text entry field. For example, Using the environment for course work.
+1. (A) Enter a **description** for what you are doing in the Purpose description text entry field. For example, Using the environment for course work.
    > Note: Ensure that you enter or select values for the required fields in the form. The required fields are highlighted in red and show an exclamation mark.
    > Refer to the appropriate runbook for more information about selecting the correct environment.
 

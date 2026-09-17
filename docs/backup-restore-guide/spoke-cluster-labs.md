@@ -95,7 +95,7 @@ This section describes the steps to create a FDF ObjectBucketClaim for configuri
 
    ![Screenshot]({{ site.baseurl }}/assets/images/backup-restore-guide/create-fdf-objectbucketclaim-for-s3-backup-location-04.png)
 
-1. (A) Enter the value fusion-backup-target in the ObjectBucketClaim Name text entry field.
+1. (A) Enter the value **fusion-backup-target** in the ObjectBucketClaim Name text entry field.
 
    ![Screenshot]({{ site.baseurl }}/assets/images/backup-restore-guide/create-fdf-objectbucketclaim-for-s3-backup-location-05.png)
 
@@ -103,7 +103,7 @@ This section describes the steps to create a FDF ObjectBucketClaim for configuri
 
    ![Screenshot]({{ site.baseurl }}/assets/images/backup-restore-guide/create-fdf-objectbucketclaim-for-s3-backup-location-06.png)
 
-1. Keep the default BucketClass shown and click on the Create (A) button.
+1. Keep the default BucketClass shown and click on the **Create** (A) button.
 
    ![Screenshot]({{ site.baseurl }}/assets/images/backup-restore-guide/create-fdf-objectbucketclaim-for-s3-backup-location-07.png)
 
@@ -126,7 +126,7 @@ In this section a new backup location will be created on the hub cluster that is
 
    ![Screenshot]({{ site.baseurl }}/assets/images/backup-restore-guide/create-a-new-backup-location-for-hub-spoke-restore-01.png)
 
-1. (A) Enter hubspoke-bucket in the Location name text entry field and click the **S3 Compliant** (B) tile. Click Next (C) to enter connection details.
+1. (A) Enter **hubspoke-bucket** in the Location name text entry field and click the **S3 Compliant** (B) tile. Click **Next** (C) to enter connection details.
 
    ![Screenshot]({{ site.baseurl }}/assets/images/backup-restore-guide/create-a-new-backup-location-for-hub-spoke-restore-02.png)
 
@@ -155,7 +155,7 @@ A new backup policy will be created for use by the hub and spoke clusters using 
 
    ![Screenshot]({{ site.baseurl }}/assets/images/backup-restore-guide/create-a-new-backup-policy-for-hub-spoke-restore-01.png)
 
-1. (A) Enter hubspoke-backup in the Policy name text entry field, set **Frequency to monthly** (B), select **1** (C) for Choose a day, and specify a Time window for the backup to occur.
+1. (A) Enter **hubspoke-backup** in the Policy name text entry field, set **Frequency to monthly** (B), select **1** (C) for Choose a day, and specify a Time window for the backup to occur.
 
    ![Screenshot]({{ site.baseurl }}/assets/images/backup-restore-guide/create-a-new-backup-policy-for-hub-spoke-restore-02.png)
 
@@ -173,7 +173,7 @@ In this section a new application will be created in a new namespace that can be
 
    ![Screenshot]({{ site.baseurl }}/assets/images/backup-restore-guide/create-a-simple-application-01.png)
 
-1. (A) Enter the value hubspoke in the Name text entry field and click the Create (B) button.
+1. (A) Enter the value **hubspoke** in the Name text entry field and click the **Create** (B) button.
 
    ![Screenshot]({{ site.baseurl }}/assets/images/backup-restore-guide/deploy-application-for-spoke-cluster-restore-01.png)
 
@@ -185,7 +185,7 @@ In this section a new application will be created in a new namespace that can be
 
    ![Screenshot]({{ site.baseurl }}/assets/images/backup-restore-guide/create-a-simple-application-04.png)
 
-1. Return to the OpenShift GUI and use Ctrl-V (windows), CMD-V (Mac) or browser Edit -> Paste button to paste the contents of the clipboard into the **editor** (A) text entry field. Click the Create (B) button to create the filebrowser resources.
+1. Return to the OpenShift GUI and use Ctrl-V (windows), CMD-V (Mac) or browser Edit -> Paste button to paste the contents of the clipboard into the **editor** (A) text entry field. Click the **Create** (B) button to create the filebrowser resources.
 
    ![Screenshot]({{ site.baseurl }}/assets/images/backup-restore-guide/deploy-application-for-spoke-cluster-restore-03.png)
 
@@ -239,11 +239,11 @@ This section outlines the steps required to restore an application to a spoke cl
 
    ![Screenshot]({{ site.baseurl }}/assets/images/backup-restore-guide/restore-application-to-spoke-cluster-04.png)
 
-1. Select the Use **same project** (A) tile and then click on the Next (B) button.
+1. Select the Use **same project** (A) tile and then click on the **Next** (B) button.
 
    ![Screenshot]({{ site.baseurl }}/assets/images/backup-restore-guide/restore-application-to-spoke-cluster-05.png)
 
-1. In Step 2 of the Restore hubspoke wizard, select the **most recent** (A) Backup time and click the Next (B) button to continue.
+1. In Step 2 of the Restore hubspoke wizard, select the **most recent** (A) Backup time and click the **Next** (B) button to continue.
 
    ![Screenshot]({{ site.baseurl }}/assets/images/backup-restore-guide/restore-application-to-spoke-cluster-06.png)
 

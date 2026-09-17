@@ -26,7 +26,7 @@ In this section, Red Hat Advanced Cluster Management (RHACM) will be configured 
 
    ![Screenshot]({{ site.baseurl }}/assets/images/rdr-lab-guide/red-hat-advanced-cluster-manager-04.png)
 
-1. Keep all the default settings as shown. Scroll down until the Create (A) button appears. Then, click on the button.
+1. Keep all the default settings as shown. Scroll **down until the Create** (A) button appears. Then, click on the button.
 
    ![Screenshot]({{ site.baseurl }}/assets/images/rdr-lab-guide/red-hat-advanced-cluster-manager-05.png)
 
@@ -47,7 +47,7 @@ In this section, Red Hat Advanced Cluster Management (RHACM) will be configured 
 
    ![Screenshot]({{ site.baseurl }}/assets/images/rdr-lab-guide/multicluster-orchestrator-02.png)
 
-1. When the Install Operator screen appears, click the Enable (A) button under the Console plugin section, and scroll **down until the Install** (B) button appears. Then, click on the button.
+1. When the Install Operator screen appears, click the **Enable** (A) button under the Console plugin section, and scroll **down until the Install** (B) button appears. Then, click on the button.
 
    ![Screenshot]({{ site.baseurl }}/assets/images/rdr-lab-guide/multicluster-orchestrator-03.png)
 
@@ -81,7 +81,7 @@ In this section, Red Hat Advanced Cluster Management (RHACM) will be configured 
 
    ![Screenshot]({{ site.baseurl }}/assets/images/rdr-lab-guide/import-second-cluster-06.png)
 
-1. (A) Enter ocp2 in the Name field and click on the Cluster set **dropdown** (B). Select the **default** (C) item from the Cluster set dropdown.
+1. (A) Enter **ocp2** in the Name field and click on the Cluster set **dropdown** (B). Select the **default** (C) item from the Cluster set dropdown.
 
    ![Screenshot]({{ site.baseurl }}/assets/images/rdr-lab-guide/import-second-cluster-07.png)
 
@@ -89,11 +89,11 @@ In this section, Red Hat Advanced Cluster Management (RHACM) will be configured 
 
    ![Screenshot]({{ site.baseurl }}/assets/images/rdr-lab-guide/import-second-cluster-08.png)
 
-1. Paste the contents of the Clipboard—containing the contents of the ocp2_kubeconfig.conf **file—into the Kubeconfig** (A) text entry field and click on the Next (B) button.
+1. Paste the contents of the Clipboard—containing the contents of the ocp2_kubeconfig.conf **file—into the Kubeconfig** (A) text entry field and click on the **Next** (B) button.
 
    ![Screenshot]({{ site.baseurl }}/assets/images/rdr-lab-guide/import-second-cluster-09.png)
 
-1. Click on the Next (A) button.
+1. Click on the **Next** (A) button.
 
    ![Screenshot]({{ site.baseurl }}/assets/images/rdr-lab-guide/import-second-cluster-10.png)
 
@@ -120,7 +120,7 @@ In this section, Red Hat Advanced Cluster Management (RHACM) will be configured 
 
    ![Screenshot]({{ site.baseurl }}/assets/images/rdr-lab-guide/configure-submariner-03.png)
 
-1. (A) Enter submariner.io/gateway=true in the Labels for worker-1 text entry field click on the **Save** (B) button.
+1. (A) Enter **submariner.io/gateway=true** in the Labels for worker-1 text entry field click on the **Save** (B) button.
 
    ![Screenshot]({{ site.baseurl }}/assets/images/rdr-lab-guide/configure-submariner-04.png)
 
@@ -153,7 +153,7 @@ In this section, Red Hat Advanced Cluster Management (RHACM) will be configured 
 
    ![Screenshot]({{ site.baseurl }}/assets/images/rdr-lab-guide/configure-submariner-09.png)
 
-1. Confirm that both local-cluster and ocp2 are listed in the Target clusters selection box. Once verified, click on the Next (A) button.
+1. Confirm that both local-cluster and ocp2 are listed in the Target clusters selection box. Once verified, click on the **Next** (A) button.
 
    ![Screenshot]({{ site.baseurl }}/assets/images/rdr-lab-guide/configure-submariner-10.png)
 
@@ -176,11 +176,11 @@ In this section, Red Hat Advanced Cluster Management (RHACM) will be configured 
 
    ![Screenshot]({{ site.baseurl }}/assets/images/rdr-lab-guide/create-disaster-recovery-policy-01.png)
 
-1. (A) Enter ocp1-ocp2-dr in the Policy name text entry field. Then, in the Connect clusters selection box, check the **boxes next to both local-cluster** (B) and **ocp2** (B) to include them in the policy.
+1. (A) Enter **ocp1-ocp2-dr** in the Policy name text entry field. Then, in the Connect clusters selection box, check the **boxes next to both local-cluster** (B) and **ocp2** (B) to include them in the policy.
 
    ![Screenshot]({{ site.baseurl }}/assets/images/rdr-lab-guide/create-disaster-recovery-policy-02.png)
 
-1. Scroll down until the Create button appears and click on the Create (A) button.
+1. Scroll down until the Create button appears and click on the **Create** (A) button.
 
    ![Screenshot]({{ site.baseurl }}/assets/images/rdr-lab-guide/create-disaster-recovery-policy-03.png)
 

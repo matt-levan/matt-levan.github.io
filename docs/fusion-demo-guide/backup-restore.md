@@ -113,7 +113,7 @@ Navigate to “networking”  “routes” and choose all projects and search fo
 
    ![Screenshot]({{ site.baseurl }}/assets/images/fusion-demo-guide/backup-location-06.png)
 
-1. (A) Enter object1 in the Location name text entry field and click the **MCG/NooBaa** (B) tile. Then, click Next (C) to enter the connection details.
+1. (A) Enter **object1** in the Location name text entry field and click the **MCG/NooBaa** (B) tile. Then, click **Next** (C) to enter the connection details.
 
    ![Screenshot]({{ site.baseurl }}/assets/images/fusion-demo-guide/backup-location-07.png)
 
@@ -129,7 +129,7 @@ The Policies page lists all policies. You can search for policy records based on
 
    ![Screenshot]({{ site.baseurl }}/assets/images/fusion-demo-guide/backup-policies-01.png)
 
-1. (A) Enter daily-snapshot in the Policy Name text entry field, set Frequency to Daily and specify a Time window for the backup to occur. Then, select the In **place snapshot** (B) Backup location tile. Finally, click the Next (C) button to create the new daily-snapshot backup policy.
+1. (A) Enter **daily-snapshot** in the Policy Name text entry field, set Frequency to Daily and specify a Time window for the backup to occur. Then, select the In **place snapshot** (B) Backup location tile. Finally, click the **Next** (C) button to create the new daily-snapshot backup policy.
 
    ![Screenshot]({{ site.baseurl }}/assets/images/fusion-demo-guide/backup-policies-02.png)
 
@@ -137,7 +137,7 @@ The Policies page lists all policies. You can search for policy records based on
 
    ![Screenshot]({{ site.baseurl }}/assets/images/fusion-demo-guide/backup-policies-03.png)
 
-1. (A) Enter weekly-backup in the Policy name text entry field, set **Frequency to weekly** (B), select **Sunday** (C) for Schedule, and specify a Time window for the backup to occur. Select the **Object Storage** (D) Backup location tile to **pick the backup location object1** (E). Click the Create **policy** (F) button to complete creation of the weekly-backup backup policy.
+1. (A) Enter **weekly-backup** in the Policy name text entry field, set **Frequency to weekly** (B), select **Sunday** (C) for Schedule, and specify a Time window for the backup to occur. Select the **Object Storage** (D) Backup location tile to **pick the backup location object1** (E). Click the Create **policy** (F) button to complete creation of the weekly-backup backup policy.
 
    ![Screenshot]({{ site.baseurl }}/assets/images/fusion-demo-guide/backup-policies-04.png)
 
@@ -153,12 +153,12 @@ In this section, you’ll learn how to create a basic application to demonstrate
 
    ![Screenshot]({{ site.baseurl }}/assets/images/fusion-demo-guide/create-a-workload-01.png)
 
-1. (A) Enter the value filebrowser in the Name text entry field and click the Create (B) button.
+1. (A) Enter the value **filebrowser** in the Name text entry field and click the **Create** (B) button.
    > Important: If this demo guide is being used for the IBM Fusion Level 3 stand and deliver demonstration, please note that the IBM Fusion Demo Script (Level 3) will create an application using the bankapp project instead of filebrowser. Regardless of the project name used—filebrowser or bankapp—the same application is deployed.
 
    ![Screenshot]({{ site.baseurl }}/assets/images/fusion-demo-guide/create-a-workload-02.png)
 
-1. Verify that the project listed is set to the newly created filebrowser namespace. Click the Quick create (A) (the icon that looks like a + sign) button on the OpenShift GUI masthead.
+1. Verify that the project listed is set to the newly created filebrowser namespace. Click the **Quick create** (A) (the icon that looks like a + sign) button on the OpenShift GUI masthead.
 
    ![Screenshot]({{ site.baseurl }}/assets/images/fusion-demo-guide/create-a-workload-03.png)
 
@@ -170,7 +170,7 @@ In this section, you’ll learn how to create a basic application to demonstrate
 
    ![Screenshot]({{ site.baseurl }}/assets/images/fusion-demo-guide/create-a-workload-05.png)
 
-1. Return to the OpenShift GUI and use Ctrl-V (windows), CMD-V (Mac) or browser Edit -> Paste button to paste the contents of the clipboard into the **editor** (A) text entry field. Click the Create (B) button to create the filebrowser resources.
+1. Return to the OpenShift GUI and use Ctrl-V (windows), CMD-V (Mac) or browser Edit -> Paste button to paste the contents of the clipboard into the **editor** (A) text entry field. Click the **Create** (B) button to create the filebrowser resources.
 
    ![Screenshot]({{ site.baseurl }}/assets/images/fusion-demo-guide/create-a-workload-06.png)
 
@@ -222,11 +222,11 @@ This sub-section describes the process for managing backups of applications depl
 
    ![Screenshot]({{ site.baseurl }}/assets/images/fusion-demo-guide/assign-policy-using-backed-up-applications-menu-item-01.png)
 
-1. The Protect applications wizard can be used to backup applications locally and in hub and spoke configurations. Select the **local cluster** (A) from the drop-down list, and a list of unprotected applications will populate in the list below. Next select, **filebrowser** (B) from the unprotected applications list. Finally click on the Next (C) button.
+1. The Protect applications wizard can be used to backup applications locally and in hub and spoke configurations. Select the **local cluster** (A) from the drop-down list, and a list of unprotected applications will populate in the list below. Next select, **filebrowser** (B) from the unprotected applications list. Finally click on the **Next** (C) button.
 
    ![Screenshot]({{ site.baseurl }}/assets/images/fusion-demo-guide/assign-policy-using-backed-up-applications-menu-item-02.png)
 
-1. On the Assign policies, you can select one or more policies to attach to the application and if backup should start right after applying the policies. Select **both the daily-snapshot** (A) and **weekly-backup** (B) policies. Leave the Back up now toggle set to enabled (displayed with a green checkmark). Click the Assign (C) button.
+1. On the Assign policies, you can select one or more policies to attach to the application and if backup should start right after applying the policies. Select **both the daily-snapshot** (A) and **weekly-backup** (B) policies. Leave the Back up now toggle set to enabled (displayed with a green checkmark). Click the **Assign** (C) button.
 
    ![Screenshot]({{ site.baseurl }}/assets/images/fusion-demo-guide/assign-policy-using-backed-up-applications-menu-item-03.png)
 
@@ -262,11 +262,11 @@ This section describes the steps required to restore an application from a previ
 
    ![Screenshot]({{ site.baseurl }}/assets/images/fusion-demo-guide/application-restore-04.png)
 
-1. The restore wizard also provides a choice to restore over the same project, an existing project, or to a new project. Select Create a **new project** (A) and (B) enter filebrowser2 in the Project name text entry field. Then, click on the Next (C) button to select the backup to restore.
+1. The restore wizard also provides a choice to restore over the same project, an existing project, or to a new project. Select Create a **new project** (A) and (B) enter filebrowser2 in the Project name text entry field. Then, click on the **Next** (C) button to select the backup to restore.
 
    ![Screenshot]({{ site.baseurl }}/assets/images/fusion-demo-guide/application-restore-05.png)
 
-1. Choose the **Backup time** (A) you want to restore from, from the list of backups provided – note that if you want multiple backups to choose from, you must first create them. Then click on the Next (B) button.
+1. Choose the **Backup time** (A) you want to restore from, from the list of backups provided – note that if you want multiple backups to choose from, you must first create them. Then click on the **Next** (B) button.
 
    ![Screenshot]({{ site.baseurl }}/assets/images/fusion-demo-guide/application-restore-06.png)
 

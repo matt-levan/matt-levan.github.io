@@ -21,15 +21,15 @@ parent: "IBM Fusion HCP Lab Guide"
 
    ![Screenshot]({{ site.baseurl }}/assets/images/hcp-lab-guide/add-cloud-provider-credentials-03.png)
 
-1. (A) Enter hcp-pull-secret in the Credential name text entry field and select default from the **Namespace drop-down list** (B). Click on the Next (C) button to continue.
+1. (A) Enter **hcp-pull-secret** in the Credential name text entry field and select default from the **Namespace drop-down list** (B). Click on the **Next** (C) button to continue.
 
    ![Screenshot]({{ site.baseurl }}/assets/images/hcp-lab-guide/add-cloud-provider-credentials-04.png)
 
-1. Leave all settings at their default and click on the Next (A) button.
+1. Leave all settings at their default and click on the **Next** (A) button.
 
    ![Screenshot]({{ site.baseurl }}/assets/images/hcp-lab-guide/add-cloud-provider-credentials-05.png)
 
-1. Paste the contents of the pull-secret text file that was created in the Save the cluster pull-secret section into the **Pull secret** (A) text entry box. Paste the contents of the SSH public key text file that was created in the Create SSH key for Hosted Control Planes section into the **SSH public key** (B) text entry box. Finally, click on the Next (C) button.
+1. Paste the contents of the pull-secret text file that was created in the Save the cluster pull-secret section into the **Pull secret** (A) text entry box. Paste the contents of the SSH public key text file that was created in the Create SSH key for Hosted Control Planes section into the **SSH public key** (B) text entry box. Finally, click on the **Next** (C) button.
 
    ![Screenshot]({{ site.baseurl }}/assets/images/hcp-lab-guide/add-cloud-provider-credentials-06.png)
 
@@ -78,7 +78,7 @@ parent: "IBM Fusion HCP Lab Guide"
    isf.ibm.com/fusion-backup=
    ```
 
-Click on the Next (B) button.
+Click on the **Next** (B) button.
 
 ![Screenshot]({{ site.baseurl }}/assets/images/hcp-lab-guide/create-cluster-05.png)
 
@@ -96,7 +96,7 @@ Click on the Next (B) button.
 
 ![Screenshot]({{ site.baseurl }}/assets/images/hcp-lab-guide/create-cluster-06.png)
 
-1. Scroll down until Root volume option is displayed and click on the Root volume option or > **dropdown carat** (A) to reveal the Root volume options section is displayed. Enter the Root volume details provided in Table 3 - Root volume options and click on the Next (E) button.
+1. Scroll down until Root volume option is displayed and click on the Root volume option or > **dropdown carat** (A) to reveal the Root volume options section is displayed. Enter the Root volume details provided in Table 3 - Root volume options and click on the **Next** (E) button.
 
 *Table  - Root volume options*
 
@@ -109,11 +109,11 @@ Click on the Next (B) button.
 
 ![Screenshot]({{ site.baseurl }}/assets/images/hcp-lab-guide/create-cluster-07.png)
 
-1. Leave all defaults and click on the Next (A) button.
+1. Leave all defaults and click on the **Next** (A) button.
 
    ![Screenshot]({{ site.baseurl }}/assets/images/hcp-lab-guide/create-cluster-08.png)
 
-1. Click on the Create (A) button.
+1. Click on the **Create** (A) button.
 
    ![Screenshot]({{ site.baseurl }}/assets/images/hcp-lab-guide/create-cluster-09.png)
 

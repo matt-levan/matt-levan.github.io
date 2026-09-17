@@ -109,7 +109,7 @@ The daily-snapshot policy will now appear in the list of backup policies. Next, 
 
 ![Back and Restore Policy New]({{ site.baseurl }}/assets/images/ocpv-fusion-lab/06-module-04-bnr-policy-new.png)
 
-(A) Enter `weekly-backup` in the **Policy name** text entry field, set **Frequency** to **weekly** (B), select **Sunday** **`**(C)` for **Schedule**, and specify a Time window for the backup to occur. Select the **Object **Storage**** (D) Backup location tile to **pick the backup location `location1`** (E). Click the **Create **policy**** (F) button to complete creation of the weekly-backup backup policy.
+(A) Enter **`weekly-backup`** in the **Policy name** text entry field, set **Frequency** to **weekly** (B), select **Sunday** **`**(C)` for **Schedule**, and specify a Time window for the backup to occur. Select the **Object **Storage**** (D) Backup location tile to **pick the backup location `location1`** (E). Click the **Create **policy**** (F) button to complete creation of the weekly-backup backup policy.
 
 ![Back and Restore Policy Weekly]({{ site.baseurl }}/assets/images/ocpv-fusion-lab/06-module-04-bnr-policy-weekly.png)
 
@@ -134,7 +134,7 @@ In the OpenShift GUI, navigate to the **Projects** screen by clicking on the **H
 
 ![Create New Project]({{ site.baseurl }}/assets/images/ocpv-fusion-lab/06-module-04-bnr-create-project.png)
 
-(A) Enter the value `filebrowser` in the Name text entry field and click the **Create** (B) button.
+(A) Enter the value **`filebrowser`** in the Name text entry field and click the **Create** (B) button.
 
 ![Create New Project]({{ site.baseurl }}/assets/images/ocpv-fusion-lab/06-module-04-bnr-create-project-new.png)
 

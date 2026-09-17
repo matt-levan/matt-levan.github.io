@@ -30,7 +30,7 @@ In this section the required operators will be installed and configured, if nece
 
    ![Screenshot]({{ site.baseurl }}/assets/images/hcp-lab-guide/openshift-virtualization-operator-05.png)
 
-1. Keep all the other default settings as shown. Scroll down until the Create (A) button appears. Then, click on the button.
+1. Keep all the other default settings as shown. Scroll **down until the Create** (A) button appears. Then, click on the button.
 
    ![Screenshot]({{ site.baseurl }}/assets/images/hcp-lab-guide/openshift-virtualization-operator-06.png)
 
@@ -80,7 +80,7 @@ MetalLB can operate in two modes:
 
    ![Screenshot]({{ site.baseurl }}/assets/images/hcp-lab-guide/metallb-operator-08.png)
 
-1. (A) Enter techzone-ipaddresspool in the Name text entry field.
+1. (A) Enter **techzone-ipaddresspool** in the Name text entry field.
 
    ![Screenshot]({{ site.baseurl }}/assets/images/hcp-lab-guide/metallb-operator-09.png)
 
@@ -88,7 +88,7 @@ MetalLB can operate in two modes:
 
    ![Screenshot]({{ site.baseurl }}/assets/images/hcp-lab-guide/metallb-operator-10.png)
 
-1. Scroll down and click on the Create (A) button.
+1. Scroll down and click on the **Create** (A) button.
 
    ![Screenshot]({{ site.baseurl }}/assets/images/hcp-lab-guide/metallb-operator-11.png)
 
@@ -96,11 +96,11 @@ MetalLB can operate in two modes:
 
    ![Screenshot]({{ site.baseurl }}/assets/images/hcp-lab-guide/metallb-operator-12.png)
 
-1. (A) Enter l2-adv-techzone in the Name text entry field.
+1. (A) Enter **l2-adv-techzone** in the Name text entry field.
 
    ![Screenshot]({{ site.baseurl }}/assets/images/hcp-lab-guide/metallb-operator-13.png)
 
-1. Scroll down until ipAddressPools is displayed. Expand **ipAddressPools** (A) by clicking the toggle (the icon that looks like a > when collapsed). (B) Enter techzone-ipaddresspool in the first Value text entry field. Click the Create (C) button.
+1. Scroll down until ipAddressPools is displayed. Expand **ipAddressPools** (A) by clicking the toggle (the icon that looks like a > when collapsed). (B) Enter techzone-ipaddresspool in the first Value text entry field. Click the **Create** (C) button.
 
    ![Screenshot]({{ site.baseurl }}/assets/images/hcp-lab-guide/metallb-operator-14.png)
 
@@ -126,7 +126,7 @@ MetalLB can operate in two modes:
 
    ![Screenshot]({{ site.baseurl }}/assets/images/hcp-lab-guide/red-hat-multicluster-engine-for-kubernetes-04.png)
 
-1. Keep all the default settings as shown. Scroll down until the Create (A) button appears. Then, click on the button.
+1. Keep all the default settings as shown. Scroll **down until the Create** (A) button appears. Then, click on the button.
 
    ![Screenshot]({{ site.baseurl }}/assets/images/hcp-lab-guide/red-hat-multicluster-engine-for-kubernetes-05.png)
 

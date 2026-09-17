@@ -44,7 +44,7 @@ There you will find the correct route to use.
 
    ![Screenshot]({{ site.baseurl }}/assets/images/backup-restore-guide/backup-location-02.png)
 
-1. (A) Enter object1 in the Location name text entry field and click the **MCG/NooBass** (B) tile. Then, click Next (C) to enter the connection details.
+1. (A) Enter **object1** in the Location name text entry field and click the **MCG/NooBass** (B) tile. Then, click **Next** (C) to enter the connection details.
 1. Enter the S3 endpoint and connection information collected in the previous steps.
 
    ![Screenshot]({{ site.baseurl }}/assets/images/backup-restore-guide/backup-location-03.png)
@@ -60,7 +60,7 @@ The Policies page lists all policies. You can search for policy records based on
 
    ![Screenshot]({{ site.baseurl }}/assets/images/backup-restore-guide/backup-policies-01.png)
 
-1. (A) Enter daily-snapshot in the Policy Name text entry field, set Frequency to Daily and specify a Time window for the backup to occur. Then, select the In **place snapshot** (B) Backup location tile. Finally, click the Next (C) button to create the new daily-snapshot backup policy.
+1. (A) Enter **daily-snapshot** in the Policy Name text entry field, set Frequency to Daily and specify a Time window for the backup to occur. Then, select the In **place snapshot** (B) Backup location tile. Finally, click the **Next** (C) button to create the new daily-snapshot backup policy.
 
    ![Screenshot]({{ site.baseurl }}/assets/images/backup-restore-guide/backup-policies-02.png)
 
@@ -68,7 +68,7 @@ The Policies page lists all policies. You can search for policy records based on
 
    ![Screenshot]({{ site.baseurl }}/assets/images/backup-restore-guide/backup-policies-03.png)
 
-1. (A) Enter weekly-backup in the Policy name text entry field, set **Frequency to weekly** (B), select **Sunday** (C) for Schedule, and specify a Time window for the backup to occur. Select the **Object Storage** (D) Backup location tile to **pick the backup location object1** (E). Click the Create **policy** (F) button to complete creation of the weekly-backup backup policy.
+1. (A) Enter **weekly-backup** in the Policy name text entry field, set **Frequency to weekly** (B), select **Sunday** (C) for Schedule, and specify a Time window for the backup to occur. Select the **Object Storage** (D) Backup location tile to **pick the backup location object1** (E). Click the Create **policy** (F) button to complete creation of the weekly-backup backup policy.
 
    ![Screenshot]({{ site.baseurl }}/assets/images/backup-restore-guide/backup-policies-04.png)
 
@@ -83,7 +83,7 @@ In this section, you’ll learn how to create a basic application to demonstrate
 
    ![Screenshot]({{ site.baseurl }}/assets/images/backup-restore-guide/create-a-simple-application-01.png)
 
-1. (A) Enter the value filebrowser in the Name text entry field and click the Create (B) button.
+1. (A) Enter the value **filebrowser** in the Name text entry field and click the **Create** (B) button.
 
    ![Screenshot]({{ site.baseurl }}/assets/images/backup-restore-guide/create-a-simple-application-02.png)
 
@@ -95,7 +95,7 @@ In this section, you’ll learn how to create a basic application to demonstrate
 
    ![Screenshot]({{ site.baseurl }}/assets/images/backup-restore-guide/create-a-simple-application-04.png)
 
-1. Return to the OpenShift GUI and use Ctrl-V (windows), CMD-V (Mac) or browser Edit -> Paste button to paste the contents of the clipboard into the **editor** (A) text entry field. Click the Create (B) button to create the filebrowser resources.
+1. Return to the OpenShift GUI and use Ctrl-V (windows), CMD-V (Mac) or browser Edit -> Paste button to paste the contents of the clipboard into the **editor** (A) text entry field. Click the **Create** (B) button to create the filebrowser resources.
 
    ![Screenshot]({{ site.baseurl }}/assets/images/backup-restore-guide/create-a-simple-application-05.png)
 
@@ -147,11 +147,11 @@ This sub-section describes the process for managing backups of applications depl
 
    ![Screenshot]({{ site.baseurl }}/assets/images/backup-restore-guide/assign-policy-using-backed-up-applications-menu-item-01.png)
 
-1. The Protect applications wizard can be used to backup applications locally and in hub and spoke configurations. Select the **local cluster** (A) from the drop-down list, and a list of unprotected applications will populate in the list below. Next select, **filebrowser** (B) from the unprotected applications list. Finally click on the Next (C) button.
+1. The Protect applications wizard can be used to backup applications locally and in hub and spoke configurations. Select the **local cluster** (A) from the drop-down list, and a list of unprotected applications will populate in the list below. Next select, **filebrowser** (B) from the unprotected applications list. Finally click on the **Next** (C) button.
 
    ![Screenshot]({{ site.baseurl }}/assets/images/backup-restore-guide/assign-policy-using-backed-up-applications-menu-item-02.png)
 
-1. On the Assign policies, you can select one or more policies to attach to the application and if backup should start right after applying the policies. Select **both the daily-snapshot** (A) and **weekly-backup** (B) policies. Leave the Back up now toggle set to enabled (displayed with a green checkmark). Click the Assign (C) button.
+1. On the Assign policies, you can select one or more policies to attach to the application and if backup should start right after applying the policies. Select **both the daily-snapshot** (A) and **weekly-backup** (B) policies. Leave the Back up now toggle set to enabled (displayed with a green checkmark). Click the **Assign** (C) button.
 
    ![Screenshot]({{ site.baseurl }}/assets/images/backup-restore-guide/assign-policy-using-backed-up-applications-menu-item-03.png)
 
@@ -187,11 +187,11 @@ This section describes the steps required to restore an application from a previ
 
    ![Screenshot]({{ site.baseurl }}/assets/images/backup-restore-guide/application-restore-04.png)
 
-1. The restore wizard also provides a choice to restore over the same project, an existing project, or to a new project. Select Create a **new project** (A) and (B) enter filebrowser2 in the Project name text entry field. Then, click on the Next (C) button to select the backup to restore.
+1. The restore wizard also provides a choice to restore over the same project, an existing project, or to a new project. Select Create a **new project** (A) and (B) enter filebrowser2 in the Project name text entry field. Then, click on the **Next** (C) button to select the backup to restore.
 
    ![Screenshot]({{ site.baseurl }}/assets/images/backup-restore-guide/application-restore-05.png)
 
-1. Choose the **Backup time** (A) you want to restore from, from the list of backups provided – note that if you want multiple backups to choose from, you must first create them. Then click on the Next (B) button.
+1. Choose the **Backup time** (A) you want to restore from, from the list of backups provided – note that if you want multiple backups to choose from, you must first create them. Then click on the **Next** (B) button.
 
    ![Screenshot]({{ site.baseurl }}/assets/images/backup-restore-guide/application-restore-06.png)
 
@@ -241,7 +241,7 @@ When you protect an application with Backup & Restore service, a default backup 
 
    ![Screenshot]({{ site.baseurl }}/assets/images/backup-restore-guide/create-a-simple-application-01.png)
 
-1. (A) Enter the value pacman in the Name text entry field and click on the Create (B) button.
+1. (A) Enter the value **pacman** in the Name text entry field and click on the **Create** (B) button.
 
    ![Screenshot]({{ site.baseurl }}/assets/images/backup-restore-guide/create-an-application-with-fusion-recipe-01.png)
 
@@ -253,7 +253,7 @@ When you protect an application with Backup & Restore service, a default backup 
 
    ![Screenshot]({{ site.baseurl }}/assets/images/backup-restore-guide/create-an-application-with-fusion-recipe-03.png)
 
-1. Navigate back to the OpenShift GUI and use Ctrl-V (windows), CMD-V (Mac) or the browser Edit -> Paste function to paste the contents of the clipboard into the **editor** (A) text entry field. Click the Create (B) button to create the pacman application resources.
+1. Navigate back to the OpenShift GUI and use Ctrl-V (windows), CMD-V (Mac) or the browser Edit -> Paste function to paste the contents of the clipboard into the **editor** (A) text entry field. Click the **Create** (B) button to create the pacman application resources.
 
    ![Screenshot]({{ site.baseurl }}/assets/images/backup-restore-guide/create-an-application-with-fusion-recipe-04.png)
 
@@ -299,7 +299,7 @@ When you protect an application with Backup & Restore service, a default backup 
 
    ![Screenshot]({{ site.baseurl }}/assets/images/backup-restore-guide/create-an-application-with-fusion-recipe-12.png)
 
-1. Navigate back to the OpenShift GUI and use Ctrl-V (windows), CMD-V (Mac) or the browser Edit -> Paste function to paste the contents of the clipboard into the **editor** (A) text entry field. Click the Create (B) button to create the recipe.
+1. Navigate back to the OpenShift GUI and use Ctrl-V (windows), CMD-V (Mac) or the browser Edit -> Paste function to paste the contents of the clipboard into the **editor** (A) text entry field. Click the **Create** (B) button to create the recipe.
 
    ![Screenshot]({{ site.baseurl }}/assets/images/backup-restore-guide/create-an-application-with-fusion-recipe-13.png)
 
@@ -399,7 +399,7 @@ The IBM Storage Fusion Backup & Restore service protection involves the backup o
 
    ![Screenshot]({{ site.baseurl }}/assets/images/backup-restore-guide/backup-service-protection-02.png)
 
-1. Click on the **S3 Compliant** (A) tile in the Choose an object storage type wizard step and click the Next (B) button.
+1. Click on the **S3 Compliant** (A) tile in the Choose an object storage type wizard step and click the **Next** (B) button.
 
    ![Screenshot]({{ site.baseurl }}/assets/images/backup-restore-guide/backup-service-protection-03.png)
 
