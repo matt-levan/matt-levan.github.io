@@ -1,0 +1,24 @@
+title: IBM Fusion Demo Guide
+description: Platform modernization with IBM Fusion - Hands-on demo guide v2.13.1
+baseurl: ""
+url: "https://matt-levan.github.io"
+
+theme: minima
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+# Collections
+collections:
+  pages:
+    output: true
+    permalink: /:name/
+
+# Navigation
+header_pages:
+  - index.md
