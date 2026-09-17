@@ -17,10 +17,10 @@ Welcome to the IBM Storage technical documentation library. Select a guide below
     <span class="doc-card-version">v2.13.1</span>
   </a>
 
-  <a href="#" class="doc-card doc-card-coming-soon">
-    <h2>Fusion Backup &amp; Restore Guide</h2>
-    <p>Deep-dive into IBM Fusion Backup &amp; Restore service configuration, policies, and recovery procedures.</p>
-    <span class="doc-card-badge">Coming soon</span>
+  <a href="/backup-restore-guide/" class="doc-card">
+    <h2>Fusion Backup &amp; Restore Lab Guide</h2>
+    <p>Hands-on labs for IBM Fusion Backup &amp; Restore — policies, recipes, application-consistent backups, and hub/spoke restore.</p>
+    <span class="doc-card-version">v2.12.0.0</span>
   </a>
 
   <a href="#" class="doc-card doc-card-coming-soon">
