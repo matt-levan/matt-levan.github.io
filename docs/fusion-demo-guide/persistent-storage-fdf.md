@@ -1,99 +1,100 @@
 ---
 layout: default
-title: "Persistent Storage – Fusion Data Foundation"
-permalink: /persistent-storage-fusion-data-foundation-fdf/
-nav_order: 10
+title: "Persistent Storage – FDF"
+permalink: /fusion-demo-guide/persistent-storage-fdf/
+nav_order: 2
 parent: "Provide Persistent Storage"
+grand_parent: "IBM Fusion Demo Guide"
 ---
 
 # Persistent Storage – Fusion Data Foundation – FDF
 
 
-![Screenshot]({{ site.baseurl }}/assets/images/persistent-storage-fusion-data-foundation-fdf-01.png)
+![Screenshot]({{ site.baseurl }}/assets/images/fusion-demo-guide/persistent-storage-fusion-data-foundation-fdf-01.png)
 
 Select Storage  Local storage and Click “Getting Started”
 
-![Screenshot]({{ site.baseurl }}/assets/images/persistent-storage-fusion-data-foundation-fdf-02.png)
+![Screenshot]({{ site.baseurl }}/assets/images/fusion-demo-guide/persistent-storage-fusion-data-foundation-fdf-02.png)
 
 The screen will go to the OpenShift Console and bring up the create storage menu
 
-![Screenshot]({{ site.baseurl }}/assets/images/persistent-storage-fusion-data-foundation-fdf-03.png)
+![Screenshot]({{ site.baseurl }}/assets/images/fusion-demo-guide/persistent-storage-fusion-data-foundation-fdf-03.png)
 
 “create a new StorageClass using local storage devices” will be pre-selected. And check “Next”
 We only need to enable the default storage class of Ceph RBD and set the default storage class for Virtualization (if you plan to setup Virtualization)
 
-![Screenshot]({{ site.baseurl }}/assets/images/persistent-storage-fusion-data-foundation-fdf-04.png)
+![Screenshot]({{ site.baseurl }}/assets/images/fusion-demo-guide/persistent-storage-fusion-data-foundation-fdf-04.png)
 
 
-![Screenshot]({{ site.baseurl }}/assets/images/persistent-storage-fusion-data-foundation-fdf-05.png)
+![Screenshot]({{ site.baseurl }}/assets/images/fusion-demo-guide/persistent-storage-fusion-data-foundation-fdf-05.png)
 
 We need the local operator for the local system, click install to install the local storage operator
 
-![Screenshot]({{ site.baseurl }}/assets/images/persistent-storage-fusion-data-foundation-fdf-06.png)
+![Screenshot]({{ site.baseurl }}/assets/images/fusion-demo-guide/persistent-storage-fusion-data-foundation-fdf-06.png)
 
 Install the local storage operator
 
-![Screenshot]({{ site.baseurl }}/assets/images/persistent-storage-fusion-data-foundation-fdf-07.png)
+![Screenshot]({{ site.baseurl }}/assets/images/fusion-demo-guide/persistent-storage-fusion-data-foundation-fdf-07.png)
 
 
-![Screenshot]({{ site.baseurl }}/assets/images/persistent-storage-fusion-data-foundation-fdf-08.png)
+![Screenshot]({{ site.baseurl }}/assets/images/fusion-demo-guide/persistent-storage-fusion-data-foundation-fdf-08.png)
 
 When complete, select view operator
 
-![Screenshot]({{ site.baseurl }}/assets/images/persistent-storage-fusion-data-foundation-fdf-09.png)
+![Screenshot]({{ site.baseurl }}/assets/images/fusion-demo-guide/persistent-storage-fusion-data-foundation-fdf-09.png)
 
 ## Create local Storage Cluster – FDF
 
-![Screenshot]({{ site.baseurl }}/assets/images/create-local-storage-cluster-fdf-01.png)
+![Screenshot]({{ site.baseurl }}/assets/images/fusion-demo-guide/create-local-storage-cluster-fdf-01.png)
 
 Now navigate back to Storage  Data Foundation  Storage Cluster
 and “select configure data foundation”
 Then Select Create Storage Cluster
 
-![Screenshot]({{ site.baseurl }}/assets/images/create-local-storage-cluster-fdf-02.png)
+![Screenshot]({{ site.baseurl }}/assets/images/fusion-demo-guide/create-local-storage-cluster-fdf-02.png)
 
 
-![Screenshot]({{ site.baseurl }}/assets/images/create-local-storage-cluster-fdf-03.png)
+![Screenshot]({{ site.baseurl }}/assets/images/fusion-demo-guide/create-local-storage-cluster-fdf-03.png)
 
 
-![Screenshot]({{ site.baseurl }}/assets/images/create-local-storage-cluster-fdf-04.png)
+![Screenshot]({{ site.baseurl }}/assets/images/fusion-demo-guide/create-local-storage-cluster-fdf-04.png)
 
 Continue the installation and configuration
 
-![Screenshot]({{ site.baseurl }}/assets/images/create-local-storage-cluster-fdf-05.png)
+![Screenshot]({{ site.baseurl }}/assets/images/fusion-demo-guide/create-local-storage-cluster-fdf-05.png)
 
 
-![Screenshot]({{ site.baseurl }}/assets/images/create-local-storage-cluster-fdf-06.png)
+![Screenshot]({{ site.baseurl }}/assets/images/fusion-demo-guide/create-local-storage-cluster-fdf-06.png)
 
 After the local storage is discovered, you can select where and how to install Data foundation
 
 You can either use all of the nodes and disks, or use a subset.
 
-![Screenshot]({{ site.baseurl }}/assets/images/create-local-storage-cluster-fdf-07.png)
+![Screenshot]({{ site.baseurl }}/assets/images/fusion-demo-guide/create-local-storage-cluster-fdf-07.png)
 
 Use the infra nodes for data foundation.
 
-![Screenshot]({{ site.baseurl }}/assets/images/create-local-storage-cluster-fdf-08.png)
+![Screenshot]({{ site.baseurl }}/assets/images/fusion-demo-guide/create-local-storage-cluster-fdf-08.png)
 
 
-![Screenshot]({{ site.baseurl }}/assets/images/create-local-storage-cluster-fdf-09.png)
+![Screenshot]({{ site.baseurl }}/assets/images/fusion-demo-guide/create-local-storage-cluster-fdf-09.png)
 
 
-![Screenshot]({{ site.baseurl }}/assets/images/create-local-storage-cluster-fdf-10.png)
+![Screenshot]({{ site.baseurl }}/assets/images/fusion-demo-guide/create-local-storage-cluster-fdf-10.png)
 
 Then select if you want to enable provider mode or not
 
-![Screenshot]({{ site.baseurl }}/assets/images/create-local-storage-cluster-fdf-11.png)
+![Screenshot]({{ site.baseurl }}/assets/images/fusion-demo-guide/create-local-storage-cluster-fdf-11.png)
 
 Selecting Default, will only enable local use. Selecting Host will enable provider mode for hosted clusters.
 It will now create a storage cluster, this will take some time.
 
-![Screenshot]({{ site.baseurl }}/assets/images/create-local-storage-cluster-fdf-12.png)
+![Screenshot]({{ site.baseurl }}/assets/images/fusion-demo-guide/create-local-storage-cluster-fdf-12.png)
 
 Wait for the cluster to become healthy
 Validate the storage classes where created
 
-![Screenshot]({{ site.baseurl }}/assets/images/create-local-storage-cluster-fdf-13.png)
+![Screenshot]({{ site.baseurl }}/assets/images/fusion-demo-guide/create-local-storage-cluster-fdf-13.png)
 
 ## Remote File Systems – External Mount of Storage Scale Cluster
 This section will demonstrate how to connect IBM Fusion to a remote IBM Storage Scale cluster. The remote Storage Scale cluster will provide persistent storage for OpenShift workloads.
@@ -102,19 +103,19 @@ With Fusion, all these steps can be done through a simple GUI and the installati
 If you had selected Data Foundation External when install the Data Foundation service, you will see 
 “external systems” on the menu
 
-![Screenshot]({{ site.baseurl }}/assets/images/remote-file-systems-external-mount-of-storage-scale-cluster-01.png)
+![Screenshot]({{ site.baseurl }}/assets/images/fusion-demo-guide/remote-file-systems-external-mount-of-storage-scale-cluster-01.png)
 
 
-![Screenshot]({{ site.baseurl }}/assets/images/remote-file-systems-external-mount-of-storage-scale-cluster-02.png)
+![Screenshot]({{ site.baseurl }}/assets/images/fusion-demo-guide/remote-file-systems-external-mount-of-storage-scale-cluster-02.png)
 
 Select “Connect to external Systems”
 Then select
 IBM Scale
 
-![Screenshot]({{ site.baseurl }}/assets/images/remote-file-systems-external-mount-of-storage-scale-cluster-03.png)
+![Screenshot]({{ site.baseurl }}/assets/images/fusion-demo-guide/remote-file-systems-external-mount-of-storage-scale-cluster-03.png)
 
 
-![Screenshot]({{ site.baseurl }}/assets/images/remote-file-systems-external-mount-of-storage-scale-cluster-04.png)
+![Screenshot]({{ site.baseurl }}/assets/images/fusion-demo-guide/remote-file-systems-external-mount-of-storage-scale-cluster-04.png)
 
 *Table  – Add file system details*
 
@@ -130,21 +131,21 @@ IBM Scale
 | Storage class name | fusionfs1 |
 
 
-![Screenshot]({{ site.baseurl }}/assets/images/remote-file-systems-external-mount-of-storage-scale-cluster-05.jpeg)
+![Screenshot]({{ site.baseurl }}/assets/images/fusion-demo-guide/remote-file-systems-external-mount-of-storage-scale-cluster-05.jpeg)
 
 
-![Screenshot]({{ site.baseurl }}/assets/images/remote-file-systems-external-mount-of-storage-scale-cluster-06.png)
+![Screenshot]({{ site.baseurl }}/assets/images/fusion-demo-guide/remote-file-systems-external-mount-of-storage-scale-cluster-06.png)
 
 
-![Screenshot]({{ site.baseurl }}/assets/images/remote-file-systems-external-mount-of-storage-scale-cluster-07.png)
+![Screenshot]({{ site.baseurl }}/assets/images/fusion-demo-guide/remote-file-systems-external-mount-of-storage-scale-cluster-07.png)
 
 
-![Screenshot]({{ site.baseurl }}/assets/images/remote-file-systems-external-mount-of-storage-scale-cluster-08.png)
+![Screenshot]({{ site.baseurl }}/assets/images/fusion-demo-guide/remote-file-systems-external-mount-of-storage-scale-cluster-08.png)
 
 1. Wait for the cluster to show “ready”
 1. Then check the “Storage Classes”, look for the ibm-spectrum-scale-sample class
 
-![Screenshot]({{ site.baseurl }}/assets/images/remote-file-systems-external-mount-of-storage-scale-cluster-09.png)
+![Screenshot]({{ site.baseurl }}/assets/images/fusion-demo-guide/remote-file-systems-external-mount-of-storage-scale-cluster-09.png)
 
 ### Logon to the Storage Scale command line and issue Storage Scale commands
 > Note: For visual guidance, refer to the supplemental PowerPoint available at [https://ibm.box.com/v/TechzoneSpFusionScreenshots](https://ibm.box.com/v/TechzoneSpFusionScreenshots). Screenshots of this process can be found in the section titled “SSH to Storage Scale Node.”
@@ -170,7 +171,7 @@ List the Storage Scale cluster name, id, and nodes associated with the Storage S
 mmlscluster
 ```
 
-![Screenshot]({{ site.baseurl }}/assets/images/logon-to-the-storage-scale-command-line-and-issue-storage-sc-01.png)
+![Screenshot]({{ site.baseurl }}/assets/images/fusion-demo-guide/logon-to-the-storage-scale-command-line-and-issue-storage-sc-01.png)
 
 List the Storage Scale GUI users by entering the following command in the terminal window.
 
@@ -178,7 +179,7 @@ List the Storage Scale GUI users by entering the following command in the termin
 /usr/lpp/mmfs/gui/cli/lsuser
 ```
 
-![Screenshot]({{ site.baseurl }}/assets/images/logon-to-the-storage-scale-command-line-and-issue-storage-sc-02.png)
+![Screenshot]({{ site.baseurl }}/assets/images/fusion-demo-guide/logon-to-the-storage-scale-command-line-and-issue-storage-sc-02.png)
 
 List the Storage Scale file systems and their mount points by entering the following command in the terminal window.
 
@@ -186,7 +187,7 @@ List the Storage Scale file systems and their mount points by entering the follo
 mmlsfs all -T
 ```
 
-![Screenshot]({{ site.baseurl }}/assets/images/logon-to-the-storage-scale-command-line-and-issue-storage-sc-03.png)
+![Screenshot]({{ site.baseurl }}/assets/images/fusion-demo-guide/logon-to-the-storage-scale-command-line-and-issue-storage-sc-03.png)
 
 ### Use the Storage Scale REST API and the Linux curl command
 You can use the representational state transfer (REST) method to issue commands in your SSH “Terminal” window if an IBM Storage Scale username and password have been provided for a user that has been granted the permissions necessary to access the IBM Storage Scale RESTful API.
@@ -198,7 +199,7 @@ https://10.10.10.202/scalemgmt/v2/cluster
 
 ```
 
-![Screenshot]({{ site.baseurl }}/assets/images/use-the-storage-scale-rest-api-and-the-linux-curl-command-01.png)
+![Screenshot]({{ site.baseurl }}/assets/images/fusion-demo-guide/use-the-storage-scale-rest-api-and-the-linux-curl-command-01.png)
 
 [About the curl command](https://www.geeksforgeeks.org/curl-command-in-linux-with-examples/)
 [Documentation on Storage Scale REST API used with the curl command](https://www.ibm.com/docs/en/spectrum-scale/5.1.3?topic=api-list-spectrum-scale-management-commands)
@@ -207,4 +208,4 @@ In some cases, it is necessary to encrypt data stored with Fusion and the Global
 > Note: The information provided in this section is for educational purposes to denote that only the IBM Security Guardium Key Lifecycle Manager (GKLM) is available for enabling encryption with IBM Fusion and the Global Data Platform.
 To enable data encryption, you must first connect to IBM Security Guardium Key Lifecycle Manager (GKLM) by clicking on the Connect button.
 
-![Screenshot]({{ site.baseurl }}/assets/images/data-encryption-01.png)
+![Screenshot]({{ site.baseurl }}/assets/images/fusion-demo-guide/data-encryption-01.png)

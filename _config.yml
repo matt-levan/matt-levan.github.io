@@ -1,5 +1,5 @@
-title: IBM Fusion Demo Guide
-description: Platform modernization with IBM Fusion – Hands-on demo guide v2.13.1
+title: IBM Storage Technical Library
+description: Technical guides for IBM Storage — Fusion, Backup & Restore, Disaster Recovery
 baseurl: ""
 url: "https://matt-levan.github.io"
 
@@ -9,27 +9,23 @@ remote_theme: just-the-docs/just-the-docs
 color_scheme: light
 search_enabled: true
 heading_anchors: true
+
 aux_links:
-  "IBM Fusion Docs":
+  "IBM Storage Docs":
     - "https://www.ibm.com/docs/en/storage-fusion-software"
 
-footer_content: "IBM Fusion Demo Guide v2.13.1 &mdash; Platform modernization with IBM Fusion"
+footer_content: "IBM Storage Technical Library &mdash; matt-levan.github.io"
 
-# Callout colours for blockquotes used as notes/tips
-callouts_level: quiet
-callouts:
-  note:
-    title: Note
-    color: blue
-  tip:
-    title: Tip
-    color: green
-  important:
-    title: Important
-    color: yellow
-  warning:
-    title: Warning
-    color: red
+# Collections — one per document
+collections:
+  docs:
+    output: true
+    permalink: /:path/
+
+just_the_docs:
+  collections:
+    docs:
+      name: "Documents"
 
 # Build settings
 markdown: kramdown

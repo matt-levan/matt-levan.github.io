@@ -1,37 +1,86 @@
 ---
-layout: default
-title: "Introduction"
+layout: home
+title: Home
 permalink: /
 nav_order: 1
 ---
 
-# Introduction
+# IBM Storage Technical Library
 
-The core value of Fusion is derived from “Fusion 5”—five foundational application data services that deliver a consistent experience across public cloud and on-premises bare metal or virtualized platforms.
-1. Data persistence: Platform engineering and application development teams gain productivity from Fusion's automation for data storage provisioning.
-1. Data resilience: Ensures that data is always available, even during disruptive events or system failures.
-1. Data security: Data encryption, retention and recovery to protect from intentional or unintentional data loss.
-1. Data mobility: Applications need to run from the edge, to the core, and to the cloud, which requires your data to be mobile.
-1. Data cataloging: Data scientists seek simple and fast ways to create actionable data insights at scale.
+Welcome to the IBM Storage technical documentation library. Select a guide below to get started.
 
-![Screenshot]({{ site.baseurl }}/assets/images/introduction-02.png)
+<div class="doc-cards">
 
-## About this demo
-The purpose of this exercise is to enable you to get some hands-on experience with IBM Fusion on an OpenShift Cluster. The environment used is a VMware server provisioned on IBM Technology Zone and is suitable for self-education, demos, and a customer Proof of Experience (PoX). In this exercise you will:
-- Learn how to install, configure, and use IBM Fusion and the Fusion graphical user interface (GUI)
-- Explore scenarios that are written, tested, documented, and maintained by the IBM Worldwide (WW) Storage Technical Architect team.
-- Learn how to install the IBM Fusion Operator on a pre-configured, ready to use Red Hat OpenShift Container Platform instance.
-- Use the IBM Fusion Operator to create an IBM Fusion instance.
-- Login to IBM Fusion
-- Use the IBM Fusion GUI to connect to a remote Storage Scale file system (and in the process, see IBM Fusion automatically install containerized Storage Scale).
-- Create and execute IBM Fusion backup and restore policies.
-## Product disclaimer
-This product is being developed and released in an agile manner. In addition to adding new capabilities, the interface is likely to change over time. Therefore, the screenshots used in this demo may not always look exactly like what you see in the product. Depending on the product, you can expect to encounter some of the following:
-- Changes in the user interface (UI), such as the location of buttons or text in various fields
-- Additional tabs or buttons
-These differences should not affect how the demos work but have patience and explore.
-## Getting help
-If you require assistance in interpreting any of the steps in this lab, please post your questions to the #storage_demo_feedback ([https://ibm.enterprise.slack.com/archives/C06KQ49RJBF](https://ibm.enterprise.slack.com/archives/C06KQ49RJBF)) Slack channel (IBMers only). Business Partners can request help at the [Partner Plus Support](https://www.ibm.com/partnerplus/support) website.
-For troubleshooting tips, see the TechZone Set Up Troubleshooting Guide ([https://ibm.seismic.com/Link/Content/DCGT3pQ7hHM828WDQ86R7Tf6gpPV](https://ibm.seismic.com/Link/Content/DCGT3pQ7hHM828WDQ86R7Tf6gpPV)) for help with common issues and solutions when using IBM Technology Zone. Additionally, go to the IBM Technology Zone Help page ([https://techzone.ibm.com/help](https://techzone.ibm.com/help)). If you have an issue with the site, you can open a support case ([https://ibmsf.force.com/ibminternalproducts/s/createrecord/NewCase?language=en_US](https://ibmsf.force.com/ibminternalproducts/s/createrecord/NewCase?language=en_US)). Alternatively, you can send an email to [techzone.help@ibm.com](mailto:techzone.help@ibm.com). This contact information is also provided in the emails you receive from IBM Technology Zone.
-Help with the Fusion product itself is available in the #ibm-fusion-help ([https://ibm.enterprise.slack.com/archives/C029ET42U8Y](https://ibm.enterprise.slack.com/archives/C029ET42U8Y)) Slack channel (IBMers only).
-Additionally, see the Fusion documentation ([https://www.ibm.com/docs/en/storage-fusion-software](https://www.ibm.com/docs/en/storage-fusion-software)).
+  <a href="/fusion-demo-guide/" class="doc-card">
+    <h2>IBM Fusion Demo Guide</h2>
+    <p>Hands-on demo guide for platform modernization with IBM Fusion. Covers installation, storage, backup, and restore on OpenShift.</p>
+    <span class="doc-card-version">v2.13.1</span>
+  </a>
+
+  <a href="#" class="doc-card doc-card-coming-soon">
+    <h2>Fusion Backup &amp; Restore Guide</h2>
+    <p>Deep-dive into IBM Fusion Backup &amp; Restore service configuration, policies, and recovery procedures.</p>
+    <span class="doc-card-badge">Coming soon</span>
+  </a>
+
+  <a href="#" class="doc-card doc-card-coming-soon">
+    <h2>Fusion Regional Disaster Recovery Guide</h2>
+    <p>Configure and test regional disaster recovery with IBM Fusion hub-and-spoke architecture.</p>
+    <span class="doc-card-badge">Coming soon</span>
+  </a>
+
+</div>
+
+<style>
+.doc-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1.25rem;
+  margin-top: 2rem;
+}
+.doc-card {
+  display: block;
+  padding: 1.25rem 1.5rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+  text-decoration: none;
+  color: inherit;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+.doc-card:hover {
+  border-color: #2c84fa;
+  box-shadow: 0 2px 8px rgba(44,132,250,0.12);
+  text-decoration: none;
+}
+.doc-card h2 {
+  margin: 0 0 0.5rem;
+  font-size: 1.05rem;
+  color: #2c84fa;
+  border: none;
+}
+.doc-card p {
+  margin: 0 0 0.75rem;
+  font-size: 0.9rem;
+  color: #57606a;
+  line-height: 1.5;
+}
+.doc-card-version {
+  font-size: 0.78rem;
+  color: #57606a;
+  background: #f0f4ff;
+  padding: 0.15em 0.5em;
+  border-radius: 3px;
+}
+.doc-card-coming-soon {
+  opacity: 0.6;
+  cursor: default;
+  pointer-events: none;
+}
+.doc-card-badge {
+  font-size: 0.78rem;
+  color: #ffffff;
+  background: #57606a;
+  padding: 0.15em 0.5em;
+  border-radius: 3px;
+}
+</style>

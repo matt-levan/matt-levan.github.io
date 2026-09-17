@@ -1,8 +1,9 @@
 ---
 layout: default
 title: "Demonstration Scope"
-permalink: /demonstration-scope/
+permalink: /fusion-demo-guide/demonstration-scope/
 nav_order: 4
+parent: "IBM Fusion Demo Guide"
 ---
 
 # Demonstration Scope

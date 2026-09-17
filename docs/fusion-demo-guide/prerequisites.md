@@ -1,8 +1,9 @@
 ---
 layout: default
 title: "Prerequisites"
-permalink: /prerequisites/
+permalink: /fusion-demo-guide/prerequisites/
 nav_order: 2
+parent: "IBM Fusion Demo Guide"
 ---
 
 # Prerequisites
@@ -26,11 +27,11 @@ Additionally, you might need to configure an OpenVPN connection to be able to ac
 1. In your web browser, go to the IBM account page (https://www.ibm.com/account/us-en/).
 1. Click **Log in to My IBM** (A).
 
-![Screenshot]({{ site.baseurl }}/assets/images/creating-an-ibmid-01.png)
+![Screenshot]({{ site.baseurl }}/assets/images/fusion-demo-guide/creating-an-ibmid-01.png)
 
 1. The Log in to IBM page is displayed. Click **Create an ****IBMid** (A).
 
-![Screenshot]({{ site.baseurl }}/assets/images/creating-an-ibmid-02.png)
+![Screenshot]({{ site.baseurl }}/assets/images/fusion-demo-guide/creating-an-ibmid-02.png)
 
 1. On the **Create an ****IBMid** page, enter the following information:
 - Your email address (A)
@@ -41,15 +42,15 @@ Additionally, you might need to configure an OpenVPN connection to be able to ac
 - If you select that you are not a student (G), then enter the name of your company (G)
 - Click **Next** (I) to continue
 
-![Screenshot]({{ site.baseurl }}/assets/images/creating-an-ibmid-03.png)
+![Screenshot]({{ site.baseurl }}/assets/images/fusion-demo-guide/creating-an-ibmid-03.png)
 
 1. You are then prompted to verify your email and complete your account creation. Enter the code that was emailed to you in **Verification token**** (A)**, and then click **Create account**** (B)**.
 
-![Screenshot]({{ site.baseurl }}/assets/images/creating-an-ibmid-04.png)
+![Screenshot]({{ site.baseurl }}/assets/images/fusion-demo-guide/creating-an-ibmid-04.png)
 
 1. The **About your ****IBMid**** Account** page is shown. Click **Proceed**** (A)**.
 
-![Screenshot]({{ site.baseurl }}/assets/images/creating-an-ibmid-05.png)
+![Screenshot]({{ site.baseurl }}/assets/images/fusion-demo-guide/creating-an-ibmid-05.png)
 
 1. After a few minutes, you will receive an email confirming that your IBMid has been activated.
 > Note: The first time that you log in using your IBMid you will be sent another code to verify your log in.
