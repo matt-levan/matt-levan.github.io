@@ -57,11 +57,9 @@ NOTE: This is a new pattern, and the some of the steps in the docs may be out of
 ![Screenshot]({{ site.baseurl }}/assets/images/fusion-demo-guide/reserve-an-environment-in-ibm-technology-zone-10.png)
 
 1. There are four important options when you reserve your environment:
-  1. OpenShift Version – 4.21 is preferred.
-Choose either 4.19, 4.20, or 4.21.
-  1. Worker Node Count – 3 is preferred.
-Choose the number of worker nodes required. 3 is enough for this lab.
-  1. Worker Node Flavor – 16 vCPU x 64 GB – 300 GB ephemeral storage is preferred.
+   1. OpenShift Version – 4.21 is preferred. Choose either 4.19, 4.20, or 4.21.
+   1. Worker Node Count – 3 is preferred. Choose the number of worker nodes required. 3 is enough for this lab.
+   1. Worker Node Flavor – 16 vCPU x 64 GB – 300 GB ephemeral storage is preferred.
 
 ![Screenshot]({{ site.baseurl }}/assets/images/fusion-demo-guide/reserve-an-environment-in-ibm-technology-zone-11.png)
 

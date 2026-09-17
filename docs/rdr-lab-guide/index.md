@@ -37,9 +37,9 @@ Participants will gain hands-on experience with:
 Red Hat Advanced Cluster Management (RHACM) provides the ability to manage multiple clusters and application lifecycles. Hence, it serves as a control plane in a multi-cluster environment.
 RHACM is split into two parts:
 - RHACM Hub
-- Components that run on the multi-cluster control plane.
+  - Components that run on the multi-cluster control plane.
 - Managed clusters
-- Components that run on the clusters that are managed.
+  - Components that run on the clusters that are managed.
 For more information about RHACM, see about this product, see About > Welcome to Red Hat Advanced Cluster Management for Kubernetes > Welcome to Red Hat Advanced Cluster Management for Kubernetes within [Red Hat Advanced Cluster Management for Kubernetes](https://www.ibm.com/links?url=https%3A%2F%2Faccess.redhat.com%2Fdocumentation%2Fen-us%2Fred_hat_advanced_cluster_management_for_kubernetes%2F2.11) (https://access.redhat.com/documentation/en-us/red_hat_advanced_cluster_management_for_kubernetes/2.13) product documentation.
 ### Fusion Data Foundation
 Fusion Data Foundation provides the ability to provision and manage storage for stateful applications in an OpenShift Container Platform cluster. It is backed by Ceph as the storage provider, whose lifecycle is managed by Rook in the Fusion Data Foundation component stack and Ceph-CSI provides the provisioning and management of Persistent Volumes for stateful applications.
@@ -53,12 +53,9 @@ OpenShift DR is a disaster recovery orchestrator for stateful applications acros
 - Failing over an application and its state to a peer cluster.
 - Relocate an application and its state to the previously deployed cluster.
 OpenShift DR is split into three components:
-- IBM Fusion Data Foundation Multicluster Orchestrator
-- Installed on the Hub cluster with RHACM, it orchestrates configuration and peering of Fusion Data Foundation clusters for Metro and Regional DR relationships.
-- IBM Fusion Data Foundation DR Hub Operator
-- Automatically installed as part of IBM Fusion Data Foundation Multicluster Orchestrator installation on the hub cluster to orchestrate failover or relocation of DR enabled applications.
-- IBM Fusion Data Foundation DR Cluster Operator
-- Automatically installed on each managed cluster that is part of a Metro and Regional DR relationship to manage the lifecycle of all PVCs of an application.
+- **IBM Fusion Data Foundation Multicluster Orchestrator** — Installed on the Hub cluster with RHACM, it orchestrates configuration and peering of Fusion Data Foundation clusters for Metro and Regional DR relationships.
+- **IBM Fusion Data Foundation DR Hub Operator** — Automatically installed as part of IBM Fusion Data Foundation Multicluster Orchestrator installation on the hub cluster to orchestrate failover or relocation of DR enabled applications.
+- **IBM Fusion Data Foundation DR Cluster Operator** — Automatically installed on each managed cluster that is part of a Metro and Regional DR relationship to manage the lifecycle of all PVCs of an application.
 ## Advanced Cluster Manager Managed vs Discovered applications
 Managed applications are applications that are part of the ACM application model. They are deployed and managed using a multi-cluster application definition that specifies which clusters they should be deployed to, and how they should be configured. ACM uses GitOps principles to manage the deployment and lifecycle of these applications, ensuring they are deployed consistently across multiple clusters. OpenShift API for Data Protection is not required for managed applications as the definition of the application is in a source code management (SCM) system.
 Discovered applications are applications that already exist on managed clusters and are not part of the ACM application model. ACM can discover these applications through mechanisms like OpenShift Container Platform GitOps or Argo CD operators, allowing for some level of visibility and potentially limited management. For example, ACM might be able to monitor their health, enforce policies on them, or integrate them with other ACM features like disaster recovery. OpenShift API for Data Protection is deployed along with ACM to backup and restore the application components in case of failure or relocation of the application.
@@ -66,24 +63,16 @@ Discovered applications are applications that already exist on managed clusters 
 In OpenShift disaster recovery, failover refers to switching an application and its state from a primary cluster to a secondary cluster during a disaster, while relocate refers to moving an application and its state back to the original primary cluster after it is recovered. Both are managed through Fusion Data Foundation's DR solution and utilize the PlacementRule for application placement.
 
 ### Failover
-- **Purpose:**
-- Switches application and state to a secondary cluster when the primary cluster is unavailable due to a disaster.
-- Process:
-- Initiated by an administrator, the DR solution orchestrates the application's relocation to the secondary cluster.
-- Data Loss:
-- Ideally, failover is designed to be non-disruptive, minimizing data loss.
-- **Example:**
-  - A cluster in one region becomes unavailable, and the application is automatically moved to a secondary cluster in a different region.
+- **Purpose:** Switches application and state to a secondary cluster when the primary cluster is unavailable due to a disaster.
+- **Process:** Initiated by an administrator, the DR solution orchestrates the application's relocation to the secondary cluster.
+- **Data Loss:** Ideally, failover is designed to be non-disruptive, minimizing data loss.
+- **Example:** A cluster in one region becomes unavailable, and the application is automatically moved to a secondary cluster in a different region.
 
 ### Relocate (Failback)
-- **Purpose:**
-- Moves the application and its state back to the original primary cluster after the disaster has been resolved and the primary cluster is restored.
-- Process:
-- Also initiated by an administrator, the DR solution orchestrates the relocation back to the primary cluster.
-- Data Loss:
-- Relocation is planned and controlled to ensure no data loss occurs during the switchback.
-- **Example:**
-  - The cluster in the original region is restored and operational, and the application is moved back to its original location.
+- **Purpose:** Moves the application and its state back to the original primary cluster after the disaster has been resolved and the primary cluster is restored.
+- **Process:** Also initiated by an administrator, the DR solution orchestrates the relocation back to the primary cluster.
+- **Data Loss:** Relocation is planned and controlled to ensure no data loss occurs during the switchback.
+- **Example:** The cluster in the original region is restored and operational, and the application is moved back to its original location.
 
 ### Key Differences
 - **Direction:** Failover moves the application away from the primary cluster, while relocate (failback) moves it back.

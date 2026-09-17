@@ -44,26 +44,14 @@ This lab provides a fully configured environment with:
 
 You will have access to:
 
-- OpenShift console in a tab on your right or if you prefer in a separate window: **your OpenShift Console URL (from TechZone reservation)**.
+- OpenShift console URL, username, and password — all provided in your TechZone reservation details.
 
-```bash
-**Username**
-**your kubeadmin username (from TechZone reservation)**
-```
+> **Note:** All environment details and credentials are available in your TechZone reservation page.
 
-```bash
-**Password**
-**your kubeadmin password (from TechZone reservation)**
-```
+## Estimated time
 
-NOTE: All environment details and credentials are available in the lab interface.
+This workshop will take approximately **90 minutes** to complete. You can work at your own pace.
 
-== Estimated time
-
-This workshop will take approximately **90 minutes** to complete.
-
-You can work at your own pace.
-
-== Let's get started!
+## Let's get started!
 
 Click on **Workshop Overview** in the navigation to begin your learning journey.

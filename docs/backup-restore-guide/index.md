@@ -14,15 +14,15 @@ IBM Fusion is a fully containerized solution providing backup and restore servic
 The purpose of this exercise is to enable you to get some hands-on experience with IBM Fusion on an OpenShift Cluster. The environment used is a VMware server provisioned on IBM Technology Zone and is suitable for self-education, demos, and a customer Proof of Experience (PoX).
 This lab is divided into two main sections, as follows:
 1. Configure and use the backup and restore functions of IBM Fusion
-  1. Learn how to define and configure backup locations and policies.
-  1. Learn how to assign backup policies to applications.
-  1. Learn how to restore an application.
-  1. Learn how to monitor the status of backups and jobs.
-  1. Learn how to create a recipe and assign the recipe to applications for application-consistent backups.
-  1. Learn how to configure protection of the backup and restore service.
+   1. Learn how to define and configure backup locations and policies.
+   1. Learn how to assign backup policies to applications.
+   1. Learn how to restore an application.
+   1. Learn how to monitor the status of backups and jobs.
+   1. Learn how to create a recipe and assign the recipe to applications for application-consistent backups.
+   1. Learn how to configure protection of the backup and restore service.
 1. Configure a second cluster as a backup and restore spoke of an IBM Fusion backup and restore hub cluster
-  1. Define an object store that is accessible from both the hub and the spoke cluster.
-  1. Restore an application backed up on one cluster to a different cluster.
+   1. Define an object store that is accessible from both the hub and the spoke cluster.
+   1. Restore an application backed up on one cluster to a different cluster.
 ## Product disclaimer
 
 {% include shared/product-disclaimer.md %}
