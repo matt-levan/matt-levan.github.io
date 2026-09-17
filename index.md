@@ -23,6 +23,12 @@ Welcome to the IBM Storage technical documentation library. Select a guide below
     <span class="doc-card-version">v2.12.0.0</span>
   </a>
 
+  <a href="/ocpv-fusion-lab/" class="doc-card">
+    <h2>OCP Virtualization with IBM Fusion Lab</h2>
+    <p>Hands-on lab for modernizing virtualization with Red Hat OpenShift Virtualization and IBM Fusion — VM lifecycle, live migration, storage, and backup.</p>
+    <span class="doc-card-version">v4.20 / Fusion 2.12</span>
+  </a>
+
   <a href="#" class="doc-card doc-card-coming-soon">
     <h2>Fusion Regional Disaster Recovery Guide</h2>
     <p>Configure and test regional disaster recovery with IBM Fusion hub-and-spoke architecture.</p>
